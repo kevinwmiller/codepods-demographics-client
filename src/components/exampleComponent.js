@@ -79,9 +79,9 @@ class ExampleComponent extends Component {
 				<p>
 					The below is a call to the backend server. This particular route fetched the google.com homepage
 				</p>
-				<p className="ExampleComponentState">
+				<div className="ExampleComponentState">
 					BackendServer says <div className="content" dangerouslySetInnerHTML={{__html: this.state.response}}></div>
-				</p>
+				</div>
 			</div>
 		);
 	}
