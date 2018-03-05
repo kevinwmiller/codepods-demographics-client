@@ -52,7 +52,8 @@ class ExampleComponent extends Component {
 	// Axios returns a promise object. 
 	// A promise object represents the eventual completion or failure of an async operation
 	getApiData() {
-		return axios.get('/api/test')
+		console.log("Getting exampleController")
+		return axios.get('/exampleController')
 	}
 
 	// To use a promise object, use the async/await paradigm
@@ -61,8 +62,7 @@ class ExampleComponent extends Component {
 	testExpressCall = async() => {
 		try {
 			const response = await this.getApiData()
-			console.log(response.data)
-			this.setState({ response: response.data.express })
+			this.setState({ response: response.data.response })
 		} catch (err) {
 			console.error(err)
 			this.setState({ response: err.message })
@@ -70,13 +70,17 @@ class ExampleComponent extends Component {
 	}
 
 	render() {
+		// Don't use dangerouslySetInnerHTML
 		return (
 			<div>
 				<p className="ExampleComponentProperty">
 					ReactComponent says {this.props.message}
 				</p>
+				<p>
+					The below is a call to the backend server. This particular route fetched the google.com homepage
+				</p>
 				<p className="ExampleComponentState">
-					BackendServer says {this.state.response}
+					BackendServer says <div className="content" dangerouslySetInnerHTML={{__html: this.state.response}}></div>
 				</p>
 			</div>
 		);
