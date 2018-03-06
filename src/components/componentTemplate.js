@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 
+/** Empty React component object to use as a template when creating new components*/
 class ComponentTemplate extends Component {
+
+	/**
+	* @constructor
+	* @param {object} props - {
+	
+		}
+	*/
 	constructor(props) {
 		super(props)
 
@@ -8,7 +16,7 @@ class ComponentTemplate extends Component {
 		}
 	}
 
-	// These functions are called when the component is 'mounted', i.e. inserted into the DOM
+	/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */
 	componentWillMount() {
 
 	}
@@ -18,7 +26,7 @@ class ComponentTemplate extends Component {
 
 
 
-	// These functions are called when a property or state change occurs. These functions trigger a re-render
+	/** These functions are called when a property or state change occurs. These functions trigger a re-render */
 	componentWillReceiveProps() {
 
 	}
@@ -36,12 +44,12 @@ class ComponentTemplate extends Component {
 	}
 
 
-	// This is called when the component is being removed from the DOM
+	/** This is called when the component is being removed from the DOM */
 	componentWillUnmount() {
 
 	}
 
-	// This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor
+	/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */
 	componentDidCatch() {
 
 	}
