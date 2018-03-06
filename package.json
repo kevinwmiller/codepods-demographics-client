@@ -11,12 +11,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "./node_modules/mocha/bin/mocha",
     "eject": "react-scripts eject",
-    "doc": "./node_modules/.bin/jsdoc -c ./conf.json -d docs -r ."
+    "doc": "./node_modules/.bin/jsdoc -c ./conf.json -d docs -r .",
+    "test": "./node_modules/.bin/mocha src/test/ --recursive"
   },
   "proxy": "http://localhost:5000/",
   "devDependencies": {
-    "jsdoc": "^3.5.5"
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.0.2"
   }
 }

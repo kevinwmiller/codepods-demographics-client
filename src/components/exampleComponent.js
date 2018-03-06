@@ -14,7 +14,11 @@ class ExampleComponent extends Component {
 		super(props)
 
 		this.state = {
-			defaultMessage: 'Hello'
+			defaultMessage: 'Hello',
+			response: {
+				firstName: "test",
+				lastName: "test",
+			}
 		}
 	}
 
@@ -76,6 +80,7 @@ class ExampleComponent extends Component {
 	testExpressCall = async () => {
 		try {
 			const response = await this.getApiData()
+			console.log(response.data)
 			this.setState({ response: response.data.response })
 		} catch (err) {
 			console.error(err)
@@ -84,10 +89,10 @@ class ExampleComponent extends Component {
 	}
 
 	/**
-		Renders the 'message' property, and will also add a div to the page containing any html returned by the express server (Stored in this.state.response  @see {@link getApiData})
-		Warning: Do not use dangerouslySetInnerHTML as we are here. It's just for fun in this example
+		Renders the 'message' property, and will also add a person's name returned by the express server (Stored in this.state.response  @see {@link getApiData})
 	*/
 	render() {
+		console.log(this.state)
 		return (
 			<div>
 				<p className="ExampleComponentProperty">
@@ -97,7 +102,7 @@ class ExampleComponent extends Component {
 					The below is a call to the backend server. This particular route fetched the google.com homepage
 				</p>
 				<div className="ExampleComponentState">
-					BackendServer says <div className="content" dangerouslySetInnerHTML={{__html: this.state.response}}></div>
+					<p>Hello {this.state.response.firstName} {this.state.response.lastName}!</p>
 				</div>
 			</div>
 		);
