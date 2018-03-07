@@ -1,0 +1,35 @@
+{
+  "coverage": "88.23%",
+  "expectCount": 34,
+  "actualCount": 30,
+  "files": {
+    "src/App.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        18
+      ]
+    },
+    "src/components/componentTemplate.js": {
+      "expectCount": 12,
+      "actualCount": 11,
+      "undocumentLines": [
+        15
+      ]
+    },
+    "src/components/exampleComponent.js": {
+      "expectCount": 14,
+      "actualCount": 13,
+      "undocumentLines": [
+        17
+      ]
+    },
+    "src/registerServiceWorker.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        11
+      ]
+    }
+  }
+}

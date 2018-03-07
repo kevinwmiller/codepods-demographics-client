@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-/** An example component showing the basics of making a call to the backend express server and using state and properties*/
+/**
+ * An example component showing the basics of making a call to the backend express server and using state and properties
+ * @reactProps {string} message - The message to display from the frontend
+ */
 class ExampleComponent extends Component {
 
 	/**
 	* @constructor
-	* @param {object} props - {
-		message: The message to display from the frontend
-		}
+	* @param {object} props
 	*/
 	constructor(props) {
 		super(props)
@@ -22,7 +23,7 @@ class ExampleComponent extends Component {
 		}
 	}
 
-	// These functions are called when the component is 'mounted', i.e. inserted into the DOM
+	/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */
 	componentWillMount() {
 
 	}
@@ -33,7 +34,7 @@ class ExampleComponent extends Component {
 
 
 
-	// These functions are called when a property or state change occurs. These functions trigger a re-render
+	/** These functions are called when a property or state change occurs. These functions trigger a re-render */
 	componentWillReceiveProps() {
 
 	}
@@ -51,12 +52,12 @@ class ExampleComponent extends Component {
 	}
 
 
-	// This is called when the component is being removed from the DOM
+	/** This is called when the component is being removed from the DOM */
 	componentWillUnmount() {
 
 	}
 
-	// This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor
+	/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */
 	componentDidCatch() {
 
 	}

@@ -1,0 +1,1290 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/App.js",
+    "content": "/**\n\t@file Main page and entry point of the React app. This file should only import components that are used directly by the App component\n\tTo add a component to the page:\n\t<ComponentName property1Name={{property1Value}} property2Name={{property2Value}}/>\n\n*/\nimport React, { Component } from 'react'\nimport logo from './teamLogo.jpg'\nimport './App.css'\n\n// Import any components used in the frontend. Only require those which are needed in the current component\nimport ExampleComponent from './components/exampleComponent'\n\n/**\n * Entry point and main page of our react app\n */\nclass App extends Component {\n\tstate = {\n\t}\n\n\t/**\n    * render\n    * @return {ReactElement} markup\n    */\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"App\">\n\t\t\t\t<header className=\"App-header\">\n\t\t\t\t\t<img src={logo} className=\"App-logo\" alt=\"logo\" />\n\t\t\t\t\t<h1 className=\"App-title\">CodePods Web Project</h1>\n\t\t\t\t</header>\n\t\t\t\t<ExampleComponent message=\"This is a property\"/>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default App;\n",
+    "static": true,
+    "longname": "/vagrant/client/src/App.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "App",
+    "memberof": "src/App.js",
+    "static": true,
+    "longname": "src/App.js~App",
+    "access": "public",
+    "export": true,
+    "importPath": "codepods-demographics-client/src/App.js",
+    "importStyle": "App",
+    "description": "Entry point and main page of our react app",
+    "lineNumber": 17,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 50,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/App.js~App",
+    "static": false,
+    "longname": "src/App.js~App#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/App.js~App#render",
+    "access": "public",
+    "description": "render ",
+    "lineNumber": 25,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": "markup"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/components/componentTemplate.js",
+    "content": "import React, { Component } from 'react'\n\n/** Empty React component object to use as a template when creating new components*/\nclass ComponentTemplate extends Component {\n\n\t/**\n\t* @constructor\n\t* @param {object} props - {\n\t\n\t\t}\n\t*/\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t\tthis.state = {\n\t\t}\n\t}\n\n\t/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\t}\n\n\n\n\t/** These functions are called when a property or state change occurs. These functions trigger a re-render */\n\tcomponentWillReceiveProps() {\n\n\t}\n\n\tshouldComponentUpdate() {\n\t\treturn true\n\t}\n\n\tcomponentWillUpdate() {\n\t\t\n\t}\n\n\tcomponentDidUpdate() {\n\n\t}\n\n\n\t/** This is called when the component is being removed from the DOM */\n\tcomponentWillUnmount() {\n\n\t}\n\n\t/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */\n\tcomponentDidCatch() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ComponentTemplate",
+    "static": true,
+    "longname": "/vagrant/client/src/components/componentTemplate.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "class",
+    "name": "ComponentTemplate",
+    "memberof": "src/components/componentTemplate.js",
+    "static": true,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate",
+    "access": "public",
+    "export": true,
+    "importPath": "codepods-demographics-client/src/components/componentTemplate.js",
+    "importStyle": "ComponentTemplate",
+    "description": "Empty React component object to use as a template when creating new components",
+    "lineNumber": 4,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 54,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "{\n\n}"
+      }
+    ]
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "componentWillMount",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillMount",
+    "access": "public",
+    "description": "These functions are called when the component is 'mounted', i.e. inserted into the DOM ",
+    "lineNumber": 20,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "componentDidMount",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentDidMount",
+    "access": "public",
+    "description": "",
+    "lineNumber": 24,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "componentWillReceiveProps",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillReceiveProps",
+    "access": "public",
+    "description": "These functions are called when a property or state change occurs. These functions trigger a re-render ",
+    "lineNumber": 30,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "shouldComponentUpdate",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#shouldComponentUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 34,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "componentWillUpdate",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 38,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "componentDidUpdate",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentDidUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 42,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "componentWillUnmount",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillUnmount",
+    "access": "public",
+    "description": "This is called when the component is being removed from the DOM ",
+    "lineNumber": 48,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "componentDidCatch",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentDidCatch",
+    "access": "public",
+    "description": "This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor ",
+    "lineNumber": 53,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/componentTemplate.js~ComponentTemplate#render",
+    "access": "public",
+    "description": "",
+    "lineNumber": 57,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/components/exampleComponent.js",
+    "content": "import React, { Component } from 'react'\r\nimport axios from 'axios'\r\n\r\n/**\r\n * An example component showing the basics of making a call to the backend express server and using state and properties\r\n * @reactProps {string} message - The message to display from the frontend\r\n */\r\nclass ExampleComponent extends Component {\r\n\r\n\t/**\r\n\t* @constructor\r\n\t* @param {object} props\r\n\t*/\r\n\tconstructor(props) {\r\n\t\tsuper(props)\r\n\r\n\t\tthis.state = {\r\n\t\t\tdefaultMessage: 'Hello',\r\n\t\t\tresponse: {\r\n\t\t\t\tfirstName: \"test\",\r\n\t\t\t\tlastName: \"test\",\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\t/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\r\n\tcomponentWillMount() {\r\n\r\n\t}\r\n\r\n\tcomponentDidMount() {\r\n\t\tthis.testExpressCall()\r\n\t}\r\n\r\n\r\n\r\n\t/** These functions are called when a property or state change occurs. These functions trigger a re-render */\r\n\tcomponentWillReceiveProps() {\r\n\r\n\t}\r\n\r\n\tshouldComponentUpdate() {\r\n\t\treturn true\r\n\t}\r\n\r\n\tcomponentWillUpdate() {\r\n\t\t\r\n\t}\r\n\r\n\tcomponentDidUpdate() {\r\n\r\n\t}\r\n\r\n\r\n\t/** This is called when the component is being removed from the DOM */\r\n\tcomponentWillUnmount() {\r\n\r\n\t}\r\n\r\n\t/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */\r\n\tcomponentDidCatch() {\r\n\r\n\t}\r\n\r\n\t/**\r\n\t\tMakes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend\r\n\t\t@returns {Promise} Promise object represents the data returned from the express server\r\n\t*/\r\n\tgetApiData() {\r\n\t\tconsole.log(\"Getting exampleController\")\r\n\t\treturn axios.get('/exampleController')\r\n\t}\r\n\r\n\t/**\r\n\t\tShows a basic usage of async/await and promises\r\n\t\tShows how to set the state of the React component\r\n\t\t\tthis.setState( {key1: value1, key2: value2, ...} )\r\n\t\t\tSetting the state forces a re-render\r\n\t\tBody is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise\r\n\t*/\r\n\ttestExpressCall = async () => {\r\n\t\ttry {\r\n\t\t\tconst response = await this.getApiData()\r\n\t\t\tconsole.log(response.data)\r\n\t\t\tthis.setState({ response: response.data.response })\r\n\t\t} catch (err) {\r\n\t\t\tconsole.error(err)\r\n\t\t\tthis.setState({ response: err.message })\r\n\t\t}\r\n\t}\r\n\r\n\t/**\r\n\t\tRenders the 'message' property, and will also add a person's name returned by the express server (Stored in this.state.response  @see {@link getApiData})\r\n\t*/\r\n\trender() {\r\n\t\tconsole.log(this.state)\r\n\t\treturn (\r\n\t\t\t<div>\r\n\t\t\t\t<p className=\"ExampleComponentProperty\">\r\n\t\t\t\t\tReactComponent says {this.props.message}\r\n\t\t\t\t</p>\r\n\t\t\t\t<p>\r\n\t\t\t\t\tThe below is a call to the backend server. This particular route fetched the google.com homepage\r\n\t\t\t\t</p>\r\n\t\t\t\t<div className=\"ExampleComponentState\">\r\n\t\t\t\t\t<p>Hello {this.state.response.firstName} {this.state.response.lastName}!</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t);\r\n\t}\r\n}\r\n\r\nexport default ExampleComponent",
+    "static": true,
+    "longname": "/vagrant/client/src/components/exampleComponent.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "class",
+    "name": "ExampleComponent",
+    "memberof": "src/components/exampleComponent.js",
+    "static": true,
+    "longname": "src/components/exampleComponent.js~ExampleComponent",
+    "access": "public",
+    "export": true,
+    "importPath": "codepods-demographics-client/src/components/exampleComponent.js",
+    "importStyle": "ExampleComponent",
+    "description": "An example component showing the basics of making a call to the backend express server and using state and properties",
+    "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@reactProps",
+        "tagValue": "{string} message - The message to display from the frontend"
+      }
+    ],
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ]
+  },
+  {
+    "__docId__": 67,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"defaultMessage\": string, \"response\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "componentWillMount",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillMount",
+    "access": "public",
+    "description": "These functions are called when the component is 'mounted', i.e. inserted into the DOM ",
+    "lineNumber": 27,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "componentDidMount",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidMount",
+    "access": "public",
+    "description": "",
+    "lineNumber": 31,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "componentWillReceiveProps",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillReceiveProps",
+    "access": "public",
+    "description": "These functions are called when a property or state change occurs. These functions trigger a re-render ",
+    "lineNumber": 38,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "shouldComponentUpdate",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#shouldComponentUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 42,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "componentWillUpdate",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 46,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "componentDidUpdate",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidUpdate",
+    "access": "public",
+    "description": "",
+    "lineNumber": 50,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "componentWillUnmount",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillUnmount",
+    "access": "public",
+    "description": "This is called when the component is being removed from the DOM ",
+    "lineNumber": 56,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 76,
+    "kind": "method",
+    "name": "componentDidCatch",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidCatch",
+    "access": "public",
+    "description": "This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor ",
+    "lineNumber": 61,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "getApiData",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#getApiData",
+    "access": "public",
+    "description": "Makes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend ",
+    "lineNumber": 69,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise} Promise object represents the data returned from the express server "
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Promise object represents the data returned from the express server"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 78,
+    "kind": "member",
+    "name": "testExpressCall",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#testExpressCall",
+    "access": "public",
+    "description": "Shows a basic usage of async/await and promises\nShows how to set the state of the React component\nthis.setState( {key1: value1, key2: value2, ...} )\nSetting the state forces a re-render\nBody is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise",
+    "lineNumber": 81,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#render",
+    "access": "public",
+    "description": "Renders the 'message' property, and will also add a person's name returned by the express server (Stored in this.state.response  @see {@link getApiData}) ",
+    "lineNumber": 95,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "import React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport './index.css';\r\nimport App from './App';\r\nimport registerServiceWorker from './registerServiceWorker';\r\n\r\nReactDOM.render(<App />, document.getElementById('root'));\r\nregisterServiceWorker();\r\n",
+    "static": true,
+    "longname": "/vagrant/client/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "src/registerServiceWorker.js",
+    "content": "// In production, we register a service worker to serve assets from local cache.\r\n\r\n// This lets the app load faster on subsequent visits in production, and gives\r\n// it offline capabilities. However, it also means that developers (and users)\r\n// will only see deployed updates on the \"N+1\" visit to a page, since previously\r\n// cached resources are updated in the background.\r\n\r\n// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.\r\n// This link also includes instructions on opting out of this behavior.\r\n\r\nconst isLocalhost = Boolean(\r\n\twindow.location.hostname === 'localhost' ||\r\n\t\t// [::1] is the IPv6 localhost address.\r\n\t\twindow.location.hostname === '[::1]' ||\r\n\t\t// 127.0.0.1/8 is considered localhost for IPv4.\r\n\t\twindow.location.hostname.match(\r\n\t\t\t/^127(?:\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/\r\n\t\t)\r\n);\r\n\r\nexport default function register() {\r\n\tif (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {\r\n\t\t// The URL constructor is available in all browsers that support SW.\r\n\t\tconst publicUrl = new URL(process.env.PUBLIC_URL, window.location);\r\n\t\tif (publicUrl.origin !== window.location.origin) {\r\n\t\t\t// Our service worker won't work if PUBLIC_URL is on a different origin\r\n\t\t\t// from what our page is served on. This might happen if a CDN is used to\r\n\t\t\t// serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\twindow.addEventListener('load', () => {\r\n\t\t\tconst swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;\r\n\r\n\t\t\tif (isLocalhost) {\r\n\t\t\t\t// This is running on localhost. Lets check if a service worker still exists or not.\r\n\t\t\t\tcheckValidServiceWorker(swUrl);\r\n\r\n\t\t\t\t// Add some additional logging to localhost, pointing developers to the\r\n\t\t\t\t// service worker/PWA documentation.\r\n\t\t\t\tnavigator.serviceWorker.ready.then(() => {\r\n\t\t\t\t\tconsole.log(\r\n\t\t\t\t\t\t'This web app is being served cache-first by a service ' +\r\n\t\t\t\t\t\t\t'worker. To learn more, visit https://goo.gl/SC7cgQ'\r\n\t\t\t\t\t);\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\t// Is not local host. Just register service worker\r\n\t\t\t\tregisterValidSW(swUrl);\r\n\t\t\t}\r\n\t\t});\r\n\t}\r\n}\r\n\r\nfunction registerValidSW(swUrl) {\r\n\tnavigator.serviceWorker\r\n\t\t.register(swUrl)\r\n\t\t.then(registration => {\r\n\t\t\tregistration.onupdatefound = () => {\r\n\t\t\t\tconst installingWorker = registration.installing;\r\n\t\t\t\tinstallingWorker.onstatechange = () => {\r\n\t\t\t\t\tif (installingWorker.state === 'installed') {\r\n\t\t\t\t\t\tif (navigator.serviceWorker.controller) {\r\n\t\t\t\t\t\t\t// At this point, the old content will have been purged and\r\n\t\t\t\t\t\t\t// the fresh content will have been added to the cache.\r\n\t\t\t\t\t\t\t// It's the perfect time to display a \"New content is\r\n\t\t\t\t\t\t\t// available; please refresh.\" message in your web app.\r\n\t\t\t\t\t\t\tconsole.log('New content is available; please refresh.');\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t// At this point, everything has been precached.\r\n\t\t\t\t\t\t\t// It's the perfect time to display a\r\n\t\t\t\t\t\t\t// \"Content is cached for offline use.\" message.\r\n\t\t\t\t\t\t\tconsole.log('Content is cached for offline use.');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t};\r\n\t\t\t};\r\n\t\t})\r\n\t\t.catch(error => {\r\n\t\t\tconsole.error('Error during service worker registration:', error);\r\n\t\t});\r\n}\r\n\r\nfunction checkValidServiceWorker(swUrl) {\r\n\t// Check if the service worker can be found. If it can't reload the page.\r\n\tfetch(swUrl)\r\n\t\t.then(response => {\r\n\t\t\t// Ensure service worker exists, and that we really are getting a JS file.\r\n\t\t\tif (\r\n\t\t\t\tresponse.status === 404 ||\r\n\t\t\t\tresponse.headers.get('content-type').indexOf('javascript') === -1\r\n\t\t\t) {\r\n\t\t\t\t// No service worker found. Probably a different app. Reload the page.\r\n\t\t\t\tnavigator.serviceWorker.ready.then(registration => {\r\n\t\t\t\t\tregistration.unregister().then(() => {\r\n\t\t\t\t\t\twindow.location.reload();\r\n\t\t\t\t\t});\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\t// Service worker found. Proceed as normal.\r\n\t\t\t\tregisterValidSW(swUrl);\r\n\t\t\t}\r\n\t\t})\r\n\t\t.catch(() => {\r\n\t\t\tconsole.log(\r\n\t\t\t\t'No internet connection found. App is running in offline mode.'\r\n\t\t\t);\r\n\t\t});\r\n}\r\n\r\nexport function unregister() {\r\n\tif ('serviceWorker' in navigator) {\r\n\t\tnavigator.serviceWorker.ready.then(registration => {\r\n\t\t\tregistration.unregister();\r\n\t\t});\r\n\t}\r\n}\r\n",
+    "static": true,
+    "longname": "/vagrant/client/src/registerServiceWorker.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "isLocalhost",
+    "memberof": "src/registerServiceWorker.js",
+    "static": true,
+    "longname": "src/registerServiceWorker.js~isLocalhost",
+    "access": "public",
+    "export": false,
+    "importPath": "codepods-demographics-client/src/registerServiceWorker.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "register",
+    "memberof": "src/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/registerServiceWorker.js~register",
+    "access": "public",
+    "export": true,
+    "importPath": "codepods-demographics-client/src/registerServiceWorker.js",
+    "importStyle": "register",
+    "description": "",
+    "lineNumber": 21,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "registerValidSW",
+    "memberof": "src/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/registerServiceWorker.js~registerValidSW",
+    "access": "public",
+    "export": false,
+    "importPath": "codepods-demographics-client/src/registerServiceWorker.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 55,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "swUrl",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "checkValidServiceWorker",
+    "memberof": "src/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/registerServiceWorker.js~checkValidServiceWorker",
+    "access": "public",
+    "export": false,
+    "importPath": "codepods-demographics-client/src/registerServiceWorker.js",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 84,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "swUrl",
+        "description": ""
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "function",
+    "name": "unregister",
+    "memberof": "src/registerServiceWorker.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/registerServiceWorker.js~unregister",
+    "access": "public",
+    "export": true,
+    "importPath": "codepods-demographics-client/src/registerServiceWorker.js",
+    "importStyle": "{unregister}",
+    "description": "",
+    "lineNumber": 111,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/test/test.js",
+    "content": "",
+    "static": true,
+    "longname": "/vagrant/client/src/test/test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "kind": "index",
+    "content": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).\r\n\r\nBelow you will find some information on how to perform common tasks.<br>\r\nYou can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).\r\n\r\n## Table of Contents\r\n\r\n- [Updating to New Releases](#updating-to-new-releases)\r\n- [Sending Feedback](#sending-feedback)\r\n- [Folder Structure](#folder-structure)\r\n- [Available Scripts](#available-scripts)\r\n  - [npm start](#npm-start)\r\n  - [npm test](#npm-test)\r\n  - [npm run build](#npm-run-build)\r\n  - [npm run eject](#npm-run-eject)\r\n- [Supported Browsers](#supported-browsers)\r\n- [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)\r\n- [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor)\r\n- [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor)\r\n- [Debugging in the Editor](#debugging-in-the-editor)\r\n- [Formatting Code Automatically](#formatting-code-automatically)\r\n- [Changing the Page `<title>`](#changing-the-page-title)\r\n- [Installing a Dependency](#installing-a-dependency)\r\n- [Importing a Component](#importing-a-component)\r\n- [Code Splitting](#code-splitting)\r\n- [Adding a Stylesheet](#adding-a-stylesheet)\r\n- [Post-Processing CSS](#post-processing-css)\r\n- [Adding a CSS Preprocessor (Sass, Less etc.)](#adding-a-css-preprocessor-sass-less-etc)\r\n- [Adding Images, Fonts, and Files](#adding-images-fonts-and-files)\r\n- [Using the `public` Folder](#using-the-public-folder)\r\n  - [Changing the HTML](#changing-the-html)\r\n  - [Adding Assets Outside of the Module System](#adding-assets-outside-of-the-module-system)\r\n  - [When to Use the `public` Folder](#when-to-use-the-public-folder)\r\n- [Using Global Variables](#using-global-variables)\r\n- [Adding Bootstrap](#adding-bootstrap)\r\n  - [Using a Custom Theme](#using-a-custom-theme)\r\n- [Adding Flow](#adding-flow)\r\n- [Adding a Router](#adding-a-router)\r\n- [Adding Custom Environment Variables](#adding-custom-environment-variables)\r\n  - [Referencing Environment Variables in the HTML](#referencing-environment-variables-in-the-html)\r\n  - [Adding Temporary Environment Variables In Your Shell](#adding-temporary-environment-variables-in-your-shell)\r\n  - [Adding Development Environment Variables In `.env`](#adding-development-environment-variables-in-env)\r\n- [Can I Use Decorators?](#can-i-use-decorators)\r\n- [Fetching Data with AJAX Requests](#fetching-data-with-ajax-requests)\r\n- [Integrating with an API Backend](#integrating-with-an-api-backend)\r\n  - [Node](#node)\r\n  - [Ruby on Rails](#ruby-on-rails)\r\n- [Proxying API Requests in Development](#proxying-api-requests-in-development)\r\n  - [\"Invalid Host Header\" Errors After Configuring Proxy](#invalid-host-header-errors-after-configuring-proxy)\r\n  - [Configuring the Proxy Manually](#configuring-the-proxy-manually)\r\n  - [Configuring a WebSocket Proxy](#configuring-a-websocket-proxy)\r\n- [Using HTTPS in Development](#using-https-in-development)\r\n- [Generating Dynamic `<meta>` Tags on the Server](#generating-dynamic-meta-tags-on-the-server)\r\n- [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files)\r\n- [Injecting Data from the Server into the Page](#injecting-data-from-the-server-into-the-page)\r\n- [Running Tests](#running-tests)\r\n  - [Filename Conventions](#filename-conventions)\r\n  - [Command Line Interface](#command-line-interface)\r\n  - [Version Control Integration](#version-control-integration)\r\n  - [Writing Tests](#writing-tests)\r\n  - [Testing Components](#testing-components)\r\n  - [Using Third Party Assertion Libraries](#using-third-party-assertion-libraries)\r\n  - [Initializing Test Environment](#initializing-test-environment)\r\n  - [Focusing and Excluding Tests](#focusing-and-excluding-tests)\r\n  - [Coverage Reporting](#coverage-reporting)\r\n  - [Continuous Integration](#continuous-integration)\r\n  - [Disabling jsdom](#disabling-jsdom)\r\n  - [Snapshot Testing](#snapshot-testing)\r\n  - [Editor Integration](#editor-integration)\r\n- [Debugging Tests](#debugging-tests)\r\n  - [Debugging Tests in Chrome](#debugging-tests-in-chrome)\r\n  - [Debugging Tests in Visual Studio Code](#debugging-tests-in-visual-studio-code)\r\n- [Developing Components in Isolation](#developing-components-in-isolation)\r\n  - [Getting Started with Storybook](#getting-started-with-storybook)\r\n  - [Getting Started with Styleguidist](#getting-started-with-styleguidist)\r\n- [Publishing Components to npm](#publishing-components-to-npm)\r\n- [Making a Progressive Web App](#making-a-progressive-web-app)\r\n  - [Opting Out of Caching](#opting-out-of-caching)\r\n  - [Offline-First Considerations](#offline-first-considerations)\r\n  - [Progressive Web App Metadata](#progressive-web-app-metadata)\r\n- [Analyzing the Bundle Size](#analyzing-the-bundle-size)\r\n- [Deployment](#deployment)\r\n  - [Static Server](#static-server)\r\n  - [Other Solutions](#other-solutions)\r\n  - [Serving Apps with Client-Side Routing](#serving-apps-with-client-side-routing)\r\n  - [Building for Relative Paths](#building-for-relative-paths)\r\n  - [Azure](#azure)\r\n  - [Firebase](#firebase)\r\n  - [GitHub Pages](#github-pages)\r\n  - [Heroku](#heroku)\r\n  - [Netlify](#netlify)\r\n  - [Now](#now)\r\n  - [S3 and CloudFront](#s3-and-cloudfront)\r\n  - [Surge](#surge)\r\n- [Advanced Configuration](#advanced-configuration)\r\n- [Troubleshooting](#troubleshooting)\r\n  - [`npm start` doesn’t detect changes](#npm-start-doesnt-detect-changes)\r\n  - [`npm test` hangs on macOS Sierra](#npm-test-hangs-on-macos-sierra)\r\n  - [`npm run build` exits too early](#npm-run-build-exits-too-early)\r\n  - [`npm run build` fails on Heroku](#npm-run-build-fails-on-heroku)\r\n  - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)\r\n  - [Moment.js locales are missing](#momentjs-locales-are-missing)\r\n- [Alternatives to Ejecting](#alternatives-to-ejecting)\r\n- [Something Missing?](#something-missing)\r\n\r\n## Updating to New Releases\r\n\r\nCreate React App is divided into two packages:\r\n\r\n* `create-react-app` is a global command-line utility that you use to create new projects.\r\n* `react-scripts` is a development dependency in the generated projects (including this one).\r\n\r\nYou almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.\r\n\r\nWhen you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.\r\n\r\nTo update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.\r\n\r\nIn most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.\r\n\r\nWe commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.\r\n\r\n## Sending Feedback\r\n\r\nWe are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).\r\n\r\n## Folder Structure\r\n\r\nAfter creation, your project should look like this:\r\n\r\n```\r\nmy-app/\r\n  README.md\r\n  node_modules/\r\n  package.json\r\n  public/\r\n    index.html\r\n    favicon.ico\r\n  src/\r\n    App.css\r\n    App.js\r\n    App.test.js\r\n    index.css\r\n    index.js\r\n    logo.svg\r\n```\r\n\r\nFor the project to build, **these files must exist with exact filenames**:\r\n\r\n* `public/index.html` is the page template;\r\n* `src/index.js` is the JavaScript entry point.\r\n\r\nYou can delete or rename the other files.\r\n\r\nYou may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>\r\nYou need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.\r\n\r\nOnly files inside `public` can be used from `public/index.html`.<br>\r\nRead instructions below for using assets from JavaScript and HTML.\r\n\r\nYou can, however, create more top-level directories.<br>\r\nThey will not be included in the production build so you can use them for things like documentation.\r\n\r\n## Available Scripts\r\n\r\nIn the project directory, you can run:\r\n\r\n### `npm start`\r\n\r\nRuns the app in the development mode.<br>\r\nOpen [http://localhost:3000](http://localhost:3000) to view it in the browser.\r\n\r\nThe page will reload if you make edits.<br>\r\nYou will also see any lint errors in the console.\r\n\r\n### `npm test`\r\n\r\nLaunches the test runner in the interactive watch mode.<br>\r\nSee the section about [running tests](#running-tests) for more information.\r\n\r\n### `npm run build`\r\n\r\nBuilds the app for production to the `build` folder.<br>\r\nIt correctly bundles React in production mode and optimizes the build for the best performance.\r\n\r\nThe build is minified and the filenames include the hashes.<br>\r\nYour app is ready to be deployed!\r\n\r\nSee the section about [deployment](#deployment) for more information.\r\n\r\n### `npm run eject`\r\n\r\n**Note: this is a one-way operation. Once you `eject`, you can’t go back!**\r\n\r\nIf you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\r\n\r\nInstead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.\r\n\r\nYou don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.\r\n\r\n## Supported Browsers\r\n\r\nBy default, the generated project uses the latest version of React.\r\n\r\nYou can refer [to the React documentation](https://reactjs.org/docs/react-dom.html#browser-support) for more information about supported browsers.\r\n\r\n## Supported Language Features and Polyfills\r\n\r\nThis project supports a superset of the latest JavaScript standard.<br>\r\nIn addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:\r\n\r\n* [Exponentiation Operator](https://github.com/rwaldron/exponentiation-operator) (ES2016).\r\n* [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017).\r\n* [Object Rest/Spread Properties](https://github.com/sebmarkbage/ecmascript-rest-spread) (stage 3 proposal).\r\n* [Dynamic import()](https://github.com/tc39/proposal-dynamic-import) (stage 3 proposal)\r\n* [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal).\r\n* [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) and [Flow](https://flowtype.org/) syntax.\r\n\r\nLearn more about [different proposal stages](https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-).\r\n\r\nWhile we recommend using experimental proposals with some caution, Facebook heavily uses these features in the product code, so we intend to provide [codemods](https://medium.com/@cpojer/effective-javascript-codemods-5a6686bb46fb) if any of these proposals change in the future.\r\n\r\nNote that **the project only includes a few ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:\r\n\r\n* [`Object.assign()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) via [`object-assign`](https://github.com/sindresorhus/object-assign).\r\n* [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) via [`promise`](https://github.com/then/promise).\r\n* [`fetch()`](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) via [`whatwg-fetch`](https://github.com/github/fetch).\r\n\r\nIf you use any other ES6+ features that need **runtime support** (such as `Array.from()` or `Symbol`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.\r\n\r\nAlso note that using some newer syntax features like `for...of` or `[...nonArrayValue]` causes Babel to emit code that depends on ES6 runtime features and might not work without a polyfill. When in doubt, use [Babel REPL](https://babeljs.io/repl/) to see what any specific syntax compiles down to.\r\n\r\n## Syntax Highlighting in the Editor\r\n\r\nTo configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.\r\n\r\n## Displaying Lint Output in the Editor\r\n\r\n>Note: this feature is available with `react-scripts@0.2.0` and higher.<br>\r\n>It also only works with npm 3 or higher.\r\n\r\nSome editors, including Sublime Text, Atom, and Visual Studio Code, provide plugins for ESLint.\r\n\r\nThey are not required for linting. You should see the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.\r\n\r\nYou would need to install an ESLint plugin for your editor first. Then, add a file called `.eslintrc` to the project root:\r\n\r\n```js\r\n{\r\n  \"extends\": \"react-app\"\r\n}\r\n```\r\n\r\nNow your editor should report the linting warnings.\r\n\r\nNote that even if you edit your `.eslintrc` file further, these changes will **only affect the editor integration**. They won’t affect the terminal and in-browser lint output. This is because Create React App intentionally provides a minimal set of rules that find common mistakes.\r\n\r\nIf you want to enforce a coding style for your project, consider using [Prettier](https://github.com/jlongster/prettier) instead of ESLint style rules.\r\n\r\n## Debugging in the Editor\r\n\r\n**This feature is currently only supported by [Visual Studio Code](https://code.visualstudio.com) and [WebStorm](https://www.jetbrains.com/webstorm/).**\r\n\r\nVisual Studio Code and WebStorm support debugging out of the box with Create React App. This enables you as a developer to write and debug your React code without leaving the editor, and most importantly it enables you to have a continuous development workflow, where context switching is minimal, as you don’t have to switch between tools.\r\n\r\n### Visual Studio Code\r\n\r\nYou would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.\r\n\r\nThen add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.\r\n\r\n```json\r\n{\r\n  \"version\": \"0.2.0\",\r\n  \"configurations\": [{\r\n    \"name\": \"Chrome\",\r\n    \"type\": \"chrome\",\r\n    \"request\": \"launch\",\r\n    \"url\": \"http://localhost:3000\",\r\n    \"webRoot\": \"${workspaceRoot}/src\",\r\n    \"sourceMapPathOverrides\": {\r\n      \"webpack:///src/*\": \"${webRoot}/*\"\r\n    }\r\n  }]\r\n}\r\n```\r\n>Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).\r\n\r\nStart your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.\r\n\r\nHaving problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).\r\n\r\n### WebStorm\r\n\r\nYou would need to have [WebStorm](https://www.jetbrains.com/webstorm/) and [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) Chrome extension installed.\r\n\r\nIn the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL field and save the configuration.\r\n\r\n>Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).\r\n\r\nStart your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.\r\n\r\nThe same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. \r\n\r\n## Formatting Code Automatically\r\n\r\nPrettier is an opinionated code formatter with support for JavaScript, CSS and JSON. With Prettier you can format the code you write automatically to ensure a code style within your project. See the [Prettier's GitHub page](https://github.com/prettier/prettier) for more information, and look at this [page to see it in action](https://prettier.github.io/prettier/).\r\n\r\nTo format our code whenever we make a commit in git, we need to install the following dependencies:\r\n\r\n```sh\r\nnpm install --save husky lint-staged prettier\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add husky lint-staged prettier\r\n```\r\n\r\n* `husky` makes it easy to use githooks as if they are npm scripts.\r\n* `lint-staged` allows us to run scripts on staged files in git. See this [blog post about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).\r\n* `prettier` is the JavaScript formatter we will run before commits.\r\n\r\nNow we can make sure every file is formatted correctly by adding a few lines to the `package.json` in the project root.\r\n\r\nAdd the following line to `scripts` section:\r\n\r\n```diff\r\n  \"scripts\": {\r\n+   \"precommit\": \"lint-staged\",\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n```\r\n\r\nNext we add a 'lint-staged' field to the `package.json`, for example:\r\n\r\n```diff\r\n  \"dependencies\": {\r\n    // ...\r\n  },\r\n+ \"lint-staged\": {\r\n+   \"src/**/*.{js,jsx,json,css}\": [\r\n+     \"prettier --single-quote --write\",\r\n+     \"git add\"\r\n+   ]\r\n+ },\r\n  \"scripts\": {\r\n```\r\n\r\nNow, whenever you make a commit, Prettier will format the changed files automatically. You can also run `./node_modules/.bin/prettier --single-quote --write \"src/**/*.{js,jsx,json,css}\"` to format your entire project for the first time.\r\n\r\nNext you might want to integrate Prettier in your favorite editor. Read the section on [Editor Integration](https://prettier.io/docs/en/editors.html) on the Prettier GitHub page.\r\n\r\n## Changing the Page `<title>`\r\n\r\nYou can find the source HTML file in the `public` folder of the generated project. You may edit the `<title>` tag in it to change the title from “React App” to anything else.\r\n\r\nNote that normally you wouldn’t edit files in the `public` folder very often. For example, [adding a stylesheet](#adding-a-stylesheet) is done without touching the HTML.\r\n\r\nIf you need to dynamically update the page title based on the content, you can use the browser [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, you can use [React Helmet](https://github.com/nfl/react-helmet), a third party library.\r\n\r\nIf you use a custom server for your app in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).\r\n\r\n## Installing a Dependency\r\n\r\nThe generated project includes React and ReactDOM as dependencies. It also includes a set of scripts used by Create React App as a development dependency. You may install other dependencies (for example, React Router) with `npm`:\r\n\r\n```sh\r\nnpm install --save react-router\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add react-router\r\n```\r\n\r\nThis works for any library, not just `react-router`.\r\n\r\n## Importing a Component\r\n\r\nThis project setup supports ES6 modules thanks to Babel.<br>\r\nWhile you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.\r\n\r\nFor example:\r\n\r\n### `Button.js`\r\n\r\n```js\r\nimport React, { Component } from 'react';\r\n\r\nclass Button extends Component {\r\n  render() {\r\n    // ...\r\n  }\r\n}\r\n\r\nexport default Button; // Don’t forget to use export default!\r\n```\r\n\r\n### `DangerButton.js`\r\n\r\n\r\n```js\r\nimport React, { Component } from 'react';\r\nimport Button from './Button'; // Import a component from another file\r\n\r\nclass DangerButton extends Component {\r\n  render() {\r\n    return <Button color=\"red\" />;\r\n  }\r\n}\r\n\r\nexport default DangerButton;\r\n```\r\n\r\nBe aware of the [difference between default and named exports](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281). It is a common source of mistakes.\r\n\r\nWe suggest that you stick to using default imports and exports when a module only exports a single thing (for example, a component). That’s what you get when you use `export default Button` and `import Button from './Button'`.\r\n\r\nNamed exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.\r\n\r\nLearn more about ES6 modules:\r\n\r\n* [When to use the curly braces?](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281)\r\n* [Exploring ES6: Modules](http://exploringjs.com/es6/ch_modules.html)\r\n* [Understanding ES6: Modules](https://leanpub.com/understandinges6/read#leanpub-auto-encapsulating-code-with-modules)\r\n\r\n## Code Splitting\r\n\r\nInstead of downloading the entire app before users can use it, code splitting allows you to split your code into small chunks which you can then load on demand.\r\n\r\nThis project setup supports code splitting via [dynamic `import()`](http://2ality.com/2017/01/import-operator.html#loading-code-on-demand). Its [proposal](https://github.com/tc39/proposal-dynamic-import) is in stage 3. The `import()` function-like form takes the module name as an argument and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) which always resolves to the namespace object of the module.\r\n\r\nHere is an example:\r\n\r\n### `moduleA.js`\r\n\r\n```js\r\nconst moduleA = 'Hello';\r\n\r\nexport { moduleA };\r\n```\r\n### `App.js`\r\n\r\n```js\r\nimport React, { Component } from 'react';\r\n\r\nclass App extends Component {\r\n  handleClick = () => {\r\n    import('./moduleA')\r\n      .then(({ moduleA }) => {\r\n        // Use moduleA\r\n      })\r\n      .catch(err => {\r\n        // Handle failure\r\n      });\r\n  };\r\n\r\n  render() {\r\n    return (\r\n      <div>\r\n        <button onClick={this.handleClick}>Load</button>\r\n      </div>\r\n    );\r\n  }\r\n}\r\n\r\nexport default App;\r\n```\r\n\r\nThis will make `moduleA.js` and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.\r\n\r\nYou can also use it with `async` / `await` syntax if you prefer it.\r\n\r\n### With React Router\r\n\r\nIf you are using React Router check out [this tutorial](http://serverless-stack.com/chapters/code-splitting-in-create-react-app.html) on how to use code splitting with it. You can find the companion GitHub repository [here](https://github.com/AnomalyInnovations/serverless-stack-demo-client/tree/code-splitting-in-create-react-app).\r\n\r\nAlso check out the [Code Splitting](https://reactjs.org/docs/code-splitting.html) section in React documentation.\r\n\r\n## Adding a Stylesheet\r\n\r\nThis project setup uses [Webpack](https://webpack.js.org/) for handling all assets. Webpack offers a custom way of “extending” the concept of `import` beyond JavaScript. To express that a JavaScript file depends on a CSS file, you need to **import the CSS from the JavaScript file**:\r\n\r\n### `Button.css`\r\n\r\n```css\r\n.Button {\r\n  padding: 20px;\r\n}\r\n```\r\n\r\n### `Button.js`\r\n\r\n```js\r\nimport React, { Component } from 'react';\r\nimport './Button.css'; // Tell Webpack that Button.js uses these styles\r\n\r\nclass Button extends Component {\r\n  render() {\r\n    // You can use them as regular CSS styles\r\n    return <div className=\"Button\" />;\r\n  }\r\n}\r\n```\r\n\r\n**This is not required for React** but many people find this feature convenient. You can read about the benefits of this approach [here](https://medium.com/seek-ui-engineering/block-element-modifying-your-javascript-components-d7f99fcab52b). However you should be aware that this makes your code less portable to other build tools and environments than Webpack.\r\n\r\nIn development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.\r\n\r\nIf you are concerned about using Webpack-specific semantics, you can put all your CSS right into `src/index.css`. It would still be imported from `src/index.js`, but you could always remove that import if you later migrate to a different build tool.\r\n\r\n## Post-Processing CSS\r\n\r\nThis project setup minifies your CSS and adds vendor prefixes to it automatically through [Autoprefixer](https://github.com/postcss/autoprefixer) so you don’t need to worry about it.\r\n\r\nFor example, this:\r\n\r\n```css\r\n.App {\r\n  display: flex;\r\n  flex-direction: row;\r\n  align-items: center;\r\n}\r\n```\r\n\r\nbecomes this:\r\n\r\n```css\r\n.App {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: row;\r\n          flex-direction: row;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n}\r\n```\r\n\r\nIf you need to disable autoprefixing for some reason, [follow this section](https://github.com/postcss/autoprefixer#disabling).\r\n\r\n## Adding a CSS Preprocessor (Sass, Less etc.)\r\n\r\nGenerally, we recommend that you don’t reuse the same CSS classes across different components. For example, instead of using a `.Button` CSS class in `<AcceptButton>` and `<RejectButton>` components, we recommend creating a `<Button>` component with its own `.Button` styles, that both `<AcceptButton>` and `<RejectButton>` can render (but [not inherit](https://facebook.github.io/react/docs/composition-vs-inheritance.html)).\r\n\r\nFollowing this rule often makes CSS preprocessors less useful, as features like mixins and nesting are replaced by component composition. You can, however, integrate a CSS preprocessor if you find it valuable. In this walkthrough, we will be using Sass, but you can also use Less, or another alternative.\r\n\r\nFirst, let’s install the command-line interface for Sass:\r\n\r\n```sh\r\nnpm install --save node-sass-chokidar\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add node-sass-chokidar\r\n```\r\n\r\nThen in `package.json`, add the following lines to `scripts`:\r\n\r\n```diff\r\n   \"scripts\": {\r\n+    \"build-css\": \"node-sass-chokidar src/ -o src/\",\r\n+    \"watch-css\": \"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive\",\r\n     \"start\": \"react-scripts start\",\r\n     \"build\": \"react-scripts build\",\r\n     \"test\": \"react-scripts test --env=jsdom\",\r\n```\r\n\r\n>Note: To use a different preprocessor, replace `build-css` and `watch-css` commands according to your preprocessor’s documentation.\r\n\r\nNow you can rename `src/App.css` to `src/App.scss` and run `npm run watch-css`. The watcher will find every Sass file in `src` subdirectories, and create a corresponding CSS file next to it, in our case overwriting `src/App.css`. Since `src/App.js` still imports `src/App.css`, the styles become a part of your application. You can now edit `src/App.scss`, and `src/App.css` will be regenerated.\r\n\r\nTo share variables between Sass files, you can use Sass imports. For example, `src/App.scss` and other component style files could include `@import \"./shared.scss\";` with variable definitions.\r\n\r\nTo enable importing files without using relative paths, you can add the  `--include-path` option to the command in `package.json`.\r\n\r\n```\r\n\"build-css\": \"node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/\",\r\n\"watch-css\": \"npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive\",\r\n```\r\n\r\nThis will allow you to do imports like\r\n\r\n```scss\r\n@import 'styles/_colors.scss'; // assuming a styles directory under src/\r\n@import 'nprogress/nprogress'; // importing a css file from the nprogress node module\r\n```\r\n\r\nAt this point you might want to remove all CSS files from the source control, and add `src/**/*.css` to your `.gitignore` file. It is generally a good practice to keep the build products outside of the source control.\r\n\r\nAs a final step, you may find it convenient to run `watch-css` automatically with `npm start`, and run `build-css` as a part of `npm run build`. You can use the `&&` operator to execute two scripts sequentially. However, there is no cross-platform way to run two scripts in parallel, so we will install a package for this:\r\n\r\n```sh\r\nnpm install --save npm-run-all\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add npm-run-all\r\n```\r\n\r\nThen we can change `start` and `build` scripts to include the CSS preprocessor commands:\r\n\r\n```diff\r\n   \"scripts\": {\r\n     \"build-css\": \"node-sass-chokidar src/ -o src/\",\r\n     \"watch-css\": \"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive\",\r\n-    \"start\": \"react-scripts start\",\r\n-    \"build\": \"react-scripts build\",\r\n+    \"start-js\": \"react-scripts start\",\r\n+    \"start\": \"npm-run-all -p watch-css start-js\",\r\n+    \"build-js\": \"react-scripts build\",\r\n+    \"build\": \"npm-run-all build-css build-js\",\r\n     \"test\": \"react-scripts test --env=jsdom\",\r\n     \"eject\": \"react-scripts eject\"\r\n   }\r\n```\r\n\r\nNow running `npm start` and `npm run build` also builds Sass files.\r\n\r\n**Why `node-sass-chokidar`?**\r\n\r\n`node-sass` has been reported as having the following issues:\r\n\r\n- `node-sass --watch` has been reported to have *performance issues* in certain conditions when used in a virtual machine or with docker.\r\n\r\n- Infinite styles compiling [#1939](https://github.com/facebookincubator/create-react-app/issues/1939)\r\n\r\n- `node-sass` has been reported as having issues with detecting new files in a directory [#1891](https://github.com/sass/node-sass/issues/1891)\r\n\r\n `node-sass-chokidar` is used here as it addresses these issues.\r\n\r\n## Adding Images, Fonts, and Files\r\n\r\nWith Webpack, using static assets like images and fonts works similarly to CSS.\r\n\r\nYou can **`import` a file right in a JavaScript module**. This tells Webpack to include that file in the bundle. Unlike CSS imports, importing a file gives you a string value. This value is the final path you can reference in your code, e.g. as the `src` attribute of an image or the `href` of a link to a PDF.\r\n\r\nTo reduce the number of requests to the server, importing images that are less than 10,000 bytes returns a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path. This applies to the following file extensions: bmp, gif, jpg, jpeg, and png. SVG files are excluded due to [#1153](https://github.com/facebookincubator/create-react-app/issues/1153).\r\n\r\nHere is an example:\r\n\r\n```js\r\nimport React from 'react';\r\nimport logo from './logo.png'; // Tell Webpack this JS file uses this image\r\n\r\nconsole.log(logo); // /logo.84287d09.png\r\n\r\nfunction Header() {\r\n  // Import result is the URL of your image\r\n  return <img src={logo} alt=\"Logo\" />;\r\n}\r\n\r\nexport default Header;\r\n```\r\n\r\nThis ensures that when the project is built, Webpack will correctly move the images into the build folder, and provide us with correct paths.\r\n\r\nThis works in CSS too:\r\n\r\n```css\r\n.Logo {\r\n  background-image: url(./logo.png);\r\n}\r\n```\r\n\r\nWebpack finds all relative module references in CSS (they start with `./`) and replaces them with the final paths from the compiled bundle. If you make a typo or accidentally delete an important file, you will see a compilation error, just like when you import a non-existent JavaScript module. The final filenames in the compiled bundle are generated by Webpack from content hashes. If the file content changes in the future, Webpack will give it a different name in production so you don’t need to worry about long-term caching of assets.\r\n\r\nPlease be advised that this is also a custom feature of Webpack.\r\n\r\n**It is not required for React** but many people enjoy it (and React Native uses a similar mechanism for images).<br>\r\nAn alternative way of handling static assets is described in the next section.\r\n\r\n## Using the `public` Folder\r\n\r\n>Note: this feature is available with `react-scripts@0.5.0` and higher.\r\n\r\n### Changing the HTML\r\n\r\nThe `public` folder contains the HTML file so you can tweak it, for example, to [set the page title](#changing-the-page-title).\r\nThe `<script>` tag with the compiled code will be added to it automatically during the build process.\r\n\r\n### Adding Assets Outside of the Module System\r\n\r\nYou can also add other assets to the `public` folder.\r\n\r\nNote that we normally encourage you to `import` assets in JavaScript files instead.\r\nFor example, see the sections on [adding a stylesheet](#adding-a-stylesheet) and [adding images and fonts](#adding-images-fonts-and-files).\r\nThis mechanism provides a number of benefits:\r\n\r\n* Scripts and stylesheets get minified and bundled together to avoid extra network requests.\r\n* Missing files cause compilation errors instead of 404 errors for your users.\r\n* Result filenames include content hashes so you don’t need to worry about browsers caching their old versions.\r\n\r\nHowever there is an **escape hatch** that you can use to add an asset outside of the module system.\r\n\r\nIf you put a file into the `public` folder, it will **not** be processed by Webpack. Instead it will be copied into the build folder untouched.   To reference assets in the `public` folder, you need to use a special variable called `PUBLIC_URL`.\r\n\r\nInside `index.html`, you can use it like this:\r\n\r\n```html\r\n<link rel=\"shortcut icon\" href=\"%PUBLIC_URL%/favicon.ico\">\r\n```\r\n\r\nOnly files inside the `public` folder will be accessible by `%PUBLIC_URL%` prefix. If you need to use a file from `src` or `node_modules`, you’ll have to copy it there to explicitly specify your intention to make this file a part of the build.\r\n\r\nWhen you run `npm run build`, Create React App will substitute `%PUBLIC_URL%` with a correct absolute path so your project works even if you use client-side routing or host it at a non-root URL.\r\n\r\nIn JavaScript code, you can use `process.env.PUBLIC_URL` for similar purposes:\r\n\r\n```js\r\nrender() {\r\n  // Note: this is an escape hatch and should be used sparingly!\r\n  // Normally we recommend using `import` for getting asset URLs\r\n  // as described in “Adding Images and Fonts” above this section.\r\n  return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;\r\n}\r\n```\r\n\r\nKeep in mind the downsides of this approach:\r\n\r\n* None of the files in `public` folder get post-processed or minified.\r\n* Missing files will not be called at compilation time, and will cause 404 errors for your users.\r\n* Result filenames won’t include content hashes so you’ll need to add query arguments or rename them every time they change.\r\n\r\n### When to Use the `public` Folder\r\n\r\nNormally we recommend importing [stylesheets](#adding-a-stylesheet), [images, and fonts](#adding-images-fonts-and-files) from JavaScript.\r\nThe `public` folder is useful as a workaround for a number of less common cases:\r\n\r\n* You need a file with a specific name in the build output, such as [`manifest.webmanifest`](https://developer.mozilla.org/en-US/docs/Web/Manifest).\r\n* You have thousands of images and need to dynamically reference their paths.\r\n* You want to include a small script like [`pace.js`](http://github.hubspot.com/pace/docs/welcome/) outside of the bundled code.\r\n* Some library may be incompatible with Webpack and you have no other option but to include it as a `<script>` tag.\r\n\r\nNote that if you add a `<script>` that declares global variables, you also need to read the next section on using them.\r\n\r\n## Using Global Variables\r\n\r\nWhen you include a script in the HTML file that defines global variables and try to use one of these variables in the code, the linter will complain because it cannot see the definition of the variable.\r\n\r\nYou can avoid this by reading the global variable explicitly from the `window` object, for example:\r\n\r\n```js\r\nconst $ = window.$;\r\n```\r\n\r\nThis makes it obvious you are using a global variable intentionally rather than because of a typo.\r\n\r\nAlternatively, you can force the linter to ignore any line by adding `// eslint-disable-line` after it.\r\n\r\n## Adding Bootstrap\r\n\r\nYou don’t have to use [React Bootstrap](https://react-bootstrap.github.io) together with React but it is a popular library for integrating Bootstrap with React apps. If you need it, you can integrate it with Create React App by following these steps:\r\n\r\nInstall React Bootstrap and Bootstrap from npm. React Bootstrap does not include Bootstrap CSS so this needs to be installed as well:\r\n\r\n```sh\r\nnpm install --save react-bootstrap bootstrap@3\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add react-bootstrap bootstrap@3\r\n```\r\n\r\nImport Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your ```src/index.js``` file:\r\n\r\n```js\r\nimport 'bootstrap/dist/css/bootstrap.css';\r\nimport 'bootstrap/dist/css/bootstrap-theme.css';\r\n// Put any other imports below so that CSS from your\r\n// components takes precedence over default styles.\r\n```\r\n\r\nImport required React Bootstrap components within ```src/App.js``` file or your custom component files:\r\n\r\n```js\r\nimport { Navbar, Jumbotron, Button } from 'react-bootstrap';\r\n```\r\n\r\nNow you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`App.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.\r\n\r\n### Using a Custom Theme\r\n\r\nSometimes you might need to tweak the visual styles of Bootstrap (or equivalent package).<br>\r\nWe suggest the following approach:\r\n\r\n* Create a new package that depends on the package you wish to customize, e.g. Bootstrap.\r\n* Add the necessary build steps to tweak the theme, and publish your package on npm.\r\n* Install your own theme npm package as a dependency of your app.\r\n\r\nHere is an example of adding a [customized Bootstrap](https://medium.com/@tacomanator/customizing-create-react-app-aa9ffb88165) that follows these steps.\r\n\r\n## Adding Flow\r\n\r\nFlow is a static type checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.\r\n\r\nRecent versions of [Flow](http://flowtype.org/) work with Create React App projects out of the box.\r\n\r\nTo add Flow to a Create React App project, follow these steps:\r\n\r\n1. Run `npm install --save flow-bin` (or `yarn add flow-bin`).\r\n2. Add `\"flow\": \"flow\"` to the `scripts` section of your `package.json`.\r\n3. Run `npm run flow init` (or `yarn flow init`) to create a [`.flowconfig` file](https://flowtype.org/docs/advanced-configuration.html) in the root directory.\r\n4. Add `// @flow` to any files you want to type check (for example, to `src/App.js`).\r\n\r\nNow you can run `npm run flow` (or `yarn flow`) to check the files for type errors.\r\nYou can optionally use an IDE like [Nuclide](https://nuclide.io/docs/languages/flow/) for a better integrated experience.\r\nIn the future we plan to integrate it into Create React App even more closely.\r\n\r\nTo learn more about Flow, check out [its documentation](https://flowtype.org/).\r\n\r\n## Adding a Router\r\n\r\nCreate React App doesn't prescribe a specific routing solution, but [React Router](https://reacttraining.com/react-router/) is the most popular one.\r\n\r\nTo add it, run:\r\n\r\n```sh\r\nnpm install --save react-router-dom\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add react-router-dom\r\n```\r\n\r\nTo try it, delete all the code in `src/App.js` and replace it with any of the examples on its website. The [Basic Example](https://reacttraining.com/react-router/web/example/basic) is a good place to get started.\r\n\r\nNote that [you may need to configure your production server to support client-side routing](#serving-apps-with-client-side-routing) before deploying your app.\r\n\r\n## Adding Custom Environment Variables\r\n\r\n>Note: this feature is available with `react-scripts@0.2.3` and higher.\r\n\r\nYour project can consume variables declared in your environment as if they were declared locally in your JS files. By\r\ndefault you will have `NODE_ENV` defined for you, and any other environment variables starting with\r\n`REACT_APP_`.\r\n\r\n**The environment variables are embedded during the build time**. Since Create React App produces a static HTML/CSS/JS bundle, it can’t possibly read them at runtime. To read them at runtime, you would need to load HTML into memory on the server and replace placeholders in runtime, just like [described here](#injecting-data-from-the-server-into-the-page). Alternatively you can rebuild the app on the server anytime you change them.\r\n\r\n>Note: You must create custom environment variables beginning with `REACT_APP_`. Any other variables except `NODE_ENV` will be ignored to avoid accidentally [exposing a private key on the machine that could have the same name](https://github.com/facebookincubator/create-react-app/issues/865#issuecomment-252199527). Changing any environment variables will require you to restart the development server if it is running.\r\n\r\nThese environment variables will be defined for you on `process.env`. For example, having an environment\r\nvariable named `REACT_APP_SECRET_CODE` will be exposed in your JS as `process.env.REACT_APP_SECRET_CODE`.\r\n\r\nThere is also a special built-in environment variable called `NODE_ENV`. You can read it from `process.env.NODE_ENV`. When you run `npm start`, it is always equal to `'development'`, when you run `npm test` it is always equal to `'test'`, and when you run `npm run build` to make a production bundle, it is always equal to `'production'`. **You cannot override `NODE_ENV` manually.** This prevents developers from accidentally deploying a slow development build to production.\r\n\r\nThese environment variables can be useful for displaying information conditionally based on where the project is\r\ndeployed or consuming sensitive data that lives outside of version control.\r\n\r\nFirst, you need to have environment variables defined. For example, let’s say you wanted to consume a secret defined\r\nin the environment inside a `<form>`:\r\n\r\n```jsx\r\nrender() {\r\n  return (\r\n    <div>\r\n      <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>\r\n      <form>\r\n        <input type=\"hidden\" defaultValue={process.env.REACT_APP_SECRET_CODE} />\r\n      </form>\r\n    </div>\r\n  );\r\n}\r\n```\r\n\r\nDuring the build, `process.env.REACT_APP_SECRET_CODE` will be replaced with the current value of the `REACT_APP_SECRET_CODE` environment variable. Remember that the `NODE_ENV` variable will be set for you automatically.\r\n\r\nWhen you load the app in the browser and inspect the `<input>`, you will see its value set to `abcdef`, and the bold text will show the environment provided when using `npm start`:\r\n\r\n```html\r\n<div>\r\n  <small>You are running this application in <b>development</b> mode.</small>\r\n  <form>\r\n    <input type=\"hidden\" value=\"abcdef\" />\r\n  </form>\r\n</div>\r\n```\r\n\r\nThe above form is looking for a variable called `REACT_APP_SECRET_CODE` from the environment. In order to consume this\r\nvalue, we need to have it defined in the environment. This can be done using two ways: either in your shell or in\r\na `.env` file. Both of these ways are described in the next few sections.\r\n\r\nHaving access to the `NODE_ENV` is also useful for performing actions conditionally:\r\n\r\n```js\r\nif (process.env.NODE_ENV !== 'production') {\r\n  analytics.disable();\r\n}\r\n```\r\n\r\nWhen you compile the app with `npm run build`, the minification step will strip out this condition, and the resulting bundle will be smaller.\r\n\r\n### Referencing Environment Variables in the HTML\r\n\r\n>Note: this feature is available with `react-scripts@0.9.0` and higher.\r\n\r\nYou can also access the environment variables starting with `REACT_APP_` in the `public/index.html`. For example:\r\n\r\n```html\r\n<title>%REACT_APP_WEBSITE_NAME%</title>\r\n```\r\n\r\nNote that the caveats from the above section apply:\r\n\r\n* Apart from a few built-in variables (`NODE_ENV` and `PUBLIC_URL`), variable names must start with `REACT_APP_` to work.\r\n* The environment variables are injected at build time. If you need to inject them at runtime, [follow this approach instead](#generating-dynamic-meta-tags-on-the-server).\r\n\r\n### Adding Temporary Environment Variables In Your Shell\r\n\r\nDefining environment variables can vary between OSes. It’s also important to know that this manner is temporary for the\r\nlife of the shell session.\r\n\r\n#### Windows (cmd.exe)\r\n\r\n```cmd\r\nset \"REACT_APP_SECRET_CODE=abcdef\" && npm start\r\n```\r\n\r\n(Note: Quotes around the variable assignment are required to avoid a trailing whitespace.)\r\n\r\n#### Windows (Powershell)\r\n\r\n```Powershell\r\n($env:REACT_APP_SECRET_CODE = \"abcdef\") -and (npm start)\r\n```\r\n\r\n#### Linux, macOS (Bash)\r\n\r\n```bash\r\nREACT_APP_SECRET_CODE=abcdef npm start\r\n```\r\n\r\n### Adding Development Environment Variables In `.env`\r\n\r\n>Note: this feature is available with `react-scripts@0.5.0` and higher.\r\n\r\nTo define permanent environment variables, create a file called `.env` in the root of your project:\r\n\r\n```\r\nREACT_APP_SECRET_CODE=abcdef\r\n```\r\n>Note: You must create custom environment variables beginning with `REACT_APP_`. Any other variables except `NODE_ENV` will be ignored to avoid [accidentally exposing a private key on the machine that could have the same name](https://github.com/facebookincubator/create-react-app/issues/865#issuecomment-252199527). Changing any environment variables will require you to restart the development server if it is running.\r\n\r\n`.env` files **should be** checked into source control (with the exclusion of `.env*.local`).\r\n\r\n#### What other `.env` files can be used?\r\n\r\n>Note: this feature is **available with `react-scripts@1.0.0` and higher**.\r\n\r\n* `.env`: Default.\r\n* `.env.local`: Local overrides. **This file is loaded for all environments except test.**\r\n* `.env.development`, `.env.test`, `.env.production`: Environment-specific settings.\r\n* `.env.development.local`, `.env.test.local`, `.env.production.local`: Local overrides of environment-specific settings.\r\n\r\nFiles on the left have more priority than files on the right:\r\n\r\n* `npm start`: `.env.development.local`, `.env.development`, `.env.local`, `.env`\r\n* `npm run build`: `.env.production.local`, `.env.production`, `.env.local`, `.env`\r\n* `npm test`: `.env.test.local`, `.env.test`, `.env` (note `.env.local` is missing)\r\n\r\nThese variables will act as the defaults if the machine does not explicitly set them.<br>\r\nPlease refer to the [dotenv documentation](https://github.com/motdotla/dotenv) for more details.\r\n\r\n>Note: If you are defining environment variables for development, your CI and/or hosting platform will most likely need\r\nthese defined as well. Consult their documentation how to do this. For example, see the documentation for [Travis CI](https://docs.travis-ci.com/user/environment-variables/) or [Heroku](https://devcenter.heroku.com/articles/config-vars).\r\n\r\n#### Expanding Environment Variables In `.env`\r\n\r\n>Note: this feature is available with `react-scripts@1.1.0` and higher.\r\n\r\nExpand variables already on your machine for use in your `.env` file (using [dotenv-expand](https://github.com/motdotla/dotenv-expand)).\r\n\r\nFor example, to get the environment variable `npm_package_version`:\r\n\r\n```\r\nREACT_APP_VERSION=$npm_package_version\r\n# also works:\r\n# REACT_APP_VERSION=${npm_package_version}\r\n```\r\n\r\nOr expand variables local to the current `.env` file:\r\n\r\n```\r\nDOMAIN=www.example.com\r\nREACT_APP_FOO=$DOMAIN/foo\r\nREACT_APP_BAR=$DOMAIN/bar\r\n```\r\n\r\n## Can I Use Decorators?\r\n\r\nMany popular libraries use [decorators](https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841) in their documentation.<br>\r\nCreate React App doesn’t support decorator syntax at the moment because:\r\n\r\n* It is an experimental proposal and is subject to change.\r\n* The current specification version is not officially supported by Babel.\r\n* If the specification changes, we won’t be able to write a codemod because we don’t use them internally at Facebook.\r\n\r\nHowever in many cases you can rewrite decorator-based code without decorators just as fine.<br>\r\nPlease refer to these two threads for reference:\r\n\r\n* [#214](https://github.com/facebookincubator/create-react-app/issues/214)\r\n* [#411](https://github.com/facebookincubator/create-react-app/issues/411)\r\n\r\nCreate React App will add decorator support when the specification advances to a stable stage.\r\n\r\n## Fetching Data with AJAX Requests\r\n\r\nReact doesn't prescribe a specific approach to data fetching, but people commonly use either a library like [axios](https://github.com/axios/axios) or the [`fetch()` API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) provided by the browser. Conveniently, Create React App includes a polyfill for `fetch()` so you can use it without worrying about the browser support.\r\n\r\nThe global `fetch` function allows to easily makes AJAX requests. It takes in a URL as an input and returns a `Promise` that resolves to a `Response` object. You can find more information about `fetch` [here](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch).\r\n\r\nThis project also includes a [Promise polyfill](https://github.com/then/promise) which provides a full implementation of Promises/A+. A Promise represents the eventual result of an asynchronous operation, you can find more information about Promises [here](https://www.promisejs.org/) and [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Both axios and `fetch()` use Promises under the hood. You can also use the [`async / await`](https://davidwalsh.name/async-await) syntax to reduce the callback nesting.\r\n\r\nYou can learn more about making AJAX requests from React components in [the FAQ entry on the React website](https://reactjs.org/docs/faq-ajax.html).\r\n\r\n## Integrating with an API Backend\r\n\r\nThese tutorials will help you to integrate your app with an API backend running on another port,\r\nusing `fetch()` to access it.\r\n\r\n### Node\r\nCheck out [this tutorial](https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/).\r\nYou can find the companion GitHub repository [here](https://github.com/fullstackreact/food-lookup-demo).\r\n\r\n### Ruby on Rails\r\n\r\nCheck out [this tutorial](https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/).\r\nYou can find the companion GitHub repository [here](https://github.com/fullstackreact/food-lookup-demo-rails).\r\n\r\n## Proxying API Requests in Development\r\n\r\n>Note: this feature is available with `react-scripts@0.2.3` and higher.\r\n\r\nPeople often serve the front-end React app from the same host and port as their backend implementation.<br>\r\nFor example, a production setup might look like this after the app is deployed:\r\n\r\n```\r\n/             - static server returns index.html with React app\r\n/todos        - static server returns index.html with React app\r\n/api/todos    - server handles any /api/* requests using the backend implementation\r\n```\r\n\r\nSuch setup is **not** required. However, if you **do** have a setup like this, it is convenient to write requests like `fetch('/api/todos')` without worrying about redirecting them to another host or port during development.\r\n\r\nTo tell the development server to proxy any unknown requests to your API server in development, add a `proxy` field to your `package.json`, for example:\r\n\r\n```js\r\n  \"proxy\": \"http://localhost:4000\",\r\n```\r\n\r\nThis way, when you `fetch('/api/todos')` in development, the development server will recognize that it’s not a static asset, and will proxy your request to `http://localhost:4000/api/todos` as a fallback. The development server will **only** attempt to send requests without `text/html` in its `Accept` header to the proxy.\r\n\r\nConveniently, this avoids [CORS issues](http://stackoverflow.com/questions/21854516/understanding-ajax-cors-and-security-considerations) and error messages like this in development:\r\n\r\n```\r\nFetch API cannot load http://localhost:4000/api/todos. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:3000' is therefore not allowed access. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.\r\n```\r\n\r\nKeep in mind that `proxy` only has effect in development (with `npm start`), and it is up to you to ensure that URLs like `/api/todos` point to the right thing in production. You don’t have to use the `/api` prefix. Any unrecognized request without a `text/html` accept header will be redirected to the specified `proxy`.\r\n\r\nThe `proxy` option supports HTTP, HTTPS and WebSocket connections.<br>\r\nIf the `proxy` option is **not** flexible enough for you, alternatively you can:\r\n\r\n* [Configure the proxy yourself](#configuring-the-proxy-manually)\r\n* Enable CORS on your server ([here’s how to do it for Express](http://enable-cors.org/server_expressjs.html)).\r\n* Use [environment variables](#adding-custom-environment-variables) to inject the right server host and port into your app.\r\n\r\n### \"Invalid Host Header\" Errors After Configuring Proxy\r\n\r\nWhen you enable the `proxy` option, you opt into a more strict set of host checks. This is necessary because leaving the backend open to remote hosts makes your computer vulnerable to DNS rebinding attacks. The issue is explained in [this article](https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a) and [this issue](https://github.com/webpack/webpack-dev-server/issues/887).\r\n\r\nThis shouldn’t affect you when developing on `localhost`, but if you develop remotely like [described here](https://github.com/facebookincubator/create-react-app/issues/2271), you will see this error in the browser after enabling the `proxy` option:\r\n\r\n>Invalid Host header\r\n\r\nTo work around it, you can specify your public development host in a file called `.env.development` in the root of your project:\r\n\r\n```\r\nHOST=mypublicdevhost.com\r\n```\r\n\r\nIf you restart the development server now and load the app from the specified host, it should work.\r\n\r\nIf you are still having issues or if you’re using a more exotic environment like a cloud editor, you can bypass the host check completely by adding a line to `.env.development.local`. **Note that this is dangerous and exposes your machine to remote code execution from malicious websites:**\r\n\r\n```\r\n# NOTE: THIS IS DANGEROUS!\r\n# It exposes your machine to attacks from the websites you visit.\r\nDANGEROUSLY_DISABLE_HOST_CHECK=true\r\n```\r\n\r\nWe don’t recommend this approach.\r\n\r\n### Configuring the Proxy Manually\r\n\r\n>Note: this feature is available with `react-scripts@1.0.0` and higher.\r\n\r\nIf the `proxy` option is **not** flexible enough for you, you can specify an object in the following form (in `package.json`).<br>\r\nYou may also specify any configuration value [`http-proxy-middleware`](https://github.com/chimurai/http-proxy-middleware#options) or [`http-proxy`](https://github.com/nodejitsu/node-http-proxy#options) supports.\r\n```js\r\n{\r\n  // ...\r\n  \"proxy\": {\r\n    \"/api\": {\r\n      \"target\": \"<url>\",\r\n      \"ws\": true\r\n      // ...\r\n    }\r\n  }\r\n  // ...\r\n}\r\n```\r\n\r\nAll requests matching this path will be proxies, no exceptions. This includes requests for `text/html`, which the standard `proxy` option does not proxy.\r\n\r\nIf you need to specify multiple proxies, you may do so by specifying additional entries.\r\nMatches are regular expressions, so that you can use a regexp to match multiple paths.\r\n```js\r\n{\r\n  // ...\r\n  \"proxy\": {\r\n    // Matches any request starting with /api\r\n    \"/api\": {\r\n      \"target\": \"<url_1>\",\r\n      \"ws\": true\r\n      // ...\r\n    },\r\n    // Matches any request starting with /foo\r\n    \"/foo\": {\r\n      \"target\": \"<url_2>\",\r\n      \"ssl\": true,\r\n      \"pathRewrite\": {\r\n        \"^/foo\": \"/foo/beta\"\r\n      }\r\n      // ...\r\n    },\r\n    // Matches /bar/abc.html but not /bar/sub/def.html\r\n    \"/bar/[^/]*[.]html\": {\r\n      \"target\": \"<url_3>\",\r\n      // ...\r\n    },\r\n    // Matches /baz/abc.html and /baz/sub/def.html\r\n    \"/baz/.*/.*[.]html\": {\r\n      \"target\": \"<url_4>\"\r\n      // ...\r\n    }\r\n  }\r\n  // ...\r\n}\r\n```\r\n\r\n### Configuring a WebSocket Proxy\r\n\r\nWhen setting up a WebSocket proxy, there are a some extra considerations to be aware of.\r\n\r\nIf you’re using a WebSocket engine like [Socket.io](https://socket.io/), you must have a Socket.io server running that you can use as the proxy target. Socket.io will not work with a standard WebSocket server. Specifically, don't expect Socket.io to work with [the websocket.org echo test](http://websocket.org/echo.html).\r\n\r\nThere’s some good documentation available for [setting up a Socket.io server](https://socket.io/docs/).\r\n\r\nStandard WebSockets **will** work with a standard WebSocket server as well as the websocket.org echo test. You can use libraries like [ws](https://github.com/websockets/ws) for the server, with [native WebSockets in the browser](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket).\r\n\r\nEither way, you can proxy WebSocket requests manually in `package.json`:\r\n\r\n```js\r\n{\r\n  // ...\r\n  \"proxy\": {\r\n    \"/socket\": {\r\n      // Your compatible WebSocket server\r\n      \"target\": \"ws://<socket_url>\",\r\n      // Tell http-proxy-middleware that this is a WebSocket proxy.\r\n      // Also allows you to proxy WebSocket requests without an additional HTTP request\r\n      // https://github.com/chimurai/http-proxy-middleware#external-websocket-upgrade\r\n      \"ws\": true\r\n      // ...\r\n    }\r\n  }\r\n  // ...\r\n}\r\n```\r\n\r\n## Using HTTPS in Development\r\n\r\n>Note: this feature is available with `react-scripts@0.4.0` and higher.\r\n\r\nYou may require the dev server to serve pages over HTTPS. One particular case where this could be useful is when using [the \"proxy\" feature](#proxying-api-requests-in-development) to proxy requests to an API server when that API server is itself serving HTTPS.\r\n\r\nTo do this, set the `HTTPS` environment variable to `true`, then start the dev server as usual with `npm start`:\r\n\r\n#### Windows (cmd.exe)\r\n\r\n```cmd\r\nset HTTPS=true&&npm start\r\n```\r\n\r\n#### Windows (Powershell)\r\n\r\n```Powershell\r\n($env:HTTPS = $true) -and (npm start)\r\n```\r\n\r\n(Note: the lack of whitespace is intentional.)\r\n\r\n#### Linux, macOS (Bash)\r\n\r\n```bash\r\nHTTPS=true npm start\r\n```\r\n\r\nNote that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.\r\n\r\n## Generating Dynamic `<meta>` Tags on the Server\r\n\r\nSince Create React App doesn’t support server rendering, you might be wondering how to make `<meta>` tags dynamic and reflect the current URL. To solve this, we recommend to add placeholders into the HTML, like this:\r\n\r\n```html\r\n<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta property=\"og:title\" content=\"__OG_TITLE__\">\r\n    <meta property=\"og:description\" content=\"__OG_DESCRIPTION__\">\r\n```\r\n\r\nThen, on the server, regardless of the backend you use, you can read `index.html` into memory and replace `__OG_TITLE__`, `__OG_DESCRIPTION__`, and any other placeholders with values depending on the current URL. Just make sure to sanitize and escape the interpolated values so that they are safe to embed into HTML!\r\n\r\nIf you use a Node server, you can even share the route matching logic between the client and the server. However duplicating it also works fine in simple cases.\r\n\r\n## Pre-Rendering into Static HTML Files\r\n\r\nIf you’re hosting your `build` with a static hosting provider you can use [react-snapshot](https://www.npmjs.com/package/react-snapshot) or [react-snap](https://github.com/stereobooster/react-snap) to generate HTML pages for each route, or relative link, in your application. These pages will then seamlessly become active, or “hydrated”, when the JavaScript bundle has loaded.\r\n\r\nThere are also opportunities to use this outside of static hosting, to take the pressure off the server when generating and caching routes.\r\n\r\nThe primary benefit of pre-rendering is that you get the core content of each page _with_ the HTML payload—regardless of whether or not your JavaScript bundle successfully downloads. It also increases the likelihood that each route of your application will be picked up by search engines.\r\n\r\nYou can read more about [zero-configuration pre-rendering (also called snapshotting) here](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319).\r\n\r\n## Injecting Data from the Server into the Page\r\n\r\nSimilarly to the previous section, you can leave some placeholders in the HTML that inject global variables, for example:\r\n\r\n```js\r\n<!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <script>\r\n      window.SERVER_DATA = __SERVER_DATA__;\r\n    </script>\r\n```\r\n\r\nThen, on the server, you can replace `__SERVER_DATA__` with a JSON of real data right before sending the response. The client code can then read `window.SERVER_DATA` to use it. **Make sure to [sanitize the JSON before sending it to the client](https://medium.com/node-security/the-most-common-xss-vulnerability-in-react-js-applications-2bdffbcc1fa0) as it makes your app vulnerable to XSS attacks.**\r\n\r\n## Running Tests\r\n\r\n>Note: this feature is available with `react-scripts@0.3.0` and higher.<br>\r\n>[Read the migration guide to learn how to enable it in older projects!](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md#migrating-from-023-to-030)\r\n\r\nCreate React App uses [Jest](https://facebook.github.io/jest/) as its test runner. To prepare for this integration, we did a [major revamp](https://facebook.github.io/jest/blog/2016/09/01/jest-15.html) of Jest so if you heard bad things about it years ago, give it another try.\r\n\r\nJest is a Node-based runner. This means that the tests always run in a Node environment and not in a real browser. This lets us enable fast iteration speed and prevent flakiness.\r\n\r\nWhile Jest provides browser globals such as `window` thanks to [jsdom](https://github.com/tmpvar/jsdom), they are only approximations of the real browser behavior. Jest is intended to be used for unit tests of your logic and your components rather than the DOM quirks.\r\n\r\nWe recommend that you use a separate tool for browser end-to-end tests if you need them. They are beyond the scope of Create React App.\r\n\r\n### Filename Conventions\r\n\r\nJest will look for test files with any of the following popular naming conventions:\r\n\r\n* Files with `.js` suffix in `__tests__` folders.\r\n* Files with `.test.js` suffix.\r\n* Files with `.spec.js` suffix.\r\n\r\nThe `.test.js` / `.spec.js` files (or the `__tests__` folders) can be located at any depth under the `src` top level folder.\r\n\r\nWe recommend to put the test files (or `__tests__` folders) next to the code they are testing so that relative imports appear shorter. For example, if `App.test.js` and `App.js` are in the same folder, the test just needs to `import App from './App'` instead of a long relative path. Colocation also helps find tests more quickly in larger projects.\r\n\r\n### Command Line Interface\r\n\r\nWhen you run `npm test`, Jest will launch in the watch mode. Every time you save a file, it will re-run the tests, just like `npm start` recompiles the code.\r\n\r\nThe watcher includes an interactive command-line interface with the ability to run all tests, or focus on a search pattern. It is designed this way so that you can keep it open and enjoy fast re-runs. You can learn the commands from the “Watch Usage” note that the watcher prints after every run:\r\n\r\n![Jest watch mode](http://facebook.github.io/jest/img/blog/15-watch.gif)\r\n\r\n### Version Control Integration\r\n\r\nBy default, when you run `npm test`, Jest will only run the tests related to files changed since the last commit. This is an optimization designed to make your tests run fast regardless of how many tests you have. However it assumes that you don’t often commit the code that doesn’t pass the tests.\r\n\r\nJest will always explicitly mention that it only ran tests related to the files changed since the last commit. You can also press `a` in the watch mode to force Jest to run all tests.\r\n\r\nJest will always run all tests on a [continuous integration](#continuous-integration) server or if the project is not inside a Git or Mercurial repository.\r\n\r\n### Writing Tests\r\n\r\nTo create tests, add `it()` (or `test()`) blocks with the name of the test and its code. You may optionally wrap them in `describe()` blocks for logical grouping but this is neither required nor recommended.\r\n\r\nJest provides a built-in `expect()` global function for making assertions. A basic test could look like this:\r\n\r\n```js\r\nimport sum from './sum';\r\n\r\nit('sums numbers', () => {\r\n  expect(sum(1, 2)).toEqual(3);\r\n  expect(sum(2, 2)).toEqual(4);\r\n});\r\n```\r\n\r\nAll `expect()` matchers supported by Jest are [extensively documented here](https://facebook.github.io/jest/docs/en/expect.html#content).<br>\r\nYou can also use [`jest.fn()` and `expect(fn).toBeCalled()`](https://facebook.github.io/jest/docs/en/expect.html#tohavebeencalled) to create “spies” or mock functions.\r\n\r\n### Testing Components\r\n\r\nThere is a broad spectrum of component testing techniques. They range from a “smoke test” verifying that a component renders without throwing, to shallow rendering and testing some of the output, to full rendering and testing component lifecycle and state changes.\r\n\r\nDifferent projects choose different testing tradeoffs based on how often components change, and how much logic they contain. If you haven’t decided on a testing strategy yet, we recommend that you start with creating simple smoke tests for your components:\r\n\r\n```js\r\nimport React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport App from './App';\r\n\r\nit('renders without crashing', () => {\r\n  const div = document.createElement('div');\r\n  ReactDOM.render(<App />, div);\r\n});\r\n```\r\n\r\nThis test mounts a component and makes sure that it didn’t throw during rendering. Tests like this provide a lot of value with very little effort so they are great as a starting point, and this is the test you will find in `src/App.test.js`.\r\n\r\nWhen you encounter bugs caused by changing components, you will gain a deeper insight into which parts of them are worth testing in your application. This might be a good time to introduce more specific tests asserting specific expected output or behavior.\r\n\r\nIf you’d like to test components in isolation from the child components they render, we recommend using [`shallow()` rendering API](http://airbnb.io/enzyme/docs/api/shallow.html) from [Enzyme](http://airbnb.io/enzyme/). To install it, run:\r\n\r\n```sh\r\nnpm install --save enzyme enzyme-adapter-react-16 react-test-renderer\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add enzyme enzyme-adapter-react-16 react-test-renderer\r\n```\r\n\r\nAs of Enzyme 3, you will need to install Enzyme along with an Adapter corresponding to the version of React you are using. (The examples above use the adapter for React 16.)\r\n\r\nThe adapter will also need to be configured in your [global setup file](#initializing-test-environment):\r\n\r\n#### `src/setupTests.js`\r\n```js\r\nimport { configure } from 'enzyme';\r\nimport Adapter from 'enzyme-adapter-react-16';\r\n\r\nconfigure({ adapter: new Adapter() });\r\n```\r\n\r\n>Note: Keep in mind that if you decide to \"eject\" before creating `src/setupTests.js`, the resulting `package.json` file won't contain any reference to it. [Read here](#initializing-test-environment) to learn how to add this after ejecting.\r\n\r\nNow you can write a smoke test with it:\r\n\r\n```js\r\nimport React from 'react';\r\nimport { shallow } from 'enzyme';\r\nimport App from './App';\r\n\r\nit('renders without crashing', () => {\r\n  shallow(<App />);\r\n});\r\n```\r\n\r\nUnlike the previous smoke test using `ReactDOM.render()`, this test only renders `<App>` and doesn’t go deeper. For example, even if `<App>` itself renders a `<Button>` that throws, this test will pass. Shallow rendering is great for isolated unit tests, but you may still want to create some full rendering tests to ensure the components integrate correctly. Enzyme supports [full rendering with `mount()`](http://airbnb.io/enzyme/docs/api/mount.html), and you can also use it for testing state changes and component lifecycle.\r\n\r\nYou can read the [Enzyme documentation](http://airbnb.io/enzyme/) for more testing techniques. Enzyme documentation uses Chai and Sinon for assertions but you don’t have to use them because Jest provides built-in `expect()` and `jest.fn()` for spies.\r\n\r\nHere is an example from Enzyme documentation that asserts specific output, rewritten to use Jest matchers:\r\n\r\n```js\r\nimport React from 'react';\r\nimport { shallow } from 'enzyme';\r\nimport App from './App';\r\n\r\nit('renders welcome message', () => {\r\n  const wrapper = shallow(<App />);\r\n  const welcome = <h2>Welcome to React</h2>;\r\n  // expect(wrapper.contains(welcome)).to.equal(true);\r\n  expect(wrapper.contains(welcome)).toEqual(true);\r\n});\r\n```\r\n\r\nAll Jest matchers are [extensively documented here](http://facebook.github.io/jest/docs/en/expect.html).<br>\r\nNevertheless you can use a third-party assertion library like [Chai](http://chaijs.com/) if you want to, as described below.\r\n\r\nAdditionally, you might find [jest-enzyme](https://github.com/blainekasten/enzyme-matchers) helpful to simplify your tests with readable matchers. The above `contains` code can be written more simply with jest-enzyme.\r\n\r\n```js\r\nexpect(wrapper).toContainReact(welcome)\r\n```\r\n\r\nTo enable this, install `jest-enzyme`:\r\n\r\n```sh\r\nnpm install --save jest-enzyme\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add jest-enzyme\r\n```\r\n\r\nImport it in [`src/setupTests.js`](#initializing-test-environment) to make its matchers available in every test:\r\n\r\n```js\r\nimport 'jest-enzyme';\r\n```\r\n\r\n### Using Third Party Assertion Libraries\r\n\r\nWe recommend that you use `expect()` for assertions and `jest.fn()` for spies. If you are having issues with them please [file those against Jest](https://github.com/facebook/jest/issues/new), and we’ll fix them. We intend to keep making them better for React, supporting, for example, [pretty-printing React elements as JSX](https://github.com/facebook/jest/pull/1566).\r\n\r\nHowever, if you are used to other libraries, such as [Chai](http://chaijs.com/) and [Sinon](http://sinonjs.org/), or if you have existing code using them that you’d like to port over, you can import them normally like this:\r\n\r\n```js\r\nimport sinon from 'sinon';\r\nimport { expect } from 'chai';\r\n```\r\n\r\nand then use them in your tests like you normally do.\r\n\r\n### Initializing Test Environment\r\n\r\n>Note: this feature is available with `react-scripts@0.4.0` and higher.\r\n\r\nIf your app uses a browser API that you need to mock in your tests or if you just need a global setup before running your tests, add a `src/setupTests.js` to your project. It will be automatically executed before running your tests.\r\n\r\nFor example:\r\n\r\n#### `src/setupTests.js`\r\n```js\r\nconst localStorageMock = {\r\n  getItem: jest.fn(),\r\n  setItem: jest.fn(),\r\n  clear: jest.fn()\r\n};\r\nglobal.localStorage = localStorageMock\r\n```\r\n\r\n>Note: Keep in mind that if you decide to \"eject\" before creating `src/setupTests.js`, the resulting `package.json` file won't contain any reference to it, so you should manually create the property `setupTestFrameworkScriptFile` in the configuration for Jest, something like the following:\r\n\r\n>```js\r\n>\"jest\": {\r\n>   // ...\r\n>   \"setupTestFrameworkScriptFile\": \"<rootDir>/src/setupTests.js\"\r\n>  }\r\n>  ```\r\n\r\n### Focusing and Excluding Tests\r\n\r\nYou can replace `it()` with `xit()` to temporarily exclude a test from being executed.<br>\r\nSimilarly, `fit()` lets you focus on a specific test without running any other tests.\r\n\r\n### Coverage Reporting\r\n\r\nJest has an integrated coverage reporter that works well with ES6 and requires no configuration.<br>\r\nRun `npm test -- --coverage` (note extra `--` in the middle) to include a coverage report like this:\r\n\r\n![coverage report](http://i.imgur.com/5bFhnTS.png)\r\n\r\nNote that tests run much slower with coverage so it is recommended to run it separately from your normal workflow.\r\n\r\n#### Configuration\r\n\r\nThe default Jest coverage configuration can be overriden by adding any of the following supported keys to a Jest config in your package.json.\r\n\r\nSupported overrides:\r\n - [`collectCoverageFrom`](https://facebook.github.io/jest/docs/en/configuration.html#collectcoveragefrom-array)\r\n - [`coverageReporters`](https://facebook.github.io/jest/docs/en/configuration.html#coveragereporters-array-string)\r\n - [`coverageThreshold`](https://facebook.github.io/jest/docs/en/configuration.html#coveragethreshold-object)\r\n - [`snapshotSerializers`](https://facebook.github.io/jest/docs/en/configuration.html#snapshotserializers-array-string)\r\n\r\nExample package.json:\r\n\r\n```json\r\n{\r\n  \"name\": \"your-package\",\r\n  \"jest\": {\r\n    \"collectCoverageFrom\" : [\r\n      \"src/**/*.{js,jsx}\",\r\n      \"!<rootDir>/node_modules/\",\r\n      \"!<rootDir>/path/to/dir/\"\r\n    ],\r\n    \"coverageThreshold\": {\r\n      \"global\": {\r\n        \"branches\": 90,\r\n        \"functions\": 90,\r\n        \"lines\": 90,\r\n        \"statements\": 90\r\n      }\r\n    },\r\n    \"coverageReporters\": [\"text\"],\r\n    \"snapshotSerializers\": [\"my-serializer-module\"]\r\n  }\r\n}\r\n```\r\n\r\n### Continuous Integration\r\n\r\nBy default `npm test` runs the watcher with interactive CLI. However, you can force it to run tests once and finish the process by setting an environment variable called `CI`.\r\n\r\nWhen creating a build of your application with `npm run build` linter warnings are not checked by default. Like `npm test`, you can force the build to perform a linter warning check by setting the environment variable `CI`. If any warnings are encountered then the build fails.\r\n\r\nPopular CI servers already set the environment variable `CI` by default but you can do this yourself too:\r\n\r\n### On CI servers\r\n#### Travis CI\r\n\r\n1. Following the [Travis Getting started](https://docs.travis-ci.com/user/getting-started/) guide for syncing your GitHub repository with Travis.  You may need to initialize some settings manually in your [profile](https://travis-ci.org/profile) page.\r\n1. Add a `.travis.yml` file to your git repository.\r\n```\r\nlanguage: node_js\r\nnode_js:\r\n  - 6\r\ncache:\r\n  directories:\r\n    - node_modules\r\nscript:\r\n  - npm run build\r\n  - npm test\r\n```\r\n1. Trigger your first build with a git push.\r\n1. [Customize your Travis CI Build](https://docs.travis-ci.com/user/customizing-the-build/) if needed.\r\n\r\n#### CircleCI\r\n\r\nFollow [this article](https://medium.com/@knowbody/circleci-and-zeits-now-sh-c9b7eebcd3c1) to set up CircleCI with a Create React App project.\r\n\r\n### On your own environment\r\n##### Windows (cmd.exe)\r\n\r\n```cmd\r\nset CI=true&&npm test\r\n```\r\n\r\n```cmd\r\nset CI=true&&npm run build\r\n```\r\n\r\n(Note: the lack of whitespace is intentional.)\r\n\r\n##### Windows (Powershell)\r\n\r\n```Powershell\r\n($env:CI = $true) -and (npm test)\r\n```\r\n\r\n```Powershell\r\n($env:CI = $true) -and (npm run build)\r\n```\r\n\r\n##### Linux, macOS (Bash)\r\n\r\n```bash\r\nCI=true npm test\r\n```\r\n\r\n```bash\r\nCI=true npm run build\r\n```\r\n\r\nThe test command will force Jest to run tests once instead of launching the watcher.\r\n\r\n>  If you find yourself doing this often in development, please [file an issue](https://github.com/facebookincubator/create-react-app/issues/new) to tell us about your use case because we want to make watcher the best experience and are open to changing how it works to accommodate more workflows.\r\n\r\nThe build command will check for linter warnings and fail if any are found.\r\n\r\n### Disabling jsdom\r\n\r\nBy default, the `package.json` of the generated project looks like this:\r\n\r\n```js\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test --env=jsdom\"\r\n```\r\n\r\nIf you know that none of your tests depend on [jsdom](https://github.com/tmpvar/jsdom), you can safely remove `--env=jsdom`, and your tests will run faster:\r\n\r\n```diff\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n-   \"test\": \"react-scripts test --env=jsdom\"\r\n+   \"test\": \"react-scripts test\"\r\n```\r\n\r\nTo help you make up your mind, here is a list of APIs that **need jsdom**:\r\n\r\n* Any browser globals like `window` and `document`\r\n* [`ReactDOM.render()`](https://facebook.github.io/react/docs/top-level-api.html#reactdom.render)\r\n* [`TestUtils.renderIntoDocument()`](https://facebook.github.io/react/docs/test-utils.html#renderintodocument) ([a shortcut](https://github.com/facebook/react/blob/34761cf9a252964abfaab6faf74d473ad95d1f21/src/test/ReactTestUtils.js#L83-L91) for the above)\r\n* [`mount()`](http://airbnb.io/enzyme/docs/api/mount.html) in [Enzyme](http://airbnb.io/enzyme/index.html)\r\n\r\nIn contrast, **jsdom is not needed** for the following APIs:\r\n\r\n* [`TestUtils.createRenderer()`](https://facebook.github.io/react/docs/test-utils.html#shallow-rendering) (shallow rendering)\r\n* [`shallow()`](http://airbnb.io/enzyme/docs/api/shallow.html) in [Enzyme](http://airbnb.io/enzyme/index.html)\r\n\r\nFinally, jsdom is also not needed for [snapshot testing](http://facebook.github.io/jest/blog/2016/07/27/jest-14.html).\r\n\r\n### Snapshot Testing\r\n\r\nSnapshot testing is a feature of Jest that automatically generates text snapshots of your components and saves them on the disk so if the UI output changes, you get notified without manually writing any assertions on the component output. [Read more about snapshot testing.](http://facebook.github.io/jest/blog/2016/07/27/jest-14.html)\r\n\r\n### Editor Integration\r\n\r\nIf you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.\r\n\r\n![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)\r\n\r\n## Debugging Tests\r\n\r\nThere are various ways to setup a debugger for your Jest tests. We cover debugging in Chrome and [Visual Studio Code](https://code.visualstudio.com/).\r\n\r\n>Note: debugging tests requires Node 8 or higher.\r\n\r\n### Debugging Tests in Chrome\r\n\r\nAdd the following to the `scripts` section in your project's `package.json`\r\n```json\r\n\"scripts\": {\r\n    \"test:debug\": \"react-scripts --inspect-brk test --runInBand --env=jsdom\"\r\n  }\r\n```\r\nPlace `debugger;` statements in any test and run:\r\n```bash\r\n$ npm run test:debug\r\n```\r\n\r\nThis will start running your Jest tests, but pause before executing to allow a debugger to attach to the process.\r\n\r\nOpen the following in Chrome\r\n```\r\nabout:inspect\r\n```\r\n\r\nAfter opening that link, the Chrome Developer Tools will be displayed. Select `inspect` on your process and a breakpoint will be set at the first line of the react script (this is done simply to give you time to open the developer tools and to prevent Jest from executing before you have time to do so). Click the button that looks like a \"play\" button in the upper right hand side of the screen to continue execution. When Jest executes the test that contains the debugger statement, execution will pause and you can examine the current scope and call stack.\r\n\r\n>Note: the --runInBand cli option makes sure Jest runs test in the same process rather than spawning processes for individual tests. Normally Jest parallelizes test runs across processes but it is hard to debug many processes at the same time.\r\n\r\n### Debugging Tests in Visual Studio Code\r\n\r\nDebugging Jest tests is supported out of the box for [Visual Studio Code](https://code.visualstudio.com).\r\n\r\nUse the following [`launch.json`](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) configuration file:\r\n```\r\n{\r\n  \"version\": \"0.2.0\",\r\n  \"configurations\": [\r\n    {\r\n      \"name\": \"Debug CRA Tests\",\r\n      \"type\": \"node\",\r\n      \"request\": \"launch\",\r\n      \"runtimeExecutable\": \"${workspaceRoot}/node_modules/.bin/react-scripts\",      \r\n      \"args\": [\r\n        \"test\",\r\n        \"--runInBand\",\r\n        \"--no-cache\",\r\n        \"--env=jsdom\"\r\n      ],\r\n      \"cwd\": \"${workspaceRoot}\",\r\n      \"protocol\": \"inspector\",\r\n      \"console\": \"integratedTerminal\",\r\n      \"internalConsoleOptions\": \"neverOpen\"\r\n    }\r\n  ]\r\n}\r\n```\r\n\r\n## Developing Components in Isolation\r\n\r\nUsually, in an app, you have a lot of UI components, and each of them has many different states.\r\nFor an example, a simple button component could have following states:\r\n\r\n* In a regular state, with a text label.\r\n* In the disabled mode.\r\n* In a loading state.\r\n\r\nUsually, it’s hard to see these states without running a sample app or some examples.\r\n\r\nCreate React App doesn’t include any tools for this by default, but you can easily add [Storybook for React](https://storybook.js.org) ([source](https://github.com/storybooks/storybook)) or [React Styleguidist](https://react-styleguidist.js.org/) ([source](https://github.com/styleguidist/react-styleguidist)) to your project. **These are third-party tools that let you develop components and see all their states in isolation from your app**.\r\n\r\n![Storybook for React Demo](http://i.imgur.com/7CIAWpB.gif)\r\n\r\nYou can also deploy your Storybook or style guide as a static app. This way, everyone in your team can view and review different states of UI components without starting a backend server or creating an account in your app.\r\n\r\n### Getting Started with Storybook\r\n\r\nStorybook is a development environment for React UI components. It allows you to browse a component library, view the different states of each component, and interactively develop and test components.\r\n\r\nFirst, install the following npm package globally:\r\n\r\n```sh\r\nnpm install -g @storybook/cli\r\n```\r\n\r\nThen, run the following command inside your app’s directory:\r\n\r\n```sh\r\ngetstorybook\r\n```\r\n\r\nAfter that, follow the instructions on the screen.\r\n\r\nLearn more about React Storybook:\r\n\r\n* Screencast: [Getting Started with React Storybook](https://egghead.io/lessons/react-getting-started-with-react-storybook)\r\n* [GitHub Repo](https://github.com/storybooks/storybook)\r\n* [Documentation](https://storybook.js.org/basics/introduction/)\r\n* [Snapshot Testing UI](https://github.com/storybooks/storybook/tree/master/addons/storyshots) with Storybook + addon/storyshot\r\n\r\n### Getting Started with Styleguidist\r\n\r\nStyleguidist combines a style guide, where all your components are presented on a single page with their props documentation and usage examples, with an environment for developing components in isolation, similar to Storybook. In Styleguidist you write examples in Markdown, where each code snippet is rendered as a live editable playground.\r\n\r\nFirst, install Styleguidist:\r\n\r\n```sh\r\nnpm install --save react-styleguidist\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add react-styleguidist\r\n```\r\n\r\nThen, add these scripts to your `package.json`:\r\n\r\n```diff\r\n   \"scripts\": {\r\n+    \"styleguide\": \"styleguidist server\",\r\n+    \"styleguide:build\": \"styleguidist build\",\r\n     \"start\": \"react-scripts start\",\r\n```\r\n\r\nThen, run the following command inside your app’s directory:\r\n\r\n```sh\r\nnpm run styleguide\r\n```\r\n\r\nAfter that, follow the instructions on the screen.\r\n\r\nLearn more about React Styleguidist:\r\n\r\n* [GitHub Repo](https://github.com/styleguidist/react-styleguidist)\r\n* [Documentation](https://react-styleguidist.js.org/docs/getting-started.html)\r\n\r\n## Publishing Components to npm\r\n\r\nCreate React App doesn't provide any built-in functionality to publish a component to npm. If you're ready to extract a component from your project so other people can use it, we recommend moving it to a separate directory outside of your project and then using a tool like [nwb](https://github.com/insin/nwb#react-components-and-libraries) to prepare it for publishing.\r\n\r\n## Making a Progressive Web App\r\n\r\nBy default, the production build is a fully functional, offline-first\r\n[Progressive Web App](https://developers.google.com/web/progressive-web-apps/).\r\n\r\nProgressive Web Apps are faster and more reliable than traditional web pages, and provide an engaging mobile experience:\r\n\r\n * All static site assets are cached so that your page loads fast on subsequent visits, regardless of network connectivity (such as 2G or 3G). Updates are downloaded in the background.\r\n * Your app will work regardless of network state, even if offline. This means your users will be able to use your app at 10,000 feet and on the subway.\r\n * On mobile devices, your app can be added directly to the user's home screen, app icon and all. You can also re-engage users using web **push notifications**. This eliminates the need for the app store.\r\n\r\nThe [`sw-precache-webpack-plugin`](https://github.com/goldhand/sw-precache-webpack-plugin)\r\nis integrated into production configuration,\r\nand it will take care of generating a service worker file that will automatically\r\nprecache all of your local assets and keep them up to date as you deploy updates.\r\nThe service worker will use a [cache-first strategy](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network)\r\nfor handling all requests for local assets, including the initial HTML, ensuring\r\nthat your web app is reliably fast, even on a slow or unreliable network.\r\n\r\n### Opting Out of Caching\r\n\r\nIf you would prefer not to enable service workers prior to your initial\r\nproduction deployment, then remove the call to `registerServiceWorker()`\r\nfrom [`src/index.js`](src/index.js).\r\n\r\nIf you had previously enabled service workers in your production deployment and\r\nhave decided that you would like to disable them for all your existing users,\r\nyou can swap out the call to `registerServiceWorker()` in\r\n[`src/index.js`](src/index.js) first by modifying the service worker import:\r\n```javascript\r\nimport { unregister } from './registerServiceWorker';\r\n```\r\nand then call `unregister()` instead.\r\nAfter the user visits a page that has `unregister()`,\r\nthe service worker will be uninstalled. Note that depending on how `/service-worker.js` is served,\r\nit may take up to 24 hours for the cache to be invalidated.\r\n\r\n### Offline-First Considerations\r\n\r\n1. Service workers [require HTTPS](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers#you_need_https),\r\nalthough to facilitate local testing, that policy\r\n[does not apply to `localhost`](http://stackoverflow.com/questions/34160509/options-for-testing-service-workers-via-http/34161385#34161385).\r\nIf your production web server does not support HTTPS, then the service worker\r\nregistration will fail, but the rest of your web app will remain functional.\r\n\r\n1. Service workers are [not currently supported](https://jakearchibald.github.io/isserviceworkerready/)\r\nin all web browsers. Service worker registration [won't be attempted](src/registerServiceWorker.js)\r\non browsers that lack support.\r\n\r\n1. The service worker is only enabled in the [production environment](#deployment),\r\ne.g. the output of `npm run build`. It's recommended that you do not enable an\r\noffline-first service worker in a development environment, as it can lead to\r\nfrustration when previously cached assets are used and do not include the latest\r\nchanges you've made locally.\r\n\r\n1. If you *need* to test your offline-first service worker locally, build\r\nthe application (using `npm run build`) and run a simple http server from your\r\nbuild directory. After running the build script, `create-react-app` will give\r\ninstructions for one way to test your production build locally and the [deployment instructions](#deployment) have\r\ninstructions for using other methods. *Be sure to always use an\r\nincognito window to avoid complications with your browser cache.*\r\n\r\n1. If possible, configure your production environment to serve the generated\r\n`service-worker.js` [with HTTP caching disabled](http://stackoverflow.com/questions/38843970/service-worker-javascript-update-frequency-every-24-hours).\r\nIf that's not possible—[GitHub Pages](#github-pages), for instance, does not\r\nallow you to change the default 10 minute HTTP cache lifetime—then be aware\r\nthat if you visit your production site, and then revisit again before\r\n`service-worker.js` has expired from your HTTP cache, you'll continue to get\r\nthe previously cached assets from the service worker. If you have an immediate\r\nneed to view your updated production deployment, performing a shift-refresh\r\nwill temporarily disable the service worker and retrieve all assets from the\r\nnetwork.\r\n\r\n1. Users aren't always familiar with offline-first web apps. It can be useful to\r\n[let the user know](https://developers.google.com/web/fundamentals/instant-and-offline/offline-ux#inform_the_user_when_the_app_is_ready_for_offline_consumption)\r\nwhen the service worker has finished populating your caches (showing a \"This web\r\napp works offline!\" message) and also let them know when the service worker has\r\nfetched the latest updates that will be available the next time they load the\r\npage (showing a \"New content is available; please refresh.\" message). Showing\r\nthis messages is currently left as an exercise to the developer, but as a\r\nstarting point, you can make use of the logic included in [`src/registerServiceWorker.js`](src/registerServiceWorker.js), which\r\ndemonstrates which service worker lifecycle events to listen for to detect each\r\nscenario, and which as a default, just logs appropriate messages to the\r\nJavaScript console.\r\n\r\n1. By default, the generated service worker file will not intercept or cache any\r\ncross-origin traffic, like HTTP [API requests](#integrating-with-an-api-backend),\r\nimages, or embeds loaded from a different domain. If you would like to use a\r\nruntime caching strategy for those requests, you can [`eject`](#npm-run-eject)\r\nand then configure the\r\n[`runtimeCaching`](https://github.com/GoogleChrome/sw-precache#runtimecaching-arrayobject)\r\noption in the `SWPrecacheWebpackPlugin` section of\r\n[`webpack.config.prod.js`](../config/webpack.config.prod.js).\r\n\r\n### Progressive Web App Metadata\r\n\r\nThe default configuration includes a web app manifest located at\r\n[`public/manifest.json`](public/manifest.json), that you can customize with\r\ndetails specific to your web application.\r\n\r\nWhen a user adds a web app to their homescreen using Chrome or Firefox on\r\nAndroid, the metadata in [`manifest.json`](public/manifest.json) determines what\r\nicons, names, and branding colors to use when the web app is displayed.\r\n[The Web App Manifest guide](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)\r\nprovides more context about what each field means, and how your customizations\r\nwill affect your users' experience.\r\n\r\n## Analyzing the Bundle Size\r\n\r\n[Source map explorer](https://www.npmjs.com/package/source-map-explorer) analyzes\r\nJavaScript bundles using the source maps. This helps you understand where code\r\nbloat is coming from.\r\n\r\nTo add Source map explorer to a Create React App project, follow these steps:\r\n\r\n```sh\r\nnpm install --save source-map-explorer\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add source-map-explorer\r\n```\r\n\r\nThen in `package.json`, add the following line to `scripts`:\r\n\r\n```diff\r\n   \"scripts\": {\r\n+    \"analyze\": \"source-map-explorer build/static/js/main.*\",\r\n     \"start\": \"react-scripts start\",\r\n     \"build\": \"react-scripts build\",\r\n     \"test\": \"react-scripts test --env=jsdom\",\r\n```\r\n\r\nThen to analyze the bundle run the production build then run the analyze\r\nscript.\r\n\r\n```\r\nnpm run build\r\nnpm run analyze\r\n```\r\n\r\n## Deployment\r\n\r\n`npm run build` creates a `build` directory with a production build of your app. Set up your favorite HTTP server so that a visitor to your site is served `index.html`, and requests to static paths like `/static/js/main.<hash>.js` are served with the contents of the `/static/js/main.<hash>.js` file.\r\n\r\n### Static Server\r\n\r\nFor environments using [Node](https://nodejs.org/), the easiest way to handle this would be to install [serve](https://github.com/zeit/serve) and let it handle the rest:\r\n\r\n```sh\r\nnpm install -g serve\r\nserve -s build\r\n```\r\n\r\nThe last command shown above will serve your static site on the port **5000**. Like many of [serve](https://github.com/zeit/serve)’s internal settings, the port can be adjusted using the `-p` or `--port` flags.\r\n\r\nRun this command to get a full list of the options available:\r\n\r\n```sh\r\nserve -h\r\n```\r\n\r\n### Other Solutions\r\n\r\nYou don’t necessarily need a static server in order to run a Create React App project in production. It works just as fine integrated into an existing dynamic one.\r\n\r\nHere’s a programmatic example using [Node](https://nodejs.org/) and [Express](http://expressjs.com/):\r\n\r\n```javascript\r\nconst express = require('express');\r\nconst path = require('path');\r\nconst app = express();\r\n\r\napp.use(express.static(path.join(__dirname, 'build')));\r\n\r\napp.get('/', function (req, res) {\r\n  res.sendFile(path.join(__dirname, 'build', 'index.html'));\r\n});\r\n\r\napp.listen(9000);\r\n```\r\n\r\nThe choice of your server software isn’t important either. Since Create React App is completely platform-agnostic, there’s no need to explicitly use Node.\r\n\r\nThe `build` folder with static assets is the only output produced by Create React App.\r\n\r\nHowever this is not quite enough if you use client-side routing. Read the next section if you want to support URLs like `/todos/42` in your single-page app.\r\n\r\n### Serving Apps with Client-Side Routing\r\n\r\nIf you use routers that use the HTML5 [`pushState` history API](https://developer.mozilla.org/en-US/docs/Web/API/History_API#Adding_and_modifying_history_entries) under the hood (for example, [React Router](https://github.com/ReactTraining/react-router) with `browserHistory`), many static file servers will fail. For example, if you used React Router with a route for `/todos/42`, the development server will respond to `localhost:3000/todos/42` properly, but an Express serving a production build as above will not.\r\n\r\nThis is because when there is a fresh page load for a `/todos/42`, the server looks for the file `build/todos/42` and does not find it. The server needs to be configured to respond to a request to `/todos/42` by serving `index.html`. For example, we can amend our Express example above to serve `index.html` for any unknown paths:\r\n\r\n```diff\r\n app.use(express.static(path.join(__dirname, 'build')));\r\n\r\n-app.get('/', function (req, res) {\r\n+app.get('/*', function (req, res) {\r\n   res.sendFile(path.join(__dirname, 'build', 'index.html'));\r\n });\r\n```\r\n\r\nIf you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to create a `.htaccess` file in the `public` folder that looks like this:\r\n\r\n```\r\n    Options -MultiViews\r\n    RewriteEngine On\r\n    RewriteCond %{REQUEST_FILENAME} !-f\r\n    RewriteRule ^ index.html [QSA,L]\r\n```\r\n\r\nIt will get copied to the `build` folder when you run `npm run build`. \r\n\r\nIf you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).\r\n\r\nNow requests to `/todos/42` will be handled correctly both in development and in production.\r\n\r\nOn a production build, and in a browser that supports [service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers),\r\nthe service worker will automatically handle all navigation requests, like for\r\n`/todos/42`, by serving the cached copy of your `index.html`. This\r\nservice worker navigation routing can be configured or disabled by\r\n[`eject`ing](#npm-run-eject) and then modifying the\r\n[`navigateFallback`](https://github.com/GoogleChrome/sw-precache#navigatefallback-string)\r\nand [`navigateFallbackWhitelist`](https://github.com/GoogleChrome/sw-precache#navigatefallbackwhitelist-arrayregexp)\r\noptions of the `SWPreachePlugin` [configuration](../config/webpack.config.prod.js).\r\n\r\nWhen users install your app to the homescreen of their device the default configuration will make a shortcut to `/index.html`. This may not work for client-side routers which expect the app to be served from `/`. Edit the web app manifest at [`public/manifest.json`](public/manifest.json) and change `start_url` to match the required URL scheme, for example:\r\n\r\n```js\r\n  \"start_url\": \".\",\r\n```\r\n\r\n### Building for Relative Paths\r\n\r\nBy default, Create React App produces a build assuming your app is hosted at the server root.<br>\r\nTo override this, specify the `homepage` in your `package.json`, for example:\r\n\r\n```js\r\n  \"homepage\": \"http://mywebsite.com/relativepath\",\r\n```\r\n\r\nThis will let Create React App correctly infer the root path to use in the generated HTML file.\r\n\r\n**Note**: If you are using `react-router@^4`, you can root `<Link>`s using the `basename` prop on any `<Router>`.<br>\r\nMore information [here](https://reacttraining.com/react-router/web/api/BrowserRouter/basename-string).<br>\r\n<br>\r\nFor example:\r\n```js\r\n<BrowserRouter basename=\"/calendar\"/>\r\n<Link to=\"/today\"/> // renders <a href=\"/calendar/today\">\r\n```\r\n\r\n#### Serving the Same Build from Different Paths\r\n\r\n>Note: this feature is available with `react-scripts@0.9.0` and higher.\r\n\r\nIf you are not using the HTML5 `pushState` history API or not using client-side routing at all, it is unnecessary to specify the URL from which your app will be served. Instead, you can put this in your `package.json`:\r\n\r\n```js\r\n  \"homepage\": \".\",\r\n```\r\n\r\nThis will make sure that all the asset paths are relative to `index.html`. You will then be able to move your app from `http://mywebsite.com` to `http://mywebsite.com/relativepath` or even `http://mywebsite.com/relative/path` without having to rebuild it.\r\n\r\n### [Azure](https://azure.microsoft.com/)\r\n\r\nSee [this](https://medium.com/@to_pe/deploying-create-react-app-on-microsoft-azure-c0f6686a4321) blog post on how to deploy your React app to Microsoft Azure.\r\n\r\nSee [this](https://medium.com/@strid/host-create-react-app-on-azure-986bc40d5bf2#.pycfnafbg) blog post or [this](https://github.com/ulrikaugustsson/azure-appservice-static) repo for a way to use automatic deployment to Azure App Service.\r\n\r\n### [Firebase](https://firebase.google.com/)\r\n\r\nInstall the Firebase CLI if you haven’t already by running `npm install -g firebase-tools`. Sign up for a [Firebase account](https://console.firebase.google.com/) and create a new project. Run `firebase login` and login with your previous created Firebase account.\r\n\r\nThen run the `firebase init` command from your project’s root. You need to choose the **Hosting: Configure and deploy Firebase Hosting sites** and choose the Firebase project you created in the previous step. You will need to agree with `database.rules.json` being created, choose `build` as the public directory, and also agree to **Configure as a single-page app** by replying with `y`.\r\n\r\n```sh\r\n    === Project Setup\r\n\r\n    First, let's associate this project directory with a Firebase project.\r\n    You can create multiple project aliases by running firebase use --add,\r\n    but for now we'll just set up a default project.\r\n\r\n    ? What Firebase project do you want to associate as default? Example app (example-app-fd690)\r\n\r\n    === Database Setup\r\n\r\n    Firebase Realtime Database Rules allow you to define how your data should be\r\n    structured and when your data can be read from and written to.\r\n\r\n    ? What file should be used for Database Rules? database.rules.json\r\n    ✔  Database Rules for example-app-fd690 have been downloaded to database.rules.json.\r\n    Future modifications to database.rules.json will update Database Rules when you run\r\n    firebase deploy.\r\n\r\n    === Hosting Setup\r\n\r\n    Your public directory is the folder (relative to your project directory) that\r\n    will contain Hosting assets to uploaded with firebase deploy. If you\r\n    have a build process for your assets, use your build's output directory.\r\n\r\n    ? What do you want to use as your public directory? build\r\n    ? Configure as a single-page app (rewrite all urls to /index.html)? Yes\r\n    ✔  Wrote build/index.html\r\n\r\n    i  Writing configuration info to firebase.json...\r\n    i  Writing project information to .firebaserc...\r\n\r\n    ✔  Firebase initialization complete!\r\n```\r\n\r\nIMPORTANT: you need to set proper HTTP caching headers for `service-worker.js` file in `firebase.json` file or you will not be able to see changes after first deployment ([issue #2440](https://github.com/facebookincubator/create-react-app/issues/2440)). It should be added inside `\"hosting\"` key like next:\r\n\r\n```\r\n{\r\n  \"hosting\": {\r\n    ...\r\n    \"headers\": [\r\n      {\"source\": \"/service-worker.js\", \"headers\": [{\"key\": \"Cache-Control\", \"value\": \"no-cache\"}]}\r\n    ]\r\n    ...\r\n```\r\n\r\nNow, after you create a production build with `npm run build`, you can deploy it by running `firebase deploy`.\r\n\r\n```sh\r\n    === Deploying to 'example-app-fd690'...\r\n\r\n    i  deploying database, hosting\r\n    ✔  database: rules ready to deploy.\r\n    i  hosting: preparing build directory for upload...\r\n    Uploading: [==============================          ] 75%✔  hosting: build folder uploaded successfully\r\n    ✔  hosting: 8 files uploaded successfully\r\n    i  starting release process (may take several minutes)...\r\n\r\n    ✔  Deploy complete!\r\n\r\n    Project Console: https://console.firebase.google.com/project/example-app-fd690/overview\r\n    Hosting URL: https://example-app-fd690.firebaseapp.com\r\n```\r\n\r\nFor more information see [Add Firebase to your JavaScript Project](https://firebase.google.com/docs/web/setup).\r\n\r\n### [GitHub Pages](https://pages.github.com/)\r\n\r\n>Note: this feature is available with `react-scripts@0.2.0` and higher.\r\n\r\n#### Step 1: Add `homepage` to `package.json`\r\n\r\n**The step below is important!**<br>\r\n**If you skip it, your app will not deploy correctly.**\r\n\r\nOpen your `package.json` and add a `homepage` field for your project:\r\n\r\n```json\r\n  \"homepage\": \"https://myusername.github.io/my-app\",\r\n```\r\n\r\nor for a GitHub user page:\r\n\r\n```json\r\n  \"homepage\": \"https://myusername.github.io\",\r\n```\r\n\r\nCreate React App uses the `homepage` field to determine the root URL in the built HTML file.\r\n\r\n#### Step 2: Install `gh-pages` and add `deploy` to `scripts` in `package.json`\r\n\r\nNow, whenever you run `npm run build`, you will see a cheat sheet with instructions on how to deploy to GitHub Pages.\r\n\r\nTo publish it at [https://myusername.github.io/my-app](https://myusername.github.io/my-app), run:\r\n\r\n```sh\r\nnpm install --save gh-pages\r\n```\r\n\r\nAlternatively you may use `yarn`:\r\n\r\n```sh\r\nyarn add gh-pages\r\n```\r\n\r\nAdd the following scripts in your `package.json`:\r\n\r\n```diff\r\n  \"scripts\": {\r\n+   \"predeploy\": \"npm run build\",\r\n+   \"deploy\": \"gh-pages -d build\",\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n```\r\n\r\nThe `predeploy` script will run automatically before `deploy` is run.\r\n\r\nIf you are deploying to a GitHub user page instead of a project page you'll need to make two\r\nadditional modifications:\r\n\r\n1. First, change your repository's source branch to be any branch other than **master**.\r\n1. Additionally, tweak your `package.json` scripts to push deployments to **master**:\r\n```diff\r\n  \"scripts\": {\r\n    \"predeploy\": \"npm run build\",\r\n-   \"deploy\": \"gh-pages -d build\",\r\n+   \"deploy\": \"gh-pages -b master -d build\",\r\n```\r\n\r\n#### Step 3: Deploy the site by running `npm run deploy`\r\n\r\nThen run:\r\n\r\n```sh\r\nnpm run deploy\r\n```\r\n\r\n#### Step 4: Ensure your project’s settings use `gh-pages`\r\n\r\nFinally, make sure **GitHub Pages** option in your GitHub project settings is set to use the `gh-pages` branch:\r\n\r\n<img src=\"http://i.imgur.com/HUjEr9l.png\" width=\"500\" alt=\"gh-pages branch setting\">\r\n\r\n#### Step 5: Optionally, configure the domain\r\n\r\nYou can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.\r\n\r\n#### Notes on client-side routing\r\n\r\nGitHub Pages doesn’t support routers that use the HTML5 `pushState` history API under the hood (for example, React Router using `browserHistory`). This is because when there is a fresh page load for a url like `http://user.github.io/todomvc/todos/42`, where `/todos/42` is a frontend route, the GitHub Pages server returns 404 because it knows nothing of `/todos/42`. If you want to add a router to a project hosted on GitHub Pages, here are a couple of solutions:\r\n\r\n* You could switch from using HTML5 history API to routing with hashes. If you use React Router, you can switch to `hashHistory` for this effect, but the URL will be longer and more verbose (for example, `http://user.github.io/todomvc/#/todos/42?_k=yknaj`). [Read more](https://reacttraining.com/react-router/web/api/Router) about different history implementations in React Router.\r\n* Alternatively, you can use a trick to teach GitHub Pages to handle 404 by redirecting to your `index.html` page with a special redirect parameter. You would need to add a `404.html` file with the redirection code to the `build` folder before deploying your project, and you’ll need to add code handling the redirect parameter to `index.html`. You can find a detailed explanation of this technique [in this guide](https://github.com/rafrex/spa-github-pages).\r\n\r\n### [Heroku](https://www.heroku.com/)\r\n\r\nUse the [Heroku Buildpack for Create React App](https://github.com/mars/create-react-app-buildpack).<br>\r\nYou can find instructions in [Deploying React with Zero Configuration](https://blog.heroku.com/deploying-react-with-zero-configuration).\r\n\r\n#### Resolving Heroku Deployment Errors\r\n\r\nSometimes `npm run build` works locally but fails during deploy via Heroku. Following are the most common cases.\r\n\r\n##### \"Module not found: Error: Cannot resolve 'file' or 'directory'\"\r\n\r\nIf you get something like this:\r\n\r\n```\r\nremote: Failed to create a production build. Reason:\r\nremote: Module not found: Error: Cannot resolve 'file' or 'directory'\r\nMyDirectory in /tmp/build_1234/src\r\n```\r\n\r\nIt means you need to ensure that the lettercase of the file or directory you `import` matches the one you see on your filesystem or on GitHub.\r\n\r\nThis is important because Linux (the operating system used by Heroku) is case sensitive. So `MyDirectory` and `mydirectory` are two distinct directories and thus, even though the project builds locally, the difference in case breaks the `import` statements on Heroku remotes.\r\n\r\n##### \"Could not find a required file.\"\r\n\r\nIf you exclude or ignore necessary files from the package you will see a error similar this one:\r\n\r\n```\r\nremote: Could not find a required file.\r\nremote:   Name: `index.html`\r\nremote:   Searched in: /tmp/build_a2875fc163b209225122d68916f1d4df/public\r\nremote:\r\nremote: npm ERR! Linux 3.13.0-105-generic\r\nremote: npm ERR! argv \"/tmp/build_a2875fc163b209225122d68916f1d4df/.heroku/node/bin/node\" \"/tmp/build_a2875fc163b209225122d68916f1d4df/.heroku/node/bin/npm\" \"run\" \"build\"\r\n```\r\n\r\nIn this case, ensure that the file is there with the proper lettercase and that’s not ignored on your local `.gitignore` or `~/.gitignore_global`.\r\n\r\n### [Netlify](https://www.netlify.com/)\r\n\r\n**To do a manual deploy to Netlify’s CDN:**\r\n\r\n```sh\r\nnpm install netlify-cli -g\r\nnetlify deploy\r\n```\r\n\r\nChoose `build` as the path to deploy.\r\n\r\n**To setup continuous delivery:**\r\n\r\nWith this setup Netlify will build and deploy when you push to git or open a pull request:\r\n\r\n1. [Start a new netlify project](https://app.netlify.com/signup)\r\n2. Pick your Git hosting service and select your repository\r\n3. Set `yarn build` as the build command and `build` as the publish directory\r\n4. Click `Deploy site`\r\n\r\n**Support for client-side routing:**\r\n\r\nTo support `pushState`, make sure to create a `public/_redirects` file with the following rewrite rules:\r\n\r\n```\r\n/*  /index.html  200\r\n```\r\n\r\nWhen you build the project, Create React App will place the `public` folder contents into the build output.\r\n\r\n### [Now](https://zeit.co/now)\r\n\r\nNow offers a zero-configuration single-command deployment. You can use `now` to deploy your app for free.\r\n\r\n1. Install the `now` command-line tool either via the recommended [desktop tool](https://zeit.co/download) or via node with `npm install -g now`.\r\n\r\n2. Build your app by running `npm run build`.\r\n\r\n3. Move into the build directory by running `cd build`.\r\n\r\n4. Run `now --name your-project-name` from within the build directory. You will see a **now.sh** URL in your output like this:\r\n\r\n    ```\r\n    > Ready! https://your-project-name-tpspyhtdtk.now.sh (copied to clipboard)\r\n    ```\r\n\r\n    Paste that URL into your browser when the build is complete, and you will see your deployed app.\r\n\r\nDetails are available in [this article.](https://zeit.co/blog/unlimited-static)\r\n\r\n### [S3](https://aws.amazon.com/s3) and [CloudFront](https://aws.amazon.com/cloudfront/)\r\n\r\nSee this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React app to Amazon Web Services S3 and CloudFront.\r\n\r\n### [Surge](https://surge.sh/)\r\n\r\nInstall the Surge CLI if you haven’t already by running `npm install -g surge`. Run the `surge` command and log in you or create a new account.\r\n\r\nWhen asked about the project path, make sure to specify the `build` folder, for example:\r\n\r\n```sh\r\n       project path: /path/to/project/build\r\n```\r\n\r\nNote that in order to support routers that use HTML5 `pushState` API, you may want to rename the `index.html` in your build folder to `200.html` before deploying to Surge. This [ensures that every URL falls back to that file](https://surge.sh/help/adding-a-200-page-for-client-side-routing).\r\n\r\n## Advanced Configuration\r\n\r\nYou can adjust various development and production settings by setting environment variables in your shell or with [.env](#adding-development-environment-variables-in-env).\r\n\r\nVariable | Development | Production | Usage\r\n:--- | :---: | :---: | :---\r\nBROWSER | :white_check_mark: | :x: | By default, Create React App will open the default system browser, favoring Chrome on macOS. Specify a [browser](https://github.com/sindresorhus/opn#app) to override this behavior, or set it to `none` to disable it completely. If you need to customize the way the browser is launched, you can specify a node script instead. Any arguments passed to `npm start` will also be passed to this script, and the url where your app is served will be the last argument. Your script's file name must have the `.js` extension.\r\nHOST | :white_check_mark: | :x: | By default, the development web server binds to `localhost`. You may use this variable to specify a different host.\r\nPORT | :white_check_mark: | :x: | By default, the development web server will attempt to listen on port 3000 or prompt you to attempt the next available port. You may use this variable to specify a different port.\r\nHTTPS | :white_check_mark: | :x: | When set to `true`, Create React App will run the development server in `https` mode.\r\nPUBLIC_URL | :x: | :white_check_mark: | Create React App assumes your application is hosted at the serving web server's root or a subpath as specified in [`package.json` (`homepage`)](#building-for-relative-paths). Normally, Create React App ignores the hostname. You may use this variable to force assets to be referenced verbatim to the url you provide (hostname included). This may be particularly useful when using a CDN to host your application.\r\nCI | :large_orange_diamond: | :white_check_mark: | When set to `true`, Create React App treats warnings as failures in the build. It also makes the test runner non-watching. Most CIs set this flag by default.\r\nREACT_EDITOR | :white_check_mark: | :x: | When an app crashes in development, you will see an error overlay with clickable stack trace. When you click on it, Create React App will try to determine the editor you are using based on currently running processes, and open the relevant source file. You can [send a pull request to detect your editor of choice](https://github.com/facebookincubator/create-react-app/issues/2636). Setting this environment variable overrides the automatic detection. If you do it, make sure your systems [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) environment variable points to your editor’s bin folder. You can also set it to `none` to disable it completely.\r\nCHOKIDAR_USEPOLLING | :white_check_mark: | :x: | When set to `true`, the watcher runs in polling mode, as necessary inside a VM. Use this option if `npm start` isn't detecting changes.\r\nGENERATE_SOURCEMAP | :x: | :white_check_mark: | When set to `false`, source maps are not generated for a production build. This solves OOM issues on some smaller machines.\r\nNODE_PATH | :white_check_mark: |  :white_check_mark: | Same as [`NODE_PATH` in Node.js](https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders), but only relative folders are allowed. Can be handy for emulating a monorepo setup by setting `NODE_PATH=src`.\r\n\r\n## Troubleshooting\r\n\r\n### `npm start` doesn’t detect changes\r\n\r\nWhen you save a file while `npm start` is running, the browser should refresh with the updated code.<br>\r\nIf this doesn’t happen, try one of the following workarounds:\r\n\r\n* If your project is in a Dropbox folder, try moving it out.\r\n* If the watcher doesn’t see a file called `index.js` and you’re referencing it by the folder name, you [need to restart the watcher](https://github.com/facebookincubator/create-react-app/issues/1164) due to a Webpack bug.\r\n* Some editors like Vim and IntelliJ have a “safe write” feature that currently breaks the watcher. You will need to disable it. Follow the instructions in [“Adjusting Your Text Editor”](https://webpack.js.org/guides/development/#adjusting-your-text-editor).\r\n* If your project path contains parentheses, try moving the project to a path without them. This is caused by a [Webpack watcher bug](https://github.com/webpack/watchpack/issues/42).\r\n* On Linux and macOS, you might need to [tweak system settings](https://github.com/webpack/docs/wiki/troubleshooting#not-enough-watchers) to allow more watchers.\r\n* If the project runs inside a virtual machine such as (a Vagrant provisioned) VirtualBox, create an `.env` file in your project directory if it doesn’t exist, and add `CHOKIDAR_USEPOLLING=true` to it. This ensures that the next time you run `npm start`, the watcher uses the polling mode, as necessary inside a VM.\r\n\r\nIf none of these solutions help please leave a comment [in this thread](https://github.com/facebookincubator/create-react-app/issues/659).\r\n\r\n### `npm test` hangs on macOS Sierra\r\n\r\nIf you run `npm test` and the console gets stuck after printing `react-scripts test --env=jsdom` to the console there might be a problem with your [Watchman](https://facebook.github.io/watchman/) installation as described in [facebookincubator/create-react-app#713](https://github.com/facebookincubator/create-react-app/issues/713).\r\n\r\nWe recommend deleting `node_modules` in your project and running `npm install` (or `yarn` if you use it) first. If it doesn't help, you can try one of the numerous workarounds mentioned in these issues:\r\n\r\n* [facebook/jest#1767](https://github.com/facebook/jest/issues/1767)\r\n* [facebook/watchman#358](https://github.com/facebook/watchman/issues/358)\r\n* [ember-cli/ember-cli#6259](https://github.com/ember-cli/ember-cli/issues/6259)\r\n\r\nIt is reported that installing Watchman 4.7.0 or newer fixes the issue. If you use [Homebrew](http://brew.sh/), you can run these commands to update it:\r\n\r\n```\r\nwatchman shutdown-server\r\nbrew update\r\nbrew reinstall watchman\r\n```\r\n\r\nYou can find [other installation methods](https://facebook.github.io/watchman/docs/install.html#build-install) on the Watchman documentation page.\r\n\r\nIf this still doesn’t help, try running `launchctl unload -F ~/Library/LaunchAgents/com.github.facebook.watchman.plist`.\r\n\r\nThere are also reports that *uninstalling* Watchman fixes the issue. So if nothing else helps, remove it from your system and try again.\r\n\r\n### `npm run build` exits too early\r\n\r\nIt is reported that `npm run build` can fail on machines with limited memory and no swap space, which is common in cloud environments. Even with small projects this command can increase RAM usage in your system by hundreds of megabytes, so if you have less than 1 GB of available memory your build is likely to fail with the following message:\r\n\r\n>  The build failed because the process exited too early. This probably means the system ran out of memory or someone called `kill -9` on the process.\r\n\r\nIf you are completely sure that you didn't terminate the process, consider [adding some swap space](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04) to the machine you’re building on, or build the project locally.\r\n\r\n### `npm run build` fails on Heroku\r\n\r\nThis may be a problem with case sensitive filenames.\r\nPlease refer to [this section](#resolving-heroku-deployment-errors).\r\n\r\n### Moment.js locales are missing\r\n\r\nIf you use a [Moment.js](https://momentjs.com/), you might notice that only the English locale is available by default. This is because the locale files are large, and you probably only need a subset of [all the locales provided by Moment.js](https://momentjs.com/#multiple-locale-support).\r\n\r\nTo add a specific Moment.js locale to your bundle, you need to import it explicitly.<br>\r\nFor example:\r\n\r\n```js\r\nimport moment from 'moment';\r\nimport 'moment/locale/fr';\r\n```\r\n\r\nIf import multiple locales this way, you can later switch between them by calling `moment.locale()` with the locale name:\r\n\r\n```js\r\nimport moment from 'moment';\r\nimport 'moment/locale/fr';\r\nimport 'moment/locale/es';\r\n\r\n// ...\r\n\r\nmoment.locale('fr');\r\n```\r\n\r\nThis will only work for locales that have been explicitly imported before.\r\n\r\n### `npm run build` fails to minify\r\n\r\nSome third-party packages don't compile their code to ES5 before publishing to npm. This often causes problems in the ecosystem because neither browsers (except for most modern versions) nor some tools currently support all ES6 features. We recommend to publish code on npm as ES5 at least for a few more years.\r\n\r\n<br>\r\nTo resolve this:\r\n\r\n1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.\r\n  * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.\r\n\r\n2. Fork the package and publish a corrected version yourself. \r\n\r\n3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.\r\n\r\nIn the future, we might start automatically compiling incompatible third-party modules, but it is not currently supported. This approach would also slow down the production builds.\r\n\r\n## Alternatives to Ejecting\r\n\r\n[Ejecting](#npm-run-eject) lets you customize anything, but from that point on you have to maintain the configuration and scripts yourself. This can be daunting if you have many similar projects. In such cases instead of ejecting we recommend to *fork* `react-scripts` and any other packages you need. [This article](https://auth0.com/blog/how-to-configure-create-react-app/) dives into how to do it in depth. You can find more discussion in [this issue](https://github.com/facebookincubator/create-react-app/issues/682).\r\n\r\n## Something Missing?\r\n\r\nIf you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)\r\n",
+    "longname": "/vagrant/client/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"codepods-demographics-client\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"axios\": \"^0.18.0\",\r\n    \"react\": \"^16.2.0\",\r\n    \"react-dom\": \"^16.2.0\",\r\n    \"react-scripts\": \"1.1.1\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"test\": \"./node_modules/.bin/mocha src/test/ --recursive\"\r\n  },\r\n  \"proxy\": \"http://localhost:5000/\",\r\n  \"devDependencies\": {\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-http\": \"^3.0.0\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\r\n    \"esdoc-flow-type-plugin\": \"^1.0.1\",\r\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\r\n    \"esdoc-react-plugin\": \"^1.0.1\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"mocha\": \"^5.0.2\"\r\n  }\r\n}\r\n",
+    "longname": "/vagrant/client/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

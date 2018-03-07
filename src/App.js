@@ -12,12 +12,16 @@ import './App.css'
 import ExampleComponent from './components/exampleComponent'
 
 /**
-	Entry point and main page of our react app
-*/
+ * Entry point and main page of our react app
+ */
 class App extends Component {
 	state = {
 	}
 
+	/**
+    * render
+    * @return {ReactElement} markup
+    */
 	render() {
 		return (
 			<div className="App">
