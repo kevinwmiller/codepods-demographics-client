@@ -1,0 +1,12 @@
+# .eslintignore
+docs/*
+public/*
+*.css
+*.svg
+*.jpg
+*.png
+**/*.css
+**/*.svg
+**/*.jpg
+**/*.png,
+registerServiceWorker.js
