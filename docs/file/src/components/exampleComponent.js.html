@@ -39,119 +39,127 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/exampleComponent.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, { Component } from &apos;react&apos;
-import axios from &apos;axios&apos;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, { Component } from &apos;react&apos;;
+import axios from &apos;axios&apos;;
+import PropTypes from &apos;prop-types&apos;;
 
 /**
- * An example component showing the basics of making a call to the backend express server and using state and properties
- * @reactProps {string} message - The message to display from the frontend
- */
-class ExampleComponent extends Component {
-
-	/**
-	* @constructor
-	* @param {object} props
-	*/
-	constructor(props) {
-		super(props)
-
-		this.state = {
-			defaultMessage: &apos;Hello&apos;,
-			response: {
-				firstName: &quot;test&quot;,
-				lastName: &quot;test&quot;,
-			}
-		}
-	}
-
-	/** These functions are called when the component is &apos;mounted&apos;, i.e. inserted into the DOM */
-	componentWillMount() {
-
-	}
-
-	componentDidMount() {
-		this.testExpressCall()
-	}
-
-
-
-	/** These functions are called when a property or state change occurs. These functions trigger a re-render */
-	componentWillReceiveProps() {
-
-	}
-
-	shouldComponentUpdate() {
-		return true
-	}
-
-	componentWillUpdate() {
-		
-	}
-
-	componentDidUpdate() {
-
-	}
-
-
-	/** This is called when the component is being removed from the DOM */
-	componentWillUnmount() {
-
-	}
-
-	/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */
-	componentDidCatch() {
-
-	}
-
-	/**
-		Makes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend
-		@returns {Promise} Promise object represents the data returned from the express server
-	*/
-	getApiData() {
-		console.log(&quot;Getting exampleController&quot;)
-		return axios.get(&apos;/exampleController&apos;)
-	}
-
-	/**
-		Shows a basic usage of async/await and promises
-		Shows how to set the state of the React component
-			this.setState( {key1: value1, key2: value2, ...} )
-			Setting the state forces a re-render
-		Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise
-	*/
-	testExpressCall = async () =&gt; {
-		try {
-			const response = await this.getApiData()
-			console.log(response.data)
-			this.setState({ response: response.data.response })
-		} catch (err) {
-			console.error(err)
-			this.setState({ response: err.message })
-		}
-	}
-
-	/**
-		Renders the &apos;message&apos; property, and will also add a person&apos;s name returned by the express server (Stored in this.state.response  @see {@link getApiData})
-	*/
-	render() {
-		console.log(this.state)
-		return (
-			&lt;div&gt;
-				&lt;p className=&quot;ExampleComponentProperty&quot;&gt;
-					ReactComponent says {this.props.message}
-				&lt;/p&gt;
-				&lt;p&gt;
-					The below is a call to the backend server. This particular route fetched the google.com homepage
-				&lt;/p&gt;
-				&lt;div className=&quot;ExampleComponentState&quot;&gt;
-					&lt;p&gt;Hello {this.state.response.firstName} {this.state.response.lastName}!&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		);
-	}
+    Makes a call to the exampleController route on the express server to
+    represent the method in which to fetch data from an API or database from the frontend.
+    Function is static since we do not use any class member variables
+    @returns {Promise} Promise object represents the data returned from the express server
+*/
+function getApiData() {
+    return axios.get(&apos;/exampleController&apos;, {
+        params: {},
+    });
 }
 
-export default ExampleComponent</code></pre>
+/**
+  * An example component showing the basics of making a call to the
+  * backend express server and using state and properties
+  * @reactProps {string} message - The message to display from the frontend
+  */
+class ExampleComponent extends Component {
+    /**
+    * @constructor
+    * @param {object} props
+    */
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            response: {
+                firstName: &apos;test&apos;,
+                lastName: &apos;test&apos;,
+            },
+        };
+    }
+
+    /** These functions are called when the component is &apos;mounted&apos;, i.e. inserted into the DOM */
+    componentWillMount() {
+
+    }
+
+    componentDidMount() {
+        this.testExpressCall();
+    }
+
+
+    /** These functions are called when a property or state change occurs.
+    These functions trigger a re-render */
+    componentWillReceiveProps() {
+
+    }
+
+    shouldComponentUpdate() {
+        return true;
+    }
+
+    componentWillUpdate() {
+
+    }
+
+    componentDidUpdate() {
+
+    }
+
+
+    /** This is called when the component is being removed from the DOM */
+    componentWillUnmount() {
+
+    }
+
+    /** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions),
+    or in a child component constructor */
+    // componentDidCatch() {
+
+    // }
+
+    /**
+        Shows a basic usage of async/await and promises
+        Shows how to set the state of the React component
+            this.setState( {key1: value1, key2: value2, ...} )
+            Setting the state forces a re-render
+        Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise
+    */
+    async testExpressCall() {
+        try {
+            const response = await getApiData();
+            this.setState({ response: response.data.response });
+        } catch (err) {
+            console.error(err);
+            this.setState({ response: err.message });
+        }
+    }
+
+    /**
+        Renders the &apos;message&apos; property, and will also add a person&apos;s name returned
+            by the express server (Stored in this.state.response  @see {@link getApiData})
+    */
+    render() {
+        return (
+            &lt;div&gt;
+                &lt;p className=&quot;ExampleComponentProperty&quot;&gt;
+                    ReactComponent says {this.props.message}
+                &lt;/p&gt;
+                &lt;p&gt;
+                    The below is a call to the backend server
+                &lt;/p&gt;
+                &lt;div className=&quot;ExampleComponentState&quot;&gt;
+                    &lt;p&gt;Hello {this.state.response.firstName} {this.state.response.lastName}!&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+ExampleComponent.propTypes = {
+    message: PropTypes.string.isRequired,
+};
+
+export default ExampleComponent;
+</code></pre>
 
 </div>
 

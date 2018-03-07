@@ -1,27 +1,25 @@
 {
-  "coverage": "88.23%",
-  "expectCount": 34,
-  "actualCount": 30,
+  "coverage": "90.32%",
+  "expectCount": 31,
+  "actualCount": 28,
   "files": {
     "src/App.js": {
-      "expectCount": 3,
+      "expectCount": 2,
       "actualCount": 2,
-      "undocumentLines": [
-        18
-      ]
+      "undocumentLines": []
     },
     "src/components/componentTemplate.js": {
-      "expectCount": 12,
-      "actualCount": 11,
+      "expectCount": 11,
+      "actualCount": 10,
       "undocumentLines": [
         15
       ]
     },
     "src/components/exampleComponent.js": {
-      "expectCount": 14,
-      "actualCount": 13,
+      "expectCount": 13,
+      "actualCount": 12,
       "undocumentLines": [
-        17
+        30
       ]
     },
     "src/registerServiceWorker.js": {

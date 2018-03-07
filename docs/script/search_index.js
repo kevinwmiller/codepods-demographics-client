@@ -324,22 +324,10 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/app.js~app#state",
-    "class/src/App.js~App.html#instance-member-state",
-    "src/App.js~App#state",
-    "member"
-  ],
-  [
     "src/components/componenttemplate.js",
     "file/src/components/componentTemplate.js.html",
     "src/components/componentTemplate.js",
     "file"
-  ],
-  [
-    "src/components/componenttemplate.js~componenttemplate#componentdidcatch",
-    "class/src/components/componentTemplate.js~ComponentTemplate.html#instance-method-componentDidCatch",
-    "src/components/componentTemplate.js~ComponentTemplate#componentDidCatch",
-    "method"
   ],
   [
     "src/components/componenttemplate.js~componenttemplate#componentdidmount",
@@ -408,12 +396,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/components/examplecomponent.js~examplecomponent#componentdidcatch",
-    "class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-componentDidCatch",
-    "src/components/exampleComponent.js~ExampleComponent#componentDidCatch",
-    "method"
-  ],
-  [
     "src/components/examplecomponent.js~examplecomponent#componentdidmount",
     "class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-componentDidMount",
     "src/components/exampleComponent.js~ExampleComponent#componentDidMount",
@@ -456,12 +438,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/components/examplecomponent.js~examplecomponent#getapidata",
-    "class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-getApiData",
-    "src/components/exampleComponent.js~ExampleComponent#getApiData",
-    "method"
-  ],
-  [
     "src/components/examplecomponent.js~examplecomponent#render",
     "class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-render",
     "src/components/exampleComponent.js~ExampleComponent#render",
@@ -481,9 +457,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/components/examplecomponent.js~examplecomponent#testexpresscall",
-    "class/src/components/exampleComponent.js~ExampleComponent.html#instance-member-testExpressCall",
+    "class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-testExpressCall",
     "src/components/exampleComponent.js~ExampleComponent#testExpressCall",
-    "member"
+    "method"
   ],
   [
     "src/index.js",

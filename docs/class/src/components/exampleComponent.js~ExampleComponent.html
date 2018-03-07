@@ -37,13 +37,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ExampleComponent from &apos;<span><a href="file/src/components/exampleComponent.js.html#lineNumber8">codepods-demographics-client/src/components/exampleComponent.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ExampleComponent from &apos;<span><a href="file/src/components/exampleComponent.js.html#lineNumber22">codepods-demographics-client/src/components/exampleComponent.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/components/exampleComponent.js.html#lineNumber8">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/components/exampleComponent.js.html#lineNumber22">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -63,7 +63,8 @@
 
   
   
-  <div class="description" data-ice="description"><p>An example component showing the basics of making a call to the backend express server and using state and properties</p>
+  <div class="description" data-ice="description"><p>An example component showing the basics of making a call to the
+backend express server and using state and properties</p>
 </div>
   
 
@@ -148,46 +149,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-member-state">state</a></span></span><span class="code" data-ice="signature">: {&quot;defaultMessage&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, &quot;response&quot;: <span>*</span>}</span>
+          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-member-state">state</a></span></span><span class="code" data-ice="signature">: {&quot;response&quot;: <span>*</span>}</span>
         </p>
       </div>
       <div>
         
         
         
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-member-testExpressCall">testExpressCall</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Shows a basic usage of async/await and promises
-Shows how to set the state of the React component
-this.setState( {key1: value1, key2: value2, ...} )
-Setting the state forces a re-render
-Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise</p>
-</div>
       </div>
     </td>
     <td>
@@ -203,35 +171,6 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
   <tbody>
   
   <tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-componentDidCatch">componentDidCatch</a></span></span><span class="code" data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor </p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
     <td>
       <span class="access" data-ice="access">public</span>
       
@@ -416,42 +355,14 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-getApiData">getApiData</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Makes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend </p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
           <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-render">render</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Renders the &apos;message&apos; property, and will also add a person&apos;s name returned by the express server (Stored in this.state.response  @see <span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-getApiData">getApiData</a></span>) </p>
+        <div data-ice="description"><p>Renders the &apos;message&apos; property, and will also add a person&apos;s name returned
+by the express server (Stored in this.state.response  @see <span>getApiData</span>) </p>
 </div>
       </div>
     </td>
@@ -488,6 +399,39 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
       
     </td>
   </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          <span data-ice="async">async</span>
+          
+          <span class="code" data-ice="name"><span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-testExpressCall">testExpressCall</a></span></span><span class="code" data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Shows a basic usage of async/await and promises
+Shows how to set the state of the React component
+this.setState( {key1: value1, key2: value2, ...} )
+Setting the state forces a re-render
+Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise </p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
 </tbody>
 </table>
 </div>
@@ -510,7 +454,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber14">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber27">source</a></span></span>
     </span>
   </h3>
 
@@ -568,11 +512,11 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     
     
     
-    <span class="code" data-ice="name">state</span><span class="code" data-ice="signature">: {&quot;defaultMessage&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, &quot;response&quot;: <span>*</span>}</span>
+    <span class="code" data-ice="name">state</span><span class="code" data-ice="signature">: {&quot;response&quot;: <span>*</span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber17">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber30">source</a></span></span>
     </span>
   </h3>
 
@@ -580,54 +524,6 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
   
   
   
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-testExpressCall">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">testExpressCall</span><span class="code" data-ice="signature">: <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber81">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Shows a basic usage of async/await and promises
-Shows how to set the state of the React component
-this.setState( {key1: value1, key2: value2, ...} )
-Setting the state forces a re-render
-Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise</p>
-</div>
 
   
 
@@ -655,50 +551,6 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
 <div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-componentDidCatch">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">componentDidCatch</span><span class="code" data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber61">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor </p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-componentDidMount">
     <span class="access" data-ice="access">public</span>
     
@@ -710,7 +562,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber31">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber43">source</a></span></span>
     </span>
   </h3>
 
@@ -753,7 +605,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber50">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber62">source</a></span></span>
     </span>
   </h3>
 
@@ -796,7 +648,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber27">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -840,14 +692,15 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber50">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>These functions are called when a property or state change occurs. These functions trigger a re-render </p>
+  <div data-ice="description"><p>These functions are called when a property or state change occurs.
+These functions trigger a re-render </p>
 </div>
 
   
@@ -884,7 +737,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber56">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber68">source</a></span></span>
     </span>
   </h3>
 
@@ -928,7 +781,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber46">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber58">source</a></span></span>
     </span>
   </h3>
 
@@ -943,63 +796,6 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
 </div>
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-getApiData">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">getApiData</span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber69">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Makes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend </p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>Promise object represents the data returned from the express server</p>
-</td>
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
 
   
 
@@ -1028,14 +824,15 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber95">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber99">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Renders the &apos;message&apos; property, and will also add a person&apos;s name returned by the express server (Stored in this.state.response  @see <span><a href="class/src/components/exampleComponent.js~ExampleComponent.html#instance-method-getApiData">getApiData</a></span>) </p>
+  <div data-ice="description"><p>Renders the &apos;message&apos; property, and will also add a person&apos;s name returned
+by the express server (Stored in this.state.response  @see <span>getApiData</span>) </p>
 </div>
 
   
@@ -1084,7 +881,7 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber42">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber54">source</a></span></span>
     </span>
   </h3>
 
@@ -1111,6 +908,54 @@ Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfille
     <div data-ice="returnProperties">
 </div>
   </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-testExpressCall">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    <span data-ice="async">async</span>
+    
+    <span class="code" data-ice="name">testExpressCall</span><span class="code" data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/components/exampleComponent.js.html#lineNumber85">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Shows a basic usage of async/await and promises
+Shows how to set the state of the React component
+this.setState( {key1: value1, key2: value2, ...} )
+Setting the state forces a re-render
+Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise </p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
 
   
 

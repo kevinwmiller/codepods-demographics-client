@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/App.js",
-    "content": "/**\n\t@file Main page and entry point of the React app. This file should only import components that are used directly by the App component\n\tTo add a component to the page:\n\t<ComponentName property1Name={{property1Value}} property2Name={{property2Value}}/>\n\n*/\nimport React, { Component } from 'react'\nimport logo from './teamLogo.jpg'\nimport './App.css'\n\n// Import any components used in the frontend. Only require those which are needed in the current component\nimport ExampleComponent from './components/exampleComponent'\n\n/**\n * Entry point and main page of our react app\n */\nclass App extends Component {\n\tstate = {\n\t}\n\n\t/**\n    * render\n    * @return {ReactElement} markup\n    */\n\trender() {\n\t\treturn (\n\t\t\t<div className=\"App\">\n\t\t\t\t<header className=\"App-header\">\n\t\t\t\t\t<img src={logo} className=\"App-logo\" alt=\"logo\" />\n\t\t\t\t\t<h1 className=\"App-title\">CodePods Web Project</h1>\n\t\t\t\t</header>\n\t\t\t\t<ExampleComponent message=\"This is a property\"/>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default App;\n",
+    "content": "/**\r\n    @file Main page and entry point of the React app.\r\n    This file should only import components that are used directly by the App component\r\n    To add a component to the page:\r\n    <ComponentName property1Name={{property1Value}} property2Name={{property2Value}}/>\r\n\r\n*/\r\nimport React, { Component } from 'react';\r\nimport logo from './logo-main.png';\r\nimport './App.css';\r\n\r\n// Import any components used in the frontend.\r\n// Only require those which are needed in the current component\r\nimport ExampleComponent from './components/exampleComponent';\r\n\r\n/**\r\n * Entry point and main page of our react app\r\n */\r\nclass App extends Component {\r\n    /**\r\n    * render\r\n    * @return {ReactElement} markup\r\n    */\r\n    render() {\r\n        return (\r\n            <div className=\"App\">\r\n                <header className=\"App-header\">\r\n                    <img src={logo} className=\"App-logo\" alt=\"logo\" />\r\n                    <h1 className=\"App-title\">CodePods Web Project</h1>\r\n                </header>\r\n                <ExampleComponent message=\"This is a property\" />\r\n            </div>\r\n        );\r\n    }\r\n}\r\n\r\nexport default App;\r\n",
     "static": true,
     "longname": "/vagrant/client/src/App.js",
     "access": "public",
@@ -586,7 +586,7 @@
     "importPath": "codepods-demographics-client/src/App.js",
     "importStyle": "App",
     "description": "Entry point and main page of our react app",
-    "lineNumber": 17,
+    "lineNumber": 19,
     "interface": false,
     "extends": [
       "react~Component"
@@ -594,23 +594,6 @@
   },
   {
     "__docId__": 50,
-    "kind": "member",
-    "name": "state",
-    "memberof": "src/App.js~App",
-    "static": false,
-    "longname": "src/App.js~App#state",
-    "access": "public",
-    "description": null,
-    "lineNumber": 18,
-    "undocument": true,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 51,
     "kind": "method",
     "name": "render",
     "memberof": "src/App.js~App",
@@ -620,7 +603,7 @@
     "longname": "src/App.js~App#render",
     "access": "public",
     "description": "render ",
-    "lineNumber": 25,
+    "lineNumber": 24,
     "return": {
       "nullable": null,
       "types": [
@@ -632,10 +615,10 @@
     "params": []
   },
   {
-    "__docId__": 52,
+    "__docId__": 51,
     "kind": "file",
     "name": "src/components/componentTemplate.js",
-    "content": "import React, { Component } from 'react'\n\n/** Empty React component object to use as a template when creating new components*/\nclass ComponentTemplate extends Component {\n\n\t/**\n\t* @constructor\n\t* @param {object} props - {\n\t\n\t\t}\n\t*/\n\tconstructor(props) {\n\t\tsuper(props)\n\n\t\tthis.state = {\n\t\t}\n\t}\n\n\t/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\n\tcomponentWillMount() {\n\n\t}\n\n\tcomponentDidMount() {\n\t}\n\n\n\n\t/** These functions are called when a property or state change occurs. These functions trigger a re-render */\n\tcomponentWillReceiveProps() {\n\n\t}\n\n\tshouldComponentUpdate() {\n\t\treturn true\n\t}\n\n\tcomponentWillUpdate() {\n\t\t\n\t}\n\n\tcomponentDidUpdate() {\n\n\t}\n\n\n\t/** This is called when the component is being removed from the DOM */\n\tcomponentWillUnmount() {\n\n\t}\n\n\t/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */\n\tcomponentDidCatch() {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ComponentTemplate",
+    "content": "import React, { Component } from 'react';\r\n// import PropTypes from 'prop-types';\r\n\r\n/** Empty React component object to use as a template when creating new components */\r\nclass ComponentTemplate extends Component {\r\n    /**\r\n    * @constructor\r\n    * @param {object} props - {\r\n\r\n        }\r\n    */\r\n    constructor(props) {\r\n        super(props);\r\n\r\n        this.state = {\r\n        };\r\n    }\r\n\r\n    /** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\r\n    componentWillMount() {\r\n\r\n    }\r\n\r\n    componentDidMount() {\r\n    }\r\n\r\n\r\n    /** These functions are called when a property or state change occurs.\r\n        These functions trigger a re-render\r\n    */\r\n    componentWillReceiveProps() {\r\n\r\n    }\r\n\r\n    shouldComponentUpdate() {\r\n        return true;\r\n    }\r\n\r\n    componentWillUpdate() {\r\n\r\n    }\r\n\r\n    componentDidUpdate() {\r\n\r\n    }\r\n\r\n\r\n    /** This is called when the component is being removed from the DOM */\r\n    componentWillUnmount() {\r\n\r\n    }\r\n\r\n    /** This function is called whe an error occurs during rendering,\r\n        a lifecycle method (One of the above functions), or in a child component constructor\r\n    */\r\n    // componentDidCatch() {\r\n    // }\r\n\r\n    render() {\r\n        return (\r\n            <div />\r\n        );\r\n    }\r\n}\r\n\r\n// ComponentTemplate.propTypes = {\r\n// };\r\n\r\nexport default ComponentTemplate;\r\n",
     "static": true,
     "longname": "/vagrant/client/src/components/componentTemplate.js",
     "access": "public",
@@ -643,7 +626,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 53,
+    "__docId__": 52,
     "kind": "class",
     "name": "ComponentTemplate",
     "memberof": "src/components/componentTemplate.js",
@@ -654,14 +637,14 @@
     "importPath": "codepods-demographics-client/src/components/componentTemplate.js",
     "importStyle": "ComponentTemplate",
     "description": "Empty React component object to use as a template when creating new components",
-    "lineNumber": 4,
+    "lineNumber": 5,
     "interface": false,
     "extends": [
       "react~Component"
     ]
   },
   {
-    "__docId__": 54,
+    "__docId__": 53,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -692,7 +675,7 @@
     ]
   },
   {
-    "__docId__": 55,
+    "__docId__": 54,
     "kind": "member",
     "name": "state",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -709,7 +692,7 @@
     }
   },
   {
-    "__docId__": 56,
+    "__docId__": 55,
     "kind": "method",
     "name": "componentWillMount",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -724,7 +707,7 @@
     "return": null
   },
   {
-    "__docId__": 57,
+    "__docId__": 56,
     "kind": "method",
     "name": "componentDidMount",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -739,7 +722,7 @@
     "return": null
   },
   {
-    "__docId__": 58,
+    "__docId__": 57,
     "kind": "method",
     "name": "componentWillReceiveProps",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -748,13 +731,13 @@
     "static": false,
     "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillReceiveProps",
     "access": "public",
-    "description": "These functions are called when a property or state change occurs. These functions trigger a re-render ",
-    "lineNumber": 30,
+    "description": "These functions are called when a property or state change occurs.\nThese functions trigger a re-render ",
+    "lineNumber": 31,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 59,
+    "__docId__": 58,
     "kind": "method",
     "name": "shouldComponentUpdate",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -764,7 +747,7 @@
     "longname": "src/components/componentTemplate.js~ComponentTemplate#shouldComponentUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 34,
+    "lineNumber": 35,
     "params": [],
     "return": {
       "types": [
@@ -773,7 +756,7 @@
     }
   },
   {
-    "__docId__": 60,
+    "__docId__": 59,
     "kind": "method",
     "name": "componentWillUpdate",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -783,12 +766,12 @@
     "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 38,
+    "lineNumber": 39,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 61,
+    "__docId__": 60,
     "kind": "method",
     "name": "componentDidUpdate",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -798,12 +781,12 @@
     "longname": "src/components/componentTemplate.js~ComponentTemplate#componentDidUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 42,
+    "lineNumber": 43,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 62,
+    "__docId__": 61,
     "kind": "method",
     "name": "componentWillUnmount",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -813,27 +796,12 @@
     "longname": "src/components/componentTemplate.js~ComponentTemplate#componentWillUnmount",
     "access": "public",
     "description": "This is called when the component is being removed from the DOM ",
-    "lineNumber": 48,
+    "lineNumber": 49,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 63,
-    "kind": "method",
-    "name": "componentDidCatch",
-    "memberof": "src/components/componentTemplate.js~ComponentTemplate",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/components/componentTemplate.js~ComponentTemplate#componentDidCatch",
-    "access": "public",
-    "description": "This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor ",
-    "lineNumber": 53,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 64,
+    "__docId__": 62,
     "kind": "method",
     "name": "render",
     "memberof": "src/components/componentTemplate.js~ComponentTemplate",
@@ -842,8 +810,8 @@
     "static": false,
     "longname": "src/components/componentTemplate.js~ComponentTemplate#render",
     "access": "public",
-    "description": "",
-    "lineNumber": 57,
+    "description": "This function is called whe an error occurs during rendering,\na lifecycle method (One of the above functions), or in a child component constructor",
+    "lineNumber": 59,
     "params": [],
     "return": {
       "types": [
@@ -852,10 +820,10 @@
     }
   },
   {
-    "__docId__": 65,
+    "__docId__": 63,
     "kind": "file",
     "name": "src/components/exampleComponent.js",
-    "content": "import React, { Component } from 'react'\r\nimport axios from 'axios'\r\n\r\n/**\r\n * An example component showing the basics of making a call to the backend express server and using state and properties\r\n * @reactProps {string} message - The message to display from the frontend\r\n */\r\nclass ExampleComponent extends Component {\r\n\r\n\t/**\r\n\t* @constructor\r\n\t* @param {object} props\r\n\t*/\r\n\tconstructor(props) {\r\n\t\tsuper(props)\r\n\r\n\t\tthis.state = {\r\n\t\t\tdefaultMessage: 'Hello',\r\n\t\t\tresponse: {\r\n\t\t\t\tfirstName: \"test\",\r\n\t\t\t\tlastName: \"test\",\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n\t/** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\r\n\tcomponentWillMount() {\r\n\r\n\t}\r\n\r\n\tcomponentDidMount() {\r\n\t\tthis.testExpressCall()\r\n\t}\r\n\r\n\r\n\r\n\t/** These functions are called when a property or state change occurs. These functions trigger a re-render */\r\n\tcomponentWillReceiveProps() {\r\n\r\n\t}\r\n\r\n\tshouldComponentUpdate() {\r\n\t\treturn true\r\n\t}\r\n\r\n\tcomponentWillUpdate() {\r\n\t\t\r\n\t}\r\n\r\n\tcomponentDidUpdate() {\r\n\r\n\t}\r\n\r\n\r\n\t/** This is called when the component is being removed from the DOM */\r\n\tcomponentWillUnmount() {\r\n\r\n\t}\r\n\r\n\t/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */\r\n\tcomponentDidCatch() {\r\n\r\n\t}\r\n\r\n\t/**\r\n\t\tMakes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend\r\n\t\t@returns {Promise} Promise object represents the data returned from the express server\r\n\t*/\r\n\tgetApiData() {\r\n\t\tconsole.log(\"Getting exampleController\")\r\n\t\treturn axios.get('/exampleController')\r\n\t}\r\n\r\n\t/**\r\n\t\tShows a basic usage of async/await and promises\r\n\t\tShows how to set the state of the React component\r\n\t\t\tthis.setState( {key1: value1, key2: value2, ...} )\r\n\t\t\tSetting the state forces a re-render\r\n\t\tBody is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise\r\n\t*/\r\n\ttestExpressCall = async () => {\r\n\t\ttry {\r\n\t\t\tconst response = await this.getApiData()\r\n\t\t\tconsole.log(response.data)\r\n\t\t\tthis.setState({ response: response.data.response })\r\n\t\t} catch (err) {\r\n\t\t\tconsole.error(err)\r\n\t\t\tthis.setState({ response: err.message })\r\n\t\t}\r\n\t}\r\n\r\n\t/**\r\n\t\tRenders the 'message' property, and will also add a person's name returned by the express server (Stored in this.state.response  @see {@link getApiData})\r\n\t*/\r\n\trender() {\r\n\t\tconsole.log(this.state)\r\n\t\treturn (\r\n\t\t\t<div>\r\n\t\t\t\t<p className=\"ExampleComponentProperty\">\r\n\t\t\t\t\tReactComponent says {this.props.message}\r\n\t\t\t\t</p>\r\n\t\t\t\t<p>\r\n\t\t\t\t\tThe below is a call to the backend server. This particular route fetched the google.com homepage\r\n\t\t\t\t</p>\r\n\t\t\t\t<div className=\"ExampleComponentState\">\r\n\t\t\t\t\t<p>Hello {this.state.response.firstName} {this.state.response.lastName}!</p>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t);\r\n\t}\r\n}\r\n\r\nexport default ExampleComponent",
+    "content": "import React, { Component } from 'react';\r\nimport axios from 'axios';\r\nimport PropTypes from 'prop-types';\r\n\r\n/**\r\n    Makes a call to the exampleController route on the express server to\r\n    represent the method in which to fetch data from an API or database from the frontend.\r\n    Function is static since we do not use any class member variables\r\n    @returns {Promise} Promise object represents the data returned from the express server\r\n*/\r\nfunction getApiData() {\r\n    return axios.get('/exampleController', {\r\n        params: {},\r\n    });\r\n}\r\n\r\n/**\r\n  * An example component showing the basics of making a call to the\r\n  * backend express server and using state and properties\r\n  * @reactProps {string} message - The message to display from the frontend\r\n  */\r\nclass ExampleComponent extends Component {\r\n    /**\r\n    * @constructor\r\n    * @param {object} props\r\n    */\r\n    constructor(props) {\r\n        super(props);\r\n\r\n        this.state = {\r\n            response: {\r\n                firstName: 'test',\r\n                lastName: 'test',\r\n            },\r\n        };\r\n    }\r\n\r\n    /** These functions are called when the component is 'mounted', i.e. inserted into the DOM */\r\n    componentWillMount() {\r\n\r\n    }\r\n\r\n    componentDidMount() {\r\n        this.testExpressCall();\r\n    }\r\n\r\n\r\n    /** These functions are called when a property or state change occurs.\r\n    These functions trigger a re-render */\r\n    componentWillReceiveProps() {\r\n\r\n    }\r\n\r\n    shouldComponentUpdate() {\r\n        return true;\r\n    }\r\n\r\n    componentWillUpdate() {\r\n\r\n    }\r\n\r\n    componentDidUpdate() {\r\n\r\n    }\r\n\r\n\r\n    /** This is called when the component is being removed from the DOM */\r\n    componentWillUnmount() {\r\n\r\n    }\r\n\r\n    /** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions),\r\n    or in a child component constructor */\r\n    // componentDidCatch() {\r\n\r\n    // }\r\n\r\n    /**\r\n        Shows a basic usage of async/await and promises\r\n        Shows how to set the state of the React component\r\n            this.setState( {key1: value1, key2: value2, ...} )\r\n            Setting the state forces a re-render\r\n        Body is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise\r\n    */\r\n    async testExpressCall() {\r\n        try {\r\n            const response = await getApiData();\r\n            this.setState({ response: response.data.response });\r\n        } catch (err) {\r\n            console.error(err);\r\n            this.setState({ response: err.message });\r\n        }\r\n    }\r\n\r\n    /**\r\n        Renders the 'message' property, and will also add a person's name returned\r\n            by the express server (Stored in this.state.response  @see {@link getApiData})\r\n    */\r\n    render() {\r\n        return (\r\n            <div>\r\n                <p className=\"ExampleComponentProperty\">\r\n                    ReactComponent says {this.props.message}\r\n                </p>\r\n                <p>\r\n                    The below is a call to the backend server\r\n                </p>\r\n                <div className=\"ExampleComponentState\">\r\n                    <p>Hello {this.state.response.firstName} {this.state.response.lastName}!</p>\r\n                </div>\r\n            </div>\r\n        );\r\n    }\r\n}\r\n\r\nExampleComponent.propTypes = {\r\n    message: PropTypes.string.isRequired,\r\n};\r\n\r\nexport default ExampleComponent;\r\n",
     "static": true,
     "longname": "/vagrant/client/src/components/exampleComponent.js",
     "access": "public",
@@ -863,7 +831,39 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 66,
+    "__docId__": 64,
+    "kind": "function",
+    "name": "getApiData",
+    "memberof": "src/components/exampleComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/exampleComponent.js~getApiData",
+    "access": "public",
+    "export": false,
+    "importPath": "codepods-demographics-client/src/components/exampleComponent.js",
+    "importStyle": null,
+    "description": "Makes a call to the exampleController route on the express server to\nrepresent the method in which to fetch data from an API or database from the frontend.\nFunction is static since we do not use any class member variables ",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Promise} Promise object represents the data returned from the express server "
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Promise object represents the data returned from the express server"
+    },
+    "params": [],
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
     "kind": "class",
     "name": "ExampleComponent",
     "memberof": "src/components/exampleComponent.js",
@@ -873,8 +873,8 @@
     "export": true,
     "importPath": "codepods-demographics-client/src/components/exampleComponent.js",
     "importStyle": "ExampleComponent",
-    "description": "An example component showing the basics of making a call to the backend express server and using state and properties",
-    "lineNumber": 8,
+    "description": "An example component showing the basics of making a call to the\nbackend express server and using state and properties",
+    "lineNumber": 22,
     "unknown": [
       {
         "tagName": "@reactProps",
@@ -887,7 +887,7 @@
     ]
   },
   {
-    "__docId__": 67,
+    "__docId__": 66,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -897,7 +897,7 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#constructor",
     "access": "public",
     "description": "",
-    "lineNumber": 14,
+    "lineNumber": 27,
     "unknown": [
       {
         "tagName": "@constructor",
@@ -918,7 +918,7 @@
     ]
   },
   {
-    "__docId__": 68,
+    "__docId__": 67,
     "kind": "member",
     "name": "state",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -926,16 +926,16 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#state",
     "access": "public",
     "description": null,
-    "lineNumber": 17,
+    "lineNumber": 30,
     "undocument": true,
     "type": {
       "types": [
-        "{\"defaultMessage\": string, \"response\": *}"
+        "{\"response\": *}"
       ]
     }
   },
   {
-    "__docId__": 69,
+    "__docId__": 68,
     "kind": "method",
     "name": "componentWillMount",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -945,12 +945,12 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillMount",
     "access": "public",
     "description": "These functions are called when the component is 'mounted', i.e. inserted into the DOM ",
-    "lineNumber": 27,
+    "lineNumber": 39,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 70,
+    "__docId__": 69,
     "kind": "method",
     "name": "componentDidMount",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -960,12 +960,12 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidMount",
     "access": "public",
     "description": "",
-    "lineNumber": 31,
+    "lineNumber": 43,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 71,
+    "__docId__": 70,
     "kind": "method",
     "name": "componentWillReceiveProps",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -974,13 +974,13 @@
     "static": false,
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillReceiveProps",
     "access": "public",
-    "description": "These functions are called when a property or state change occurs. These functions trigger a re-render ",
-    "lineNumber": 38,
+    "description": "These functions are called when a property or state change occurs.\nThese functions trigger a re-render ",
+    "lineNumber": 50,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 72,
+    "__docId__": 71,
     "kind": "method",
     "name": "shouldComponentUpdate",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -990,7 +990,7 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#shouldComponentUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 42,
+    "lineNumber": 54,
     "params": [],
     "return": {
       "types": [
@@ -999,7 +999,7 @@
     }
   },
   {
-    "__docId__": 73,
+    "__docId__": 72,
     "kind": "method",
     "name": "componentWillUpdate",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -1009,12 +1009,12 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 46,
+    "lineNumber": 58,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 74,
+    "__docId__": 73,
     "kind": "method",
     "name": "componentDidUpdate",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -1024,12 +1024,12 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidUpdate",
     "access": "public",
     "description": "",
-    "lineNumber": 50,
+    "lineNumber": 62,
     "params": [],
     "return": null
   },
   {
-    "__docId__": 75,
+    "__docId__": 74,
     "kind": "method",
     "name": "componentWillUnmount",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -1039,71 +1039,27 @@
     "longname": "src/components/exampleComponent.js~ExampleComponent#componentWillUnmount",
     "access": "public",
     "description": "This is called when the component is being removed from the DOM ",
-    "lineNumber": 56,
+    "lineNumber": 68,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 75,
+    "kind": "method",
+    "name": "testExpressCall",
+    "memberof": "src/components/exampleComponent.js~ExampleComponent",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/components/exampleComponent.js~ExampleComponent#testExpressCall",
+    "access": "public",
+    "description": "Shows a basic usage of async/await and promises\nShows how to set the state of the React component\nthis.setState( {key1: value1, key2: value2, ...} )\nSetting the state forces a re-render\nBody is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise ",
+    "lineNumber": 85,
     "params": [],
     "return": null
   },
   {
     "__docId__": 76,
-    "kind": "method",
-    "name": "componentDidCatch",
-    "memberof": "src/components/exampleComponent.js~ExampleComponent",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/components/exampleComponent.js~ExampleComponent#componentDidCatch",
-    "access": "public",
-    "description": "This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor ",
-    "lineNumber": 61,
-    "params": [],
-    "return": null
-  },
-  {
-    "__docId__": 77,
-    "kind": "method",
-    "name": "getApiData",
-    "memberof": "src/components/exampleComponent.js~ExampleComponent",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/components/exampleComponent.js~ExampleComponent#getApiData",
-    "access": "public",
-    "description": "Makes a call to the exampleController route on the express server to represent the method in which to fetch data from an API or database from the frontend ",
-    "lineNumber": 69,
-    "unknown": [
-      {
-        "tagName": "@returns",
-        "tagValue": "{Promise} Promise object represents the data returned from the express server "
-      }
-    ],
-    "return": {
-      "nullable": null,
-      "types": [
-        "Promise"
-      ],
-      "spread": false,
-      "description": "Promise object represents the data returned from the express server"
-    },
-    "params": []
-  },
-  {
-    "__docId__": 78,
-    "kind": "member",
-    "name": "testExpressCall",
-    "memberof": "src/components/exampleComponent.js~ExampleComponent",
-    "static": false,
-    "longname": "src/components/exampleComponent.js~ExampleComponent#testExpressCall",
-    "access": "public",
-    "description": "Shows a basic usage of async/await and promises\nShows how to set the state of the React component\nthis.setState( {key1: value1, key2: value2, ...} )\nSetting the state forces a re-render\nBody is wrapped in a try/catch block to catch exceptions thrown by an unfulfilled promise",
-    "lineNumber": 81,
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 79,
     "kind": "method",
     "name": "render",
     "memberof": "src/components/exampleComponent.js~ExampleComponent",
@@ -1112,8 +1068,8 @@
     "static": false,
     "longname": "src/components/exampleComponent.js~ExampleComponent#render",
     "access": "public",
-    "description": "Renders the 'message' property, and will also add a person's name returned by the express server (Stored in this.state.response  @see {@link getApiData}) ",
-    "lineNumber": 95,
+    "description": "Renders the 'message' property, and will also add a person's name returned\nby the express server (Stored in this.state.response  @see {@link getApiData}) ",
+    "lineNumber": 99,
     "params": [],
     "return": {
       "types": [
@@ -1122,7 +1078,7 @@
     }
   },
   {
-    "__docId__": 80,
+    "__docId__": 77,
     "kind": "file",
     "name": "src/index.js",
     "content": "import React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport './index.css';\r\nimport App from './App';\r\nimport registerServiceWorker from './registerServiceWorker';\r\n\r\nReactDOM.render(<App />, document.getElementById('root'));\r\nregisterServiceWorker();\r\n",
@@ -1133,7 +1089,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 81,
+    "__docId__": 78,
     "kind": "file",
     "name": "src/registerServiceWorker.js",
     "content": "// In production, we register a service worker to serve assets from local cache.\r\n\r\n// This lets the app load faster on subsequent visits in production, and gives\r\n// it offline capabilities. However, it also means that developers (and users)\r\n// will only see deployed updates on the \"N+1\" visit to a page, since previously\r\n// cached resources are updated in the background.\r\n\r\n// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.\r\n// This link also includes instructions on opting out of this behavior.\r\n\r\nconst isLocalhost = Boolean(\r\n\twindow.location.hostname === 'localhost' ||\r\n\t\t// [::1] is the IPv6 localhost address.\r\n\t\twindow.location.hostname === '[::1]' ||\r\n\t\t// 127.0.0.1/8 is considered localhost for IPv4.\r\n\t\twindow.location.hostname.match(\r\n\t\t\t/^127(?:\\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/\r\n\t\t)\r\n);\r\n\r\nexport default function register() {\r\n\tif (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {\r\n\t\t// The URL constructor is available in all browsers that support SW.\r\n\t\tconst publicUrl = new URL(process.env.PUBLIC_URL, window.location);\r\n\t\tif (publicUrl.origin !== window.location.origin) {\r\n\t\t\t// Our service worker won't work if PUBLIC_URL is on a different origin\r\n\t\t\t// from what our page is served on. This might happen if a CDN is used to\r\n\t\t\t// serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374\r\n\t\t\treturn;\r\n\t\t}\r\n\r\n\t\twindow.addEventListener('load', () => {\r\n\t\t\tconst swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;\r\n\r\n\t\t\tif (isLocalhost) {\r\n\t\t\t\t// This is running on localhost. Lets check if a service worker still exists or not.\r\n\t\t\t\tcheckValidServiceWorker(swUrl);\r\n\r\n\t\t\t\t// Add some additional logging to localhost, pointing developers to the\r\n\t\t\t\t// service worker/PWA documentation.\r\n\t\t\t\tnavigator.serviceWorker.ready.then(() => {\r\n\t\t\t\t\tconsole.log(\r\n\t\t\t\t\t\t'This web app is being served cache-first by a service ' +\r\n\t\t\t\t\t\t\t'worker. To learn more, visit https://goo.gl/SC7cgQ'\r\n\t\t\t\t\t);\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\t// Is not local host. Just register service worker\r\n\t\t\t\tregisterValidSW(swUrl);\r\n\t\t\t}\r\n\t\t});\r\n\t}\r\n}\r\n\r\nfunction registerValidSW(swUrl) {\r\n\tnavigator.serviceWorker\r\n\t\t.register(swUrl)\r\n\t\t.then(registration => {\r\n\t\t\tregistration.onupdatefound = () => {\r\n\t\t\t\tconst installingWorker = registration.installing;\r\n\t\t\t\tinstallingWorker.onstatechange = () => {\r\n\t\t\t\t\tif (installingWorker.state === 'installed') {\r\n\t\t\t\t\t\tif (navigator.serviceWorker.controller) {\r\n\t\t\t\t\t\t\t// At this point, the old content will have been purged and\r\n\t\t\t\t\t\t\t// the fresh content will have been added to the cache.\r\n\t\t\t\t\t\t\t// It's the perfect time to display a \"New content is\r\n\t\t\t\t\t\t\t// available; please refresh.\" message in your web app.\r\n\t\t\t\t\t\t\tconsole.log('New content is available; please refresh.');\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\t// At this point, everything has been precached.\r\n\t\t\t\t\t\t\t// It's the perfect time to display a\r\n\t\t\t\t\t\t\t// \"Content is cached for offline use.\" message.\r\n\t\t\t\t\t\t\tconsole.log('Content is cached for offline use.');\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t};\r\n\t\t\t};\r\n\t\t})\r\n\t\t.catch(error => {\r\n\t\t\tconsole.error('Error during service worker registration:', error);\r\n\t\t});\r\n}\r\n\r\nfunction checkValidServiceWorker(swUrl) {\r\n\t// Check if the service worker can be found. If it can't reload the page.\r\n\tfetch(swUrl)\r\n\t\t.then(response => {\r\n\t\t\t// Ensure service worker exists, and that we really are getting a JS file.\r\n\t\t\tif (\r\n\t\t\t\tresponse.status === 404 ||\r\n\t\t\t\tresponse.headers.get('content-type').indexOf('javascript') === -1\r\n\t\t\t) {\r\n\t\t\t\t// No service worker found. Probably a different app. Reload the page.\r\n\t\t\t\tnavigator.serviceWorker.ready.then(registration => {\r\n\t\t\t\t\tregistration.unregister().then(() => {\r\n\t\t\t\t\t\twindow.location.reload();\r\n\t\t\t\t\t});\r\n\t\t\t\t});\r\n\t\t\t} else {\r\n\t\t\t\t// Service worker found. Proceed as normal.\r\n\t\t\t\tregisterValidSW(swUrl);\r\n\t\t\t}\r\n\t\t})\r\n\t\t.catch(() => {\r\n\t\t\tconsole.log(\r\n\t\t\t\t'No internet connection found. App is running in offline mode.'\r\n\t\t\t);\r\n\t\t});\r\n}\r\n\r\nexport function unregister() {\r\n\tif ('serviceWorker' in navigator) {\r\n\t\tnavigator.serviceWorker.ready.then(registration => {\r\n\t\t\tregistration.unregister();\r\n\t\t});\r\n\t}\r\n}\r\n",
@@ -1144,7 +1100,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 82,
+    "__docId__": 79,
     "kind": "variable",
     "name": "isLocalhost",
     "memberof": "src/registerServiceWorker.js",
@@ -1165,7 +1121,7 @@
     "ignore": true
   },
   {
-    "__docId__": 83,
+    "__docId__": 80,
     "kind": "function",
     "name": "register",
     "memberof": "src/registerServiceWorker.js",
@@ -1183,7 +1139,7 @@
     "return": null
   },
   {
-    "__docId__": 84,
+    "__docId__": 81,
     "kind": "function",
     "name": "registerValidSW",
     "memberof": "src/registerServiceWorker.js",
@@ -1213,7 +1169,7 @@
     "ignore": true
   },
   {
-    "__docId__": 85,
+    "__docId__": 82,
     "kind": "function",
     "name": "checkValidServiceWorker",
     "memberof": "src/registerServiceWorker.js",
@@ -1243,7 +1199,7 @@
     "ignore": true
   },
   {
-    "__docId__": 86,
+    "__docId__": 83,
     "kind": "function",
     "name": "unregister",
     "memberof": "src/registerServiceWorker.js",
@@ -1261,7 +1217,7 @@
     "return": null
   },
   {
-    "__docId__": 87,
+    "__docId__": 84,
     "kind": "file",
     "name": "src/test/test.js",
     "content": "",
@@ -1281,7 +1237,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\r\n  \"name\": \"codepods-demographics-client\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"axios\": \"^0.18.0\",\r\n    \"react\": \"^16.2.0\",\r\n    \"react-dom\": \"^16.2.0\",\r\n    \"react-scripts\": \"1.1.1\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"test\": \"./node_modules/.bin/mocha src/test/ --recursive\"\r\n  },\r\n  \"proxy\": \"http://localhost:5000/\",\r\n  \"devDependencies\": {\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-http\": \"^3.0.0\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\r\n    \"esdoc-flow-type-plugin\": \"^1.0.1\",\r\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\r\n    \"esdoc-react-plugin\": \"^1.0.1\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"mocha\": \"^5.0.2\"\r\n  }\r\n}\r\n",
+    "content": "{\r\n  \"name\": \"codepods-demographics-client\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"axios\": \"^0.18.0\",\r\n    \"prop-types\": \"^15.6.1\",\r\n    \"react\": \"^16.2.0\",\r\n    \"react-dom\": \"^16.2.0\",\r\n    \"react-scripts\": \"1.1.1\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"doc\": \"./node_modules/.bin/esdoc\",\r\n    \"test\": \"./node_modules/.bin/mocha src/test/ --recursive\",\r\n    \"lint\": \"./node_modules/react-scripts/node_modules/.bin/eslint .\"\r\n  },\r\n  \"proxy\": \"http://localhost:5000/\",\r\n  \"devDependencies\": {\r\n    \"chai\": \"^4.1.2\",\r\n    \"chai-http\": \"^3.0.0\",\r\n    \"esdoc\": \"^1.0.4\",\r\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\r\n    \"esdoc-flow-type-plugin\": \"^1.0.1\",\r\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\r\n    \"esdoc-react-plugin\": \"^1.0.1\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\",\r\n    \"eslint\": \"^4.18.2\",\r\n    \"eslint-config-airbnb\": \"^16.1.0\",\r\n    \"eslint-plugin-import\": \"^2.9.0\",\r\n    \"eslint-plugin-jsx-a11y\": \"^6.0.3\",\r\n    \"eslint-plugin-react\": \"^7.7.0\",\r\n    \"eslint-watch\": \"^3.1.3\",\r\n    \"mocha\": \"^5.0.2\"\r\n  }\r\n}\r\n",
     "longname": "/vagrant/client/package.json",
     "name": "package.json",
     "static": true,

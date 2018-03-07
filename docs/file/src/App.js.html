@@ -40,40 +40,39 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/App.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
-	@file Main page and entry point of the React app. This file should only import components that are used directly by the App component
-	To add a component to the page:
-	&lt;ComponentName property1Name={{property1Value}} property2Name={{property2Value}}/&gt;
+    @file Main page and entry point of the React app.
+    This file should only import components that are used directly by the App component
+    To add a component to the page:
+    &lt;ComponentName property1Name={{property1Value}} property2Name={{property2Value}}/&gt;
 
 */
-import React, { Component } from &apos;react&apos;
-import logo from &apos;./teamLogo.jpg&apos;
-import &apos;./App.css&apos;
+import React, { Component } from &apos;react&apos;;
+import logo from &apos;./logo-main.png&apos;;
+import &apos;./App.css&apos;;
 
-// Import any components used in the frontend. Only require those which are needed in the current component
-import ExampleComponent from &apos;./components/exampleComponent&apos;
+// Import any components used in the frontend.
+// Only require those which are needed in the current component
+import ExampleComponent from &apos;./components/exampleComponent&apos;;
 
 /**
  * Entry point and main page of our react app
  */
 class App extends Component {
-	state = {
-	}
-
-	/**
+    /**
     * render
     * @return {ReactElement} markup
     */
-	render() {
-		return (
-			&lt;div className=&quot;App&quot;&gt;
-				&lt;header className=&quot;App-header&quot;&gt;
-					&lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
-					&lt;h1 className=&quot;App-title&quot;&gt;CodePods Web Project&lt;/h1&gt;
-				&lt;/header&gt;
-				&lt;ExampleComponent message=&quot;This is a property&quot;/&gt;
-			&lt;/div&gt;
-		);
-	}
+    render() {
+        return (
+            &lt;div className=&quot;App&quot;&gt;
+                &lt;header className=&quot;App-header&quot;&gt;
+                    &lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
+                    &lt;h1 className=&quot;App-title&quot;&gt;CodePods Web Project&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;ExampleComponent message=&quot;This is a property&quot; /&gt;
+            &lt;/div&gt;
+        );
+    }
 }
 
 export default App;

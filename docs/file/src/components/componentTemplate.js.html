@@ -39,71 +39,76 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/components/componentTemplate.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, { Component } from &apos;react&apos;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import React, { Component } from &apos;react&apos;;
+// import PropTypes from &apos;prop-types&apos;;
 
-/** Empty React component object to use as a template when creating new components*/
+/** Empty React component object to use as a template when creating new components */
 class ComponentTemplate extends Component {
+    /**
+    * @constructor
+    * @param {object} props - {
 
-	/**
-	* @constructor
-	* @param {object} props - {
-	
-		}
-	*/
-	constructor(props) {
-		super(props)
+        }
+    */
+    constructor(props) {
+        super(props);
 
-		this.state = {
-		}
-	}
+        this.state = {
+        };
+    }
 
-	/** These functions are called when the component is &apos;mounted&apos;, i.e. inserted into the DOM */
-	componentWillMount() {
+    /** These functions are called when the component is &apos;mounted&apos;, i.e. inserted into the DOM */
+    componentWillMount() {
 
-	}
+    }
 
-	componentDidMount() {
-	}
-
+    componentDidMount() {
+    }
 
 
-	/** These functions are called when a property or state change occurs. These functions trigger a re-render */
-	componentWillReceiveProps() {
+    /** These functions are called when a property or state change occurs.
+        These functions trigger a re-render
+    */
+    componentWillReceiveProps() {
 
-	}
+    }
 
-	shouldComponentUpdate() {
-		return true
-	}
+    shouldComponentUpdate() {
+        return true;
+    }
 
-	componentWillUpdate() {
-		
-	}
+    componentWillUpdate() {
 
-	componentDidUpdate() {
+    }
 
-	}
+    componentDidUpdate() {
+
+    }
 
 
-	/** This is called when the component is being removed from the DOM */
-	componentWillUnmount() {
+    /** This is called when the component is being removed from the DOM */
+    componentWillUnmount() {
 
-	}
+    }
 
-	/** This function is called whe an error occurs during rendering, a lifecycle method (One of the above functions), or in a child component constructor */
-	componentDidCatch() {
+    /** This function is called whe an error occurs during rendering,
+        a lifecycle method (One of the above functions), or in a child component constructor
+    */
+    // componentDidCatch() {
+    // }
 
-	}
-
-	render() {
-		return (
-			&lt;div&gt;
-			&lt;/div&gt;
-		);
-	}
+    render() {
+        return (
+            &lt;div /&gt;
+        );
+    }
 }
 
-export default ComponentTemplate</code></pre>
+// ComponentTemplate.propTypes = {
+// };
+
+export default ComponentTemplate;
+</code></pre>
 
 </div>
 

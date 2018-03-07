@@ -24,6 +24,7 @@
     "react/jsx-indent": ["error", 4],
     "max-len": ["error", { "code": 120 }],
     "no-console": "off",
+    "linebreak-style": 0,
     "react/jsx-filename-extension": "off",
     "react/prefer-stateless-function": "off"
   }
