@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import PropTypes from 'prop-types';
+import server from '../services/server';
 
 /**
     Makes a call to the exampleController route on the express server to
@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
     @returns {Promise} Promise object represents the data returned from the express server
 */
 function getApiData() {
-    return axios.get('/exampleController', {
+    return server.get('/exampleController', {
         params: {},
     });
 }
