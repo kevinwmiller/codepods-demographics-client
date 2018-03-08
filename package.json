@@ -10,9 +10,9 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "start": "./node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "./node_modules/react-scripts/bin/react-scripts.js build",
+    "eject": "./node_modules/react-scripts/bin/react-scripts.js eject",
     "doc": "./node_modules/esdoc/out/src/ESDocCLI.js",
     "test": "./node_modules/mocha/bin/mocha src/test --recursive",
     "lint": "./node_modules/react-scripts/node_modules/eslint/bin/eslint.js ."
