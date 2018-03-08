@@ -8,5 +8,5 @@
     {"name": "esdoc-jsx-plugin", "option": {"enable": true}},
     {"name": "esdoc-react-plugin", "option": {"enable": true}}
   ],
-  "includes": ["./*.js$", "components/*.js$", "test/*.js$"]
+  "includes": ["./*.js", "components/*.js", "test/*.js"]
 }

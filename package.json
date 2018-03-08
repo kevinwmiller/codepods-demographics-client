@@ -13,9 +13,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "doc": "./node_modules/.bin/esdoc",
-    "test": "./node_modules/.bin/mocha src/test/ --recursive",
-    "lint": "./node_modules/react-scripts/node_modules/.bin/eslint ."
+    "doc": "./node_modules/esdoc/out/src/ESDocCLI.js",
+    "test": "./node_modules/mocha/bin/mocha src/test --recursive",
+    "lint": "./node_modules/react-scripts/node_modules/eslint/bin/eslint.js ."
   },
   "proxy": "http://localhost:5000/",
   "devDependencies": {
