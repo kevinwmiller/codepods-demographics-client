@@ -95,7 +95,7 @@ class ExampleComponent extends Component {
         } catch (err) {
             console.error(err);
             this.setState({
-                response: err.message,
+                error: err.message,
                 loading: false,
             });
         }
@@ -116,10 +116,12 @@ class ExampleComponent extends Component {
                 </p>
                 <div className="ExampleComponentState">
                     {
-                        !this.state.loading ?
-                            this.state.response.map(personName =>
-                                <p key={personName._firstNameId}>Hello {personName.firstName} {personName.lastName}!</p>)
-                            : <p>Loading...</p>
+                        this.state.loading ?
+                            <p>Loading...</p>
+                            : this.state.error ? 
+                                <p>Failed to contact server</p>
+                                : this.state.response.map(personName =>
+                                    <p key={personName._firstNameId}>Hello {personName.firstName} {personName.lastName}!</p>)
                     }
                 </div>
             </div>
