@@ -9,8 +9,11 @@ import server from '../services/server';
     @returns {Promise} Promise object represents the data returned from the express server
 */
 function getApiData() {
-    return server.get('/exampleController', {
-        params: {},
+    return server.get('/example/read', {
+        params: {
+            firstName: "React",
+            lastName: "js",
+        },
     });
 }
 
@@ -28,10 +31,12 @@ class ExampleComponent extends Component {
         super(props);
 
         this.state = {
-            response: {
-                firstName: 'test',
-                lastName: 'test',
-            },
+            response: [
+                {
+                    firstName: 'test',
+                    lastName: 'test',
+                }
+            ]
         };
     }
 
@@ -97,6 +102,7 @@ class ExampleComponent extends Component {
             by the express server (Stored in this.state.response  @see {@link getApiData})
     */
     render() {
+        console.log(this.state.response);
         return (
             <div>
                 <p className="ExampleComponentProperty">
@@ -106,7 +112,11 @@ class ExampleComponent extends Component {
                     The below is a call to the backend server
                 </p>
                 <div className="ExampleComponentState">
-                    <p>Hello {this.state.response.firstName} {this.state.response.lastName}!</p>
+                {
+                    this.state.response.map((personName, index) =>
+                        <p key={index}>Hello {personName.firstName} {personName.lastName}!</p>
+                    )
+                }
                 </div>
             </div>
         );

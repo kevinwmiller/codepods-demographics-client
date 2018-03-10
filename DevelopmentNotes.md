@@ -66,15 +66,105 @@
 -  Main page of our web server. This file is where the different components are organized in relation to each other on the web page
 -  Gives an example on passing properties to a component
 -  Import components by doing the following:
-  -     import {{ComponentName}} from './components/{{componentName}}
+    ```javascript
+    import {{ComponentName}} from './components/{{componentName}}
+    ```
 ### Querying Express Backend
+- Requests to the backend server should be made through the server module located in src/services/server
+- This module will create an axios instance with the baseUrl configured to the baseUrl of the backend
+- To import the server module:
+    ```javascript
+    import server from '../services/server';
+    ```
 #### URLs to the Express Server
-- The backend urls should be named the same as the express controllers. 
-- For example, to query the exampleController controller
-  -     axios.get('/exampleController')
-    - This returns a promise object (See above)
-- The query to the backend server should return a json object in the response attribute in response.data
-  -     response.data.response
+- Server routes are defined through a CRUD interface (Create, Read, Update, Delete)
+##### Server Response Object
+- Query response is a json object with a top-level key of response
+```json
+{
+    response: {
+        responseKey1: responseValue1
+    }
+}
+```
+- See [server documentation](https://github.com/kmiller92/codepods-demographics-server/blob/production/ReadMe.md) for API notes
+##### Examples
+- All examples assume the user wants to query the /example api 
+###### Create
+- Protocol: Post
+```javascript
+server.post('/example/create', {
+  key: value,
+});
+```
+###### Read
+- Protocol: Get
+```javascript
+server.get('/example/read', {
+  params: {
+        key: value,
+    }
+});
+```
+###### Update
+- Protocol: Post
+```javascript
+server.post('/example/update', {
+  key: value,
+});
+```
+###### Delete
+- Protocol: Post
+```javascript
+server.post('/example/delete', {
+  key: value,
+});
+```
+
+```javascript
+function getApiData() {
+    return server.get('/example/read', {
+        params: {
+            firstName: "React",
+            lastName: "js",
+        },
+    });
+}
+
+class ExampleComponent...
+    async testExpressCall() {
+        try {
+            const response = await getApiData();
+            this.setState({ response: response.data.response });
+        } catch (err) {
+            console.error(err);
+            this.setState({ response: err.message });
+        }
+    }
+    render() {
+        console.log(this.state.response);
+        return (
+            <div>
+                <p className="ExampleComponentProperty">
+                    ReactComponent says {this.props.message}
+                </p>
+                <p>
+                    The below is a call to the backend server
+                </p>
+                <div className="ExampleComponentState">
+                {
+                    this.state.response.map((personName, index) =>
+                        <p key={index}>Hello {personName.firstName} {personName.lastName}!</p>
+                    )
+                }
+                </div>
+            </div>
+        );
+    }
+}
+```
+- The read operation returns an array of objects from the api. To render all of them, we can use the map function. The map function operates on an array, and for each element in the array, and function is called. In the render example above, each Person object is placed into  paragraph tags. 'personName' refers to the current Person object and index is the current index, i.e. 0, 1, 2, etc.
+- We can also access a specific person object by array index, i.e. this.state.response[0] will return the first object
 # General Notes
 - To exit vagrant ssh. Run the following from your command prompt
   -   exit or ctrl+D
@@ -84,4 +174,3 @@
   -   vagrant destroy
 - When adding new node packages, be sure to save it to the package.json using the -s modifier
 - If testing a new branch, run "git checkout {{BranchName}}" and then run "yarn update" in /vagrant
-- Due to some issues with Windows and symlinks, an administrator command prompt may be needed when running "yarn update"
