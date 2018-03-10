@@ -11,8 +11,8 @@ import server from '../services/server';
 function getApiData() {
     return server.get('/example/read', {
         params: {
-            firstName: "React",
-            lastName: "js",
+            firstName: 'React',
+            lastName: 'js',
         },
     });
 }
@@ -31,12 +31,7 @@ class ExampleComponent extends Component {
         super(props);
 
         this.state = {
-            response: [
-                {
-                    firstName: 'test',
-                    lastName: 'test',
-                }
-            ]
+            loading: true,
         };
     }
 
@@ -89,11 +84,20 @@ class ExampleComponent extends Component {
     */
     async testExpressCall() {
         try {
+            this.setState({
+                loading: true,
+            });
             const response = await getApiData();
-            this.setState({ response: response.data.response });
+            this.setState({
+                response: response.data.response,
+                loading: false,
+            });
         } catch (err) {
             console.error(err);
-            this.setState({ response: err.message });
+            this.setState({
+                response: err.message,
+                loading: false,
+            });
         }
     }
 
@@ -102,7 +106,6 @@ class ExampleComponent extends Component {
             by the express server (Stored in this.state.response  @see {@link getApiData})
     */
     render() {
-        console.log(this.state.response);
         return (
             <div>
                 <p className="ExampleComponentProperty">
@@ -112,11 +115,12 @@ class ExampleComponent extends Component {
                     The below is a call to the backend server
                 </p>
                 <div className="ExampleComponentState">
-                {
-                    this.state.response.map((personName, index) =>
-                        <p key={index}>Hello {personName.firstName} {personName.lastName}!</p>
-                    )
-                }
+                    {
+                        !this.state.loading ?
+                            this.state.response.map(personName =>
+                                <p key={personName._firstNameId}>Hello {personName.firstName} {personName.lastName}!</p>)
+                            : <p>Loading...</p>
+                    }
                 </div>
             </div>
         );
