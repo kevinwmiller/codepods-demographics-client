@@ -87,46 +87,65 @@
     }
 }
 ```
+- A bulk GET request (One that does not specify a specific object) will return an array of matching objects
+  - server.get('/example);
+```json
+{
+    response: [
+        {
+            object1ResponseKey1: object1ResponseValue1,
+        },
+        {
+             object2ResponseKey1: object2ResponseValue1,
+        },
+        ...
+    ]
+}
+```
 - See [server documentation](https://github.com/kmiller92/codepods-demographics-server/blob/production/ReadMe.md) for API notes
 ##### Examples
 - All examples assume the user wants to query the /example api 
 ###### Create
-- Protocol: Post
+- Protocol: POST
 ```javascript
-server.post('/example/create', {
+server.post('/example', {
   key: value,
 });
 ```
-###### Read
-- Protocol: Get
+###### Get All
+- Protocol: GET
 ```javascript
-server.get('/example/read', {
+server.get('/example', {
   params: {
         key: value,
     }
 });
 ```
-###### Update
-- Protocol: Post
+###### Get One
+- Protocol: GET
 ```javascript
-server.post('/example/update', {
+server.get('/example/{:id}');
+```
+###### Update
+- Protocol: PUT
+```javascript
+server.put('/example', {
   key: value,
 });
 ```
 ###### Delete
-- Protocol: Post
+- Protocol: DELETE
 ```javascript
-server.post('/example/delete', {
+server.post('/example', {
   key: value,
 });
 ```
 
 ```javascript
 function getApiData() {
-    return server.get('/example/read', {
+    return server.get('/example', {
         params: {
-            firstName: "React",
-            lastName: "js",
+            lastName: 'Bailey',
         },
     });
 }

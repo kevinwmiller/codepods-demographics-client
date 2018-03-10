@@ -5,14 +5,12 @@ import server from '../services/server';
 /**
     Makes a call to the exampleController route on the express server to
     represent the method in which to fetch data from an API or database from the frontend.
-    Function is static since we do not use any class member variables
     @returns {Promise} Promise object represents the data returned from the express server
 */
 function getApiData() {
-    return server.get('/example/read', {
+    return server.get('/example', {
         params: {
-            firstName: 'React',
-            lastName: 'js',
+            lastName: 'Bailey',
         },
     });
 }
