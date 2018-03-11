@@ -6,7 +6,7 @@ const config = {
     },
     production: {
         server: {
-            url: process.env.SERVER_URL,
+            url: process.env.REACT_APP_SERVER_URL,
         },
     },
 };
