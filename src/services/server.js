@@ -32,7 +32,6 @@ axiosInstance.interceptors.response.use((response) => {
         // If the response isn't an array, attempt to add Ids to the single object
         addIdsToObject(response.data.response);
     }
-    console.log(response.data.response);
     return response;
 }, error => Promise.reject(error));
 
