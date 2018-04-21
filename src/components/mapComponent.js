@@ -21,17 +21,42 @@ class MapComponent extends Component {
     */
     render() {
         return (
-            <div style={{ height: '600px' }}>
+            <div style={{ height: '600px', width: '100%' }}>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: config.googleMapsApiKey }}
                     center={{ lat: 39.2556, lng: -76.7110 }}
-                    zoom={11}
+                    zoom={11}   
+                    heatmapLibrary={true}
+                    heatmap={{
+                        positions: [
+                            {
+                                lat: 39.2556,
+                                lng: -76.711,
+                            },
+                            {
+                                lat: 39.2554,
+                                lng: -76.710,
+                            },
+                            {
+                                lat: 39.2552,
+                                lng: -76.709,
+                            },
+                        ],
+
+                        options: {
+                            radius: 20,
+                            opacity: 0.7,
+
+                            
+                        },
+                    }}
                 >
                     <MetricLabel
                         lat={39.2556}
                         lng={-76.7110}
                         metricName={this.props.metricName}
                     />
+
                 </GoogleMapReact>
             </div>
         );
