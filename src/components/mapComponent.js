@@ -74,7 +74,7 @@ class MapComponent extends Component {
                     />
 
                 </GoogleMapReact>
-                <h3>SGO Google Maps Demo</h3>
+                <h3>SGO Google Test Map</h3>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: config.googleMapsApiKey }}
                     center= {{lat: -25.363, lng: 131.044}}
