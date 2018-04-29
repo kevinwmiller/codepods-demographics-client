@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #map1 {
+        height: 400px;
+        width: 100%;
+       }
+        #map2 {
+        height: 300px;
+        width: 75%;
+       }
+       #map3 {
+        height: 300px;
+        width: 50%;
+       }
+    </style>
+  </head>
+
+  <body>
+    <h3>My Google Maps Demo Map 1</h3>
+    <div id="map1"></div>
+    <h3>My Google Maps Demo Map 2</h3>
+    <div id="map2"></div>
+    <h3>My Google Maps Demo Map 3</h3>
+    <div id="map3"></div>
+
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            var map1 = new google.maps.Map(document.getElementById('map1'), {
+                zoom: 4,
+                center: uluru
+            });
+            var map2 = new google.maps.Map(document.getElementById('map2'), {
+                zoom: 5,
+                center: uluru
+            });
+            var map3 = new google.maps.Map(document.getElementById('map3'), {
+                zoom: 6,
+                center: uluru
+            });
+
+            var marker1 = new google.maps.Marker({
+                position: uluru,
+                map: map1
+            });
+            var marker2 = new google.maps.Marker({
+                position: uluru,
+                map: map2
+            });
+            var marker3 = new google.maps.Marker({
+                position: uluru,
+                map: map3
+            });
+        } 
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4jBe4zV1PMrJFTBSLbGsRVTjbvkXLFVc&callback=initMap">
+    </script>
+  </body>
+</html>
+
+
