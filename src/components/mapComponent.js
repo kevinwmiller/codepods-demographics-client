@@ -108,8 +108,8 @@ class MapComponent extends Component {
                         lat={-25.363}
                         lng={131.044}
                         metricName={this.props.metricName}
-                    />
- 
+                    />     
+
  <MapMarker lat={-26.36} lng={132.042} />
                 </GoogleMapReact>
              
