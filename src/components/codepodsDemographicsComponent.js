@@ -20,6 +20,7 @@ class CodepodsDemographicsComponent extends Component {
         this.state = {
             metricLabel: '',
             metricName: '',
+            latlng: [],
         };
     }
 
@@ -27,6 +28,7 @@ class CodepodsDemographicsComponent extends Component {
         this.setState({
             metricLabel,
             metricName: data.value,
+            latlng: [{ lat: 39, lng: -76}],        
         });
     }
     /**
