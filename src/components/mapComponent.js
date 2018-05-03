@@ -27,11 +27,11 @@ class MapComponent extends Component {
                     center={{ lat: 39.2556, lng: -76.7110 }}
                     zoom={11}
                 >
-                    <MetricLabel
+                    {/*<MetricLabel
                         lat={39.2556}
                         lng={-76.7110}
                         metricName={this.props.metricName}
-                    />
+                    />*/}
                 </GoogleMapReact>
             </div>
         );
