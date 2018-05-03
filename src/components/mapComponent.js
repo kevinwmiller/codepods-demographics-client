@@ -21,6 +21,7 @@ class MapComponent extends Component {
         Renders the 'message' property, and will also add a person's name returned
             by the express server (Stored in this.state.response  @see {@link getApiData})
     */
+    loadMap(); 
     componentDidUpdate(prevProps, prevState) {
         this.loadMap();
     }
@@ -46,36 +47,70 @@ class MapComponent extends Component {
 
         // Set up first heatmap data
         var heatmapData1 = [];
-        heatmapData1.push({
-            location: new google.maps.LatLng(39.2556, -76.7110),
-            weight: 1
-        })
+
+        for (var i = 0; i < 15; i++) {
+            var change =  Math.random();
+            var sign = 1;
+            if (Math.random() > .49) {
+                sign = -1;
+            }
+            change *= sign;
+            // Test marker
+            const marker = new google.maps.Marker({
+                position: {lat: 39.2556 + change, lng:-76.7110 + change},
+                map: this.map,
+                title: "info"
+            })
+
+            heatmapData1.push({
+
+                location: new google.maps.LatLng(39.2556 + change, -76.7110 + change),
+                weight: 1
+            })
+        }
 
         // Set up second heatmap data
         var heatmapData2 = [];
-        heatmapData2.push({
-            location: new google.maps.LatLng(39.2655, -76.811),
-            weight: 1
-        })
+        for (var i = 0; i < 15; i++) {
+            var change =  Math.random();
+            var sign = 1;
+            if (Math.random() > .49) {
+                sign = -1;
+            }
+            change *= sign;
+            // Test marker
+            const marker = new google.maps.Marker({
+                position: {lat: 39.2655 + change, lng:-76.811 + change},
+                map: this.map,
+                title: "info"
+            })
 
-        // Test marker
-        const marker = new google.maps.Marker({
-            position: {lat: 39.2556, lng:-76.7110},
-            map: this.map,
-            title: "info"
-        })
+            heatmapData2.push({
+
+                location: new google.maps.LatLng(39.2655 + change, -76.811 + change),
+                weight: 1
+            })
+        }
 
         // Makes the first heatmap
         var heatmap1 = new google.maps.visualization.HeatmapLayer({
             data: heatmapData1,
-            radius: 40
+            radius: 25,
+            gradient: [ 
+                'rgba(0, 255, 0, 0)',
+                'rgba(0, 255, 0, 1)',
+            ]
         });
         heatmap1.setMap(this.map);
 
         // Makes the second heatmap
         var heatmap2 = new google.maps.visualization.HeatmapLayer({
             data: heatmapData2,
-            radius: 40
+            radius: 25,
+            gradient: [ 
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
+            ]
         });
         heatmap2.setMap(this.map);
 
