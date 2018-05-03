@@ -21,7 +21,10 @@ class MapComponent extends Component {
         Renders the 'message' property, and will also add a person's name returned
             by the express server (Stored in this.state.response  @see {@link getApiData})
     */
-    loadMap(); 
+    componentDidMount(){
+        this.loadMap(); 
+    }
+
     componentDidUpdate(prevProps, prevState) {
         this.loadMap();
     }
