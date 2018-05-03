@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+ 
+ <title>reading file</title>
+ <script type="text/javascript">
+ 
+ //var hello = "Howdy,Howdy2,Howdy3";
+ //var helloarray = hello.split(",");
+ //for(i=0;i<helloarray.length;i++)  
+ //   alert(helloarray[i]);
+
+
+
+
+	var reader = new FileReader();
+	function readText(that){
+
+		if(that.files && that.files[0]){
+			var reader = new FileReader();
+			reader.onload = function (e) {  
+				var allTextLines = e.target.result.split(/,|\r\n|\n/);
+  
+  			document.getElementById('main').innerHTML= allTextLines;
+			};//end onload()
+			reader.readAsText(that.files[0]);
+		}//end if html5 filelist support
+	}
+</script>
+</head>
+<body>
+	<input type="file" onchange='readText(this)' />
+	<div id="main"></div>
+  </body>
+</html>
