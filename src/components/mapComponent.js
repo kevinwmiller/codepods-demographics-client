@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import PropTypes from 'react'
 import ReactDOM from 'react-dom'
 import {Map, GoogleApiWrapper} from 'google-maps-react'
 
 const config = require('../config');
 
+/*
+const MetricLabel = ({ metricName }) => <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{metricName}</div>;
+
+MetricLabel.propTypes = {
+    metricName: PropTypes.string.isRequired,
+};
+*/
 /**
   * A wrapper around a GoogleMap component that controls the rendering of different metric data
   * @reactProps {string} metricName - The metric to display
@@ -15,17 +21,13 @@ class MapComponent extends Component {
         Renders the 'message' property, and will also add a person's name returned
             by the express server (Stored in this.state.response  @see {@link getApiData})
     */
-
-    componentDidMount() {
-        this.loadMap(39.2556, -76.7110);
-    }
-
+    loadMap(); 
     componentDidUpdate(prevProps, prevState) {
-        this.loadMap(39.2556, -76.7110);
+        this.loadMap();
     }
 
     // Does the actual work to set up the map
-    loadMap(lat, lng) {
+    loadMap() {
         if (this.props && this.props.google) {
             const {google} = this.props;
             const maps = google.maps;
@@ -36,10 +38,9 @@ class MapComponent extends Component {
 
     // Configure all the things
     const mapConfig = Object.assign({}, {
-        center: {lat: lat, lng:lng},
-        gestureHandling: "cooperative",
+        center: {lat: 39.2556, lng:-76.7110},
         zoom: 11
-    })
+        })
 
         // Make a new map
         this.map = new maps.Map(node, mapConfig);
@@ -54,21 +55,12 @@ class MapComponent extends Component {
                 sign = -1;
             }
             change *= sign;
-
             // Test marker
-            const markerGood = new google.maps.Marker({
+            const marker = new google.maps.Marker({
                 position: {lat: 39.2556 + change, lng:-76.7110 + change},
                 map: this.map,
-                title: "good"
+                title: "info"
             })
-
-            var infowindowGood = new google.maps.InfoWindow({
-                content: `<h3> Good marker </h3>`
-            })
-
-            markerGood.addListener('click', function() {
-                infowindowGood.open(this.map, markerGood);
-            });
 
             heatmapData1.push({
 
@@ -87,19 +79,11 @@ class MapComponent extends Component {
             }
             change *= sign;
             // Test marker
-            const markerBad = new google.maps.Marker({
+            const marker = new google.maps.Marker({
                 position: {lat: 39.2655 + change, lng:-76.811 + change},
                 map: this.map,
-                title: "bad"
+                title: "info"
             })
-
-            var infowindowBad = new google.maps.InfoWindow({
-                content: `<h3> Bad marker </h3>`
-            })
-
-            markerBad.addListener('click', function() {
-                infowindowBad.open(this.map, markerBad);
-            });
 
             heatmapData2.push({
 
@@ -108,10 +92,10 @@ class MapComponent extends Component {
             })
         }
 
-        // Makes the first heatmap good
+        // Makes the first heatmap
         var heatmap1 = new google.maps.visualization.HeatmapLayer({
             data: heatmapData1,
-            radius: 51,
+            radius: 25,
             gradient: [ 
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
@@ -119,10 +103,10 @@ class MapComponent extends Component {
         });
         heatmap1.setMap(this.map);
 
-        // Makes the second heatmap bad
+        // Makes the second heatmap
         var heatmap2 = new google.maps.visualization.HeatmapLayer({
             data: heatmapData2,
-            radius: 50,
+            radius: 25,
             gradient: [ 
                 'rgba(255, 0, 0, 0)',
                 'rgba(255, 0, 0, 1)',
