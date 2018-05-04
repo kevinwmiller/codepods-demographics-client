@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid } from 'semantic-ui-react';
 import Qs from 'qs'
 import server from '../services/server';
+import fetchMetricData from '../metrics'
 
 // Only require those which are needed in the current component
 import MapComponent from './mapComponent';
@@ -19,11 +20,6 @@ class CodepodsDemographicsComponent extends Component {
     constructor(props) {
         super(props);
 
-        this.apiEndpoints = {
-            crime: this.fetchCrimeData,
-            // income: this.notImplemented,
-            // commute: this.notImplemented
-        }
 
         this.state = {
             metricLabel: '',
