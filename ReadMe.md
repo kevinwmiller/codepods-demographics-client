@@ -53,9 +53,9 @@ Use your distro's package manager to install VirtualBox, Vagrant, and Git
 4.	Start the web server and client
 	-	  vagrant ssh
 	-	  cd /vagrant
-	-	  yarn start-dev (just yarn start for the front end)
+	-	  yarn start-dev 
 		-	yarn start-dev will start the client server. Changes made on the host machine will be reflected automatically on the web site
-
+	(just yarn start for the front end)
 
 ### Installing
 
