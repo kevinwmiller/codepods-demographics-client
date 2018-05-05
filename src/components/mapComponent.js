@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types';
 import {GoogleApiWrapper} from 'google-maps-react'
 
 const config = require('../config');
@@ -16,7 +17,11 @@ MetricLabel.propTypes = {
   * @reactProps {string} metricName - The metric to display
   */
 
+
+
 class MapComponent extends Component {
+
+
 
     constructor() {
         super();
@@ -27,6 +32,7 @@ class MapComponent extends Component {
         }
     }
 
+    
     processCrime = (data) => {
         if (!data) {
             return [];
@@ -83,10 +89,11 @@ class MapComponent extends Component {
         return heatmapData;
     }
 
-    /**
-        Renders the 'message' property, and will also add a person's name returned
-            by the express server (Stored in this.state.response  @see {@link getApiData})
-    */
+   
+    onMarkerClick(data) {
+        this.props.onMarkerClickCallback(data);
+    }
+
     componentDidMount(){
         this.loadMap(); 
     }
@@ -101,6 +108,11 @@ class MapComponent extends Component {
         else if (this.props.metricName === "commute") {
             this.commuteMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
         }
+    }
+
+    myFunct() {
+        console.log("Test")
+
     }
 
     // Initial Load
@@ -167,16 +179,18 @@ class MapComponent extends Component {
         var newlocs = this.getHeatmapData(this.props.metricName, this.props.metricData)
         var heatmapDataGood = [];
             
+        var exData = ["Assault", "Robbery", "Sad"]
         for (var i = 0; i < newlocs["positions"].length; i++) {
 
             const marker = new google.maps.Marker({
                 position: new google.maps.LatLng(newlocs["positions"][i]["lat"], newlocs["positions"][i]["lng"]),
-                map:this.map
+                map: this.map,
+                information: exData[i]
             })
 
-            marker.addListener('click', function() {
-                console.log("How criminal")
-            })
+
+            marker.addListener('click', () => this.onMarkerClick(marker.information));
+
 
             heatmapDataGood.push({
                 location: new google.maps.LatLng(newlocs["positions"][i]["lat"], newlocs["positions"][i]["lng"]),
@@ -225,6 +239,7 @@ class MapComponent extends Component {
 
         var heatmapDataGood = [];
         
+
         for (var i = 0; i < 10; i++) {
 
             const marker = new google.maps.Marker({
@@ -322,6 +337,10 @@ class MapComponent extends Component {
         );
     }
 }
+
+MapComponent.propTypes = {
+    onMarkerClickCallback: PropTypes.func.isRequired,
+};
 
 export default GoogleApiWrapper({
     apiKey: config.googleMapsApiKey,

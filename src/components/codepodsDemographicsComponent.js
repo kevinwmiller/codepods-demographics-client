@@ -115,6 +115,14 @@ class CodepodsDemographicsComponent extends Component {
         }
     }
 
+    onMarkerClick = (data) => {
+        this.setState({
+            metricInfo: data
+        })
+
+    
+    }
+
     render() {
         return (
             <div>
@@ -122,7 +130,7 @@ class CodepodsDemographicsComponent extends Component {
                 <Grid columns={2} divided>
                     <Grid.Row>
                         <Grid.Column>
-                            <MapComponent onMapChange={this.onMapChange} metricName={this.state.metricName} metricData={this.state.metricData} />
+                            <MapComponent onMarkerClickCallback={this.onMarkerClick} onMapChange={this.onMapChange} metricName={this.state.metricName} metricData={this.state.metricData} />
                         </Grid.Column>
                         <Grid.Column>
                             <MetricStatisticsComponent metricStatistics={
