@@ -15,9 +15,19 @@ class MetricStatisticsComponent extends Component {
                         <h2 className="ui header">
                             {this.props.metricStatistics.metricLabel} Statistics
                         </h2>
-                        : null
+                        : <h3> Statistics </h3>
+               }
+               {
+                    this.props.metricStatistics.metricInfo ?
+                        <h3 className="ui menu">
+                            {this.props.metricStatistics.metricInfo}
+                        </h3>
+                        : <h3> Data </h3>
+               
                 }
             </Segment>
+
+
         );
     }
 }
@@ -26,9 +36,10 @@ class MetricStatisticsComponent extends Component {
 MetricStatisticsComponent.propTypes = {
     metricStatistics: PropTypes.shape({
         metricLabel: PropTypes.string.isRequired,
-        metricValues: PropTypes.arrayOf(PropTypes.shape({
+        metricData: PropTypes.arrayOf(PropTypes.shape({
             value: PropTypes.number,
         })).isRequired,
+        metricInfo: PropTypes.string.isRequired,
     }).isRequired,
 };
 
