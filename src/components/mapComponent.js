@@ -21,8 +21,6 @@ MetricLabel.propTypes = {
 
 class MapComponent extends Component {
 
-
-
     constructor() {
         super();
         this.metricProcessors = {
@@ -79,11 +77,11 @@ class MapComponent extends Component {
         let heatmapData = [];
         // if (metricName in this.metricProcessors) {
             try {
-                console.log('setting heatmap', data);
+                //console.log('setting heatmap', data);
                 heatmapData = {
                     positions: this.processCrime(data),
                 };
-                console.log(heatmapData);
+//                console.log(heatmapData);
             } catch (err) {
                 console.log('aaaaaaaahahahha')
             }
@@ -91,11 +89,17 @@ class MapComponent extends Component {
         return heatmapData;
     }
 
-   
+    // Callback click function
     onMarkerClick(data) {
         this.props.onMarkerClickCallback(data);
     }
 
+    mapChange(bounds) {
+        this.props.onMapChange(bounds);
+    }
+
+
+    // Initital load
     componentDidMount(){
         this.loadMap(); 
     }
@@ -152,12 +156,15 @@ class MapComponent extends Component {
 
         // Make a new map
         this.map = new maps.Map(node, mapConfig);
-
-        //this.map.addListener("bounds_changed", function());
     
         // Set up the bounds for the grid
         var bounds = this.map.getBounds();
         
+
+        // Update the heatmap when the bounds change
+        this.map.addListener("dragend", () => this.mapChange(bounds));
+        this.map.addListener("zoom_changed", () => this.mapChange(bounds));
+
         // Get the edges
         var smallestLat = bounds.getSouthWest().lat();
         var smallestLng = bounds.getSouthWest().lng();
@@ -236,12 +243,14 @@ class MapComponent extends Component {
                 var centerLat = leftBound + (totalLat/dim)/2;
                 var centerLng = bottomBound + (totalLng/dim)/2;
 
+                // If there is a crime make it red
                 if (grid[i][j] > 0) {
                     heatmapDataBad.push({
                         location: new google.maps.LatLng(centerLat, centerLng),
                         weight: 1
                     })
 
+                    // Add a marker with info about the crime
                     const marker = new google.maps.Marker({
                         position: new google.maps.LatLng(centerLat, centerLng),
                         map: this.map,
@@ -250,7 +259,7 @@ class MapComponent extends Component {
 
                     marker.addListener('click', () => this.onMarkerClick(marker.information));
 
-
+                // If there is no crime make it green
                 } else {
                     heatmapDataGood.push({
                         location: new google.maps.LatLng(centerLat, centerLng),
@@ -260,7 +269,7 @@ class MapComponent extends Component {
             }
         }
 
-         // Makes the first heatmap
+         // Makes green (good) heatmap
         var heatmapGood = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataGood,
             radius: 45,
@@ -271,6 +280,7 @@ class MapComponent extends Component {
         });
         heatmapGood.setMap(this.map);
         
+        // Makes the red (bad) heatmap
         var heatmapBad = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataBad,
             radius: 45,
@@ -412,6 +422,7 @@ class MapComponent extends Component {
 
 MapComponent.propTypes = {
     onMarkerClickCallback: PropTypes.func.isRequired,
+    onMapChange: PropTypes.func.isRequired
 };
 
 export default GoogleApiWrapper({
