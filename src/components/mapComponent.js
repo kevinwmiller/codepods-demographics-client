@@ -58,7 +58,9 @@ class MapComponent extends Component {
         return [
             {lat: 39.3278, lng: -76.6192}, 
             {lat: 39.103969, lng: -76.843785}, 
-            {lat: 39.0957812, lng: -76.84830029999999}
+            {lat: 39.0957812, lng: -76.84830029999999},
+            {lat: 39.12, lng: -76.9},
+            {lat: 39.32, lng: -76.5},  
         ]
 
         return [
@@ -110,10 +112,6 @@ class MapComponent extends Component {
         }
     }
 
-    myFunct() {
-        console.log("Test")
-
-    }
 
     // Initial Load
     loadMap() {
@@ -155,53 +153,117 @@ class MapComponent extends Component {
         // Make a new map
         this.map = new maps.Map(node, mapConfig);
 
-        this.map.addListener("bounds_changed", function(){
-           
-
-        });
-
-        var bounds = this.map.getBounds();
-        console.log("Lat", bounds.getSouthWest().lat(), bounds.getSouthWest().lng(), "Lng", bounds.getNorthEast().lat(), bounds.getNorthEast().lng());
+        //this.map.addListener("bounds_changed", function());
     
+        // Set up the bounds for the grid
+        var bounds = this.map.getBounds();
+        
+        // Get the edges
         var smallestLat = bounds.getSouthWest().lat();
         var smallestLng = bounds.getSouthWest().lng();
         var largestLat = bounds.getNorthEast().lat();
         var largestLng = bounds.getNorthEast().lng();
 
+        // Find how much total lat and lng are taken up
         var totalLat = largestLat - smallestLat;
         var totalLng = largestLng - smallestLng;
 
-        console.log("TotalLat: ", totalLat, "TotalLng: ", totalLng);
+        // init grid for points and grid for info for those points
+        var grid = [];
+        var gridData = [];
 
-        var grid = []
+        // This make a 10x10 grid
+        var dim = 10;
+
+        // Build the grid
+        for (var i = 0; i < dim; i++) {
+            var row = [];
+            var rowData = [];
+            for (var j = 0; j < dim; j++) {
+                row.push(0)
+                rowData.push([]);
+            }
+            grid.push(row)
+            gridData.push(rowData)
+        }
+        
 
         // Set up first heatmap data
         var newlocs = this.getHeatmapData(this.props.metricName, this.props.metricData)
-        var heatmapDataGood = [];
             
         var exData = ["Assault", "Robbery", "Sad"]
+        // Iterate through all given information
         for (var i = 0; i < newlocs["positions"].length; i++) {
 
-            const marker = new google.maps.Marker({
-                position: new google.maps.LatLng(newlocs["positions"][i]["lat"], newlocs["positions"][i]["lng"]),
-                map: this.map,
-                information: exData[i]
-            })
+            // Get instance of lat and lng for convienence
+            var thisLat = newlocs["positions"][i]["lat"];
+            var thisLng = newlocs["positions"][i]["lng"];   
+
+            // Put that in the grid at the correct position
+            for (var j = 0; j < dim; j++) {
+                for (var k = 0; k < dim; k++){
+                    
+                    // Set up the bounds for that location
+                    var leftBound = smallestLat + (totalLat / dim) * k;
+                    var rightBound = leftBound + (totalLat / dim);
+                    var bottomBound = smallestLng + (totalLng / dim) * j;
+                    var topBound = bottomBound +(totalLng / dim);
+
+                    // Check left, right, up, down bounds
+                    if (thisLat >= leftBound && thisLat <= rightBound && thisLng <= topBound && thisLng >= bottomBound){
+                        // If in update grid to be +1
+                        grid[j][k] += 1;
+                        gridData[j][k].push(exData[0])
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Build the heatmaps out of the data 
+        var heatmapDataGood = [];
+        var heatmapDataBad  = [];
+
+        // Iterate through the built grid
+        for (var i = 0; i < dim; i++) {
+            for (var j = 0; j < dim; j++) {
+
+                // Get info for convience
+                var leftBound = smallestLat + (totalLat / dim) * j;
+                var bottomBound = smallestLng + (totalLng / dim) * i;
+
+                // Lat and lng for where the heatmap dot will be center upon
+                var centerLat = leftBound + (totalLat/dim)/2;
+                var centerLng = bottomBound + (totalLng/dim)/2;
+
+                if (grid[i][j] > 0) {
+                    heatmapDataBad.push({
+                        location: new google.maps.LatLng(centerLat, centerLng),
+                        weight: 1
+                    })
+
+                    const marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(centerLat, centerLng),
+                        map: this.map,
+                        information: gridData[i][j][0]
+                    });
+
+                    marker.addListener('click', () => this.onMarkerClick(marker.information));
 
 
-            marker.addListener('click', () => this.onMarkerClick(marker.information));
-
-
-            heatmapDataGood.push({
-                location: new google.maps.LatLng(newlocs["positions"][i]["lat"], newlocs["positions"][i]["lng"]),
-                weight: 1
-            })
+                } else {
+                    heatmapDataGood.push({
+                        location: new google.maps.LatLng(centerLat, centerLng),
+                        weight: 1
+                    })
+                }
+            }
         }
 
          // Makes the first heatmap
         var heatmapGood = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataGood,
-            radius: 30,
+            radius: 45,
             gradient: [ 
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
@@ -209,6 +271,16 @@ class MapComponent extends Component {
         });
         heatmapGood.setMap(this.map);
         
+        var heatmapBad = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataBad,
+            radius: 45,
+            gradient: [
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
+            ]
+        });
+        heatmapBad.setMap(this.map);   
+
         }
     }
 
