@@ -19,7 +19,7 @@ class MetricStatisticsComponent extends Component {
                }
                {
                     this.props.metricStatistics.metricInfo ?
-                        <h3 className="ui menu">
+                        <h3 className="ui header">
                             {this.props.metricStatistics.metricInfo}
                         </h3>
                         : <h3> Data </h3>

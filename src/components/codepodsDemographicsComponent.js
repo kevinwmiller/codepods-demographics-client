@@ -42,6 +42,8 @@ class CodepodsDemographicsComponent extends Component {
      * @return     {<type>}  { crime information }
      */
     fetchCrimeData = async (bounds) => {
+
+        console.log("FETCH THE DATA");
         const response = await server.get('/crime', {
             params: {
                 startDate: '2018-04-30',
@@ -59,7 +61,7 @@ class CodepodsDemographicsComponent extends Component {
             },
             // Prevent axios from encoding our json object incorrectly
             paramsSerializer: function(params) {
-                console.log("Response", Qs.stringify(params, {arrayFormat: 'brackets'}));
+                console.log("Serial");
                 return Qs.stringify(params, {arrayFormat: 'brackets'});
             },
         });
@@ -103,6 +105,7 @@ class CodepodsDemographicsComponent extends Component {
         this.setState({
             metricLabel,
             metricName: data.value,
+            metricInfo: "",
         });
         
     }
@@ -129,10 +132,10 @@ class CodepodsDemographicsComponent extends Component {
                 <MetricSelectionComponent onMetricChangeCallback={this.onMetricChange} />
                 <Grid columns={2} divided>
                     <Grid.Row>
-                        <Grid.Column>
+                        <Grid.Column width={10}>
                             <MapComponent onMarkerClickCallback={this.onMarkerClick} onMapChange={this.onMapChange} metricName={this.state.metricName} metricData={this.state.metricData} />
                         </Grid.Column>
-                        <Grid.Column>
+                        <Grid.Column width={6}>
                             <MetricStatisticsComponent metricStatistics={
                                 {
                                     metricLabel: this.state.metricLabel,

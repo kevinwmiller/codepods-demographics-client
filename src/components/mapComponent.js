@@ -29,7 +29,6 @@ class MapComponent extends Component {
             commute: this.notImplemented
         }
     }
-
     
     processCrime = (data) => {
         if (!data) {
@@ -54,11 +53,22 @@ class MapComponent extends Component {
         }
 
         return [
-            {lat: 39.3278, lng: -76.6192}, 
-            {lat: 39.103969, lng: -76.843785}, 
-            {lat: 39.0957812, lng: -76.84830029999999},
-            {lat: 39.12, lng: -76.9},
-            {lat: 39.32, lng: -76.5},  
+            {lat: 39.3278, lng: -76.6192, category: "violent"}, 
+            {lat: 39.103969, lng: -76.843785, category: "violent"}, 
+            {lat: 39.0957812, lng: -76.84830029999999, category: "violent"},
+            {lat: 39.12, lng: -76.9, category: "property"},
+            {lat: 39.32, lng: -76.5, category: "property"},  
+            {lat: 39.4, lng: -76.66, category: "violent"}, 
+            {lat: 39.11234, lng: -76.3456, category: "violent"}, 
+            {lat: 39.0543, lng: -76.7534, category: "violent"},
+            {lat: 39.234, lng: -76.64, category: "property"},
+            {lat: 39.634, lng: -76.23, category: "property"},  
+            {lat: 39.745, lng: -76.43, category: "violent"}, 
+            {lat: 39.543, lng: -76.643, category: "violent"}, 
+            {lat: 39.1234, lng: -76.83453, category: "violent"},
+            {lat: 39.643, lng: -76.345, category: "property"},
+            {lat: 39.32, lng: -76.1234, category: "property"},  
+
         ]
 
         return [
@@ -104,6 +114,7 @@ class MapComponent extends Component {
         this.loadMap(); 
     }
 
+    // Display whatever metric that is selected
     componentDidUpdate(prevProps, prevState) {
         if (this.props.metricName === "crime") {
            this.crimeMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
@@ -160,12 +171,11 @@ class MapComponent extends Component {
         // Set up the bounds for the grid
         var bounds = this.map.getBounds();
         
-
         // Update the heatmap when the bounds change
         this.map.addListener("dragend", () => this.mapChange(bounds));
         this.map.addListener("zoom_changed", () => this.mapChange(bounds));
 
-        // Get the edges
+        // Get the edges of the boundary
         var smallestLat = bounds.getSouthWest().lat();
         var smallestLng = bounds.getSouthWest().lng();
         var largestLat = bounds.getNorthEast().lat();
@@ -179,7 +189,7 @@ class MapComponent extends Component {
         var grid = [];
         var gridData = [];
 
-        // This make a 10x10 grid
+        // This makes a 10x10 grid
         var dim = 10;
 
         // Build the grid
@@ -194,7 +204,6 @@ class MapComponent extends Component {
             gridData.push(rowData)
         }
         
-
         // Set up first heatmap data
         var newlocs = this.getHeatmapData(this.props.metricName, this.props.metricData)
             
@@ -220,7 +229,7 @@ class MapComponent extends Component {
                     if (thisLat >= leftBound && thisLat <= rightBound && thisLng <= topBound && thisLng >= bottomBound){
                         // If in update grid to be +1
                         grid[j][k] += 1;
-                        gridData[j][k].push(exData[0])
+                        gridData[j][k].push({"category": newlocs["positions"][i]["category"]}) 
                         break;
                     }
                 }
@@ -230,6 +239,7 @@ class MapComponent extends Component {
         // Build the heatmaps out of the data 
         var heatmapDataGood = [];
         var heatmapDataBad  = [];
+        var heatmapDataMiddle = [];
 
         // Iterate through the built grid
         for (var i = 0; i < dim; i++) {
@@ -243,18 +253,41 @@ class MapComponent extends Component {
                 var centerLat = leftBound + (totalLat/dim)/2;
                 var centerLng = bottomBound + (totalLng/dim)/2;
 
-                // If there is a crime make it red
+                // If there is a crime make it yellow or red based on what crimes happened there
                 if (grid[i][j] > 0) {
-                    heatmapDataBad.push({
-                        location: new google.maps.LatLng(centerLat, centerLng),
-                        weight: 1
-                    })
+
+                    var crimeInfo = "";
+                    var violent = 0;
+                    var nonViolent = 0;
+                    for (var k = 0; k < gridData[i][j].length; k++) {
+                        // Would build info about the crime 
+                        crimeInfo += gridData[i][j][k]["category"];
+                        if (gridData[i][j][k]["category"] == "violent") {
+                            violent += 1
+                        } else {
+                            nonViolent += 1
+                        }
+                    }
+
+                    // Find out which to put it in
+                    if (violent >= nonViolent) {
+                        heatmapDataBad.push({
+                            location: new google.maps.LatLng(centerLat, centerLng),
+                            weight: 1
+                        })
+                    } else {
+                        heatmapDataMiddle.push({
+                            location: new google.maps.LatLng(centerLat, centerLng),
+                            weight: 1
+                        })
+                    }
+
 
                     // Add a marker with info about the crime
                     const marker = new google.maps.Marker({
                         position: new google.maps.LatLng(centerLat, centerLng),
                         map: this.map,
-                        information: gridData[i][j][0]
+                        information: crimeInfo
                     });
 
                     marker.addListener('click', () => this.onMarkerClick(marker.information));
@@ -272,7 +305,7 @@ class MapComponent extends Component {
          // Makes green (good) heatmap
         var heatmapGood = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataGood,
-            radius: 45,
+            radius: 75,
             gradient: [ 
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
@@ -280,10 +313,23 @@ class MapComponent extends Component {
         });
         heatmapGood.setMap(this.map);
         
+        // Makes yellow (middle) heatmap
+        var heatmapMiddle = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataMiddle,
+            radius: 80,
+            gradient: [
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        })
+        heatmapMiddle.setMap(this.map);
+        
+
+
         // Makes the red (bad) heatmap
         var heatmapBad = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataBad,
-            radius: 45,
+            radius: 75,
             gradient: [
                 'rgba(255, 0, 0, 0)',
                 'rgba(255, 0, 0, 1)',
@@ -313,27 +359,17 @@ class MapComponent extends Component {
         // Make a new map
         this.map = new maps.Map(node, mapConfig);
 
-        this.map.addListener("bounds_changed", function(){
-           
+        // Grab the bounds
+        var bounds = this.map.getBounds();
 
-        });
+        // Update the heatmap when the bounds change
+        this.map.addListener("dragend", () => this.mapChange(bounds));
+        this.map.addListener("zoom_changed", () => this.mapChange(bounds));
 
 
         var heatmapDataGood = [];
         
-
         for (var i = 0; i < 10; i++) {
-
-            const marker = new google.maps.Marker({
-                position: new google.maps.LatLng(39.2556-i/100, -76.7110-i/100),
-                map:this.map
-
-            })
-
-            marker.addListener('click', function() {
-                console.log("Making that money")
-            })
-
             heatmapDataGood.push({
             location: new google.maps.LatLng(39.2556-i/100, -76.7110-i/100),
               weight: 1
@@ -353,7 +389,9 @@ class MapComponent extends Component {
         }
     }
 
-    // Load the commute map
+    /* 
+     * Load the commute heatmap
+     */
     commuteMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -372,27 +410,22 @@ class MapComponent extends Component {
         // Make a new map
         this.map = new maps.Map(node, mapConfig);
 
-        this.map.addListener("bounds_changed", function(){
-           
-        });
+        // Grab the bounds
+        var bounds = this.map.getBounds();
+
+        // Update the heatmap when the bounds change
+        this.map.addListener("dragend", () => this.mapChange(bounds));
+        this.map.addListener("zoom_changed", () => this.mapChange(bounds));
 
         var heatmapDataGood = [];
         
+        // Add some fake data for now
         for (var i = 0; i < 10; i++) {
             heatmapDataGood.push({
             location: new google.maps.LatLng(39.2556+i/100, -76.7110+i/100),
               weight: 1
             })
 
-            const marker = new google.maps.Marker({
-                position: new google.maps.LatLng(39.2556+i/100, -76.7110+i/100),
-                map:this.map
-
-            })
-
-            marker.addListener('click', function() {
-                console.log("Zoom")
-            })
         }
         
         // Makes the first heatmap
@@ -407,7 +440,6 @@ class MapComponent extends Component {
         heatmapGood.setMap(this.map);
         }
     }
-
 
     render() {
 
