@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
 import {GoogleApiWrapper} from 'google-maps-react'
 
+
 const config = require('../config');
 
 /*
@@ -368,24 +369,60 @@ class MapComponent extends Component {
 
 
         var heatmapDataGood = [];
+        var heatmapDataMiddle = [];
+        var heatmapDataBad = [];
         
-        for (var i = 0; i < 10; i++) {
-            heatmapDataGood.push({
-            location: new google.maps.LatLng(39.2556-i/100, -76.7110-i/100),
-              weight: 1
-            })
-        }
+        heatmapDataGood.push(new google.maps.LatLng(39.2556, -76.3452))
+        heatmapDataGood.push(new google.maps.LatLng(39.2345, -76.6453))
+        heatmapDataGood.push(new google.maps.LatLng(39.6324, -76.3412))
+        heatmapDataGood.push(new google.maps.LatLng(39.7564, -76.7645))
+        heatmapDataGood.push(new google.maps.LatLng(39.4532, -76.2345))
 
-        // Makes the first heatmap
+        heatmapDataMiddle.push(new google.maps.LatLng(39.3453, -76.2345))
+        heatmapDataMiddle.push(new google.maps.LatLng(39.6754, -76.6432))         
+        heatmapDataMiddle.push(new google.maps.LatLng(39.2433, -76.1345))
+        heatmapDataMiddle.push(new google.maps.LatLng(39.7543, -76.5643))         
+        heatmapDataMiddle.push(new google.maps.LatLng(39.4864, -76.5346))    
+
+        heatmapDataBad.push(new google.maps.LatLng(39.6343, -76.23456))
+        heatmapDataBad.push(new google.maps.LatLng(39.23452, -76.7564))         
+        heatmapDataBad.push(new google.maps.LatLng(39.5764, -76.34533))
+        heatmapDataBad.push(new google.maps.LatLng(39.2346, -76.7433))         
+        heatmapDataBad.push(new google.maps.LatLng(39.9786, -76.2345))    
+ 
+        // Makes the green (good) heatmap
         var heatmapGood = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataGood,
-            radius: 30,
+            radius: 70,
             gradient: [ 
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
             ]
         });
         heatmapGood.setMap(this.map);
+
+        // Makes the yellow (middle) heatmap
+        var heatmapMiddle = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataMiddle,
+            radius: 70,
+            gradient: [ 
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        });
+        heatmapMiddle.setMap(this.map);
+
+        // Makes the red (bad) heatmap
+        var heatmapBad = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataBad,
+            radius: 70,
+            gradient: [ 
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
+            ]
+        });
+        heatmapBad.setMap(this.map);
+
         }
     }
 
@@ -417,27 +454,64 @@ class MapComponent extends Component {
         this.map.addListener("dragend", () => this.mapChange(bounds));
         this.map.addListener("zoom_changed", () => this.mapChange(bounds));
 
-        var heatmapDataGood = [];
-        
-        // Add some fake data for now
-        for (var i = 0; i < 10; i++) {
-            heatmapDataGood.push({
-            location: new google.maps.LatLng(39.2556+i/100, -76.7110+i/100),
-              weight: 1
-            })
 
-        }
+
+
+        var heatmapDataGood = [];
+        var heatmapDataMiddle = [];
+        var heatmapDataBad = [];
         
-        // Makes the first heatmap
+        heatmapDataGood.push(new google.maps.LatLng(39.2556, -76.3452))
+        heatmapDataGood.push(new google.maps.LatLng(39.2345, -76.7453))
+        heatmapDataGood.push(new google.maps.LatLng(39.2643, -76.3412))
+        heatmapDataGood.push(new google.maps.LatLng(39.2754, -76.7645))
+        heatmapDataGood.push(new google.maps.LatLng(39.3754, -76.2345))
+
+        heatmapDataMiddle.push(new google.maps.LatLng(39.4352, -76.5322))
+        heatmapDataMiddle.push(new google.maps.LatLng(39.3452, -76.23452))         
+        heatmapDataMiddle.push(new google.maps.LatLng(39.6433, -76.45342))
+        heatmapDataMiddle.push(new google.maps.LatLng(39.1345, -76.8545))         
+        heatmapDataMiddle.push(new google.maps.LatLng(39.8675, -76.1345))    
+
+        heatmapDataBad.push(new google.maps.LatLng(39.6343, -76.23452))
+        heatmapDataBad.push(new google.maps.LatLng(39.23452, -76.6453))         
+        heatmapDataBad.push(new google.maps.LatLng(39.4325, -76.33543))
+        heatmapDataBad.push(new google.maps.LatLng(39.7434, -76.3532))         
+        heatmapDataBad.push(new google.maps.LatLng(39.3452, -76.24352))    
+ 
+        // Makes the green (good) heatmap
         var heatmapGood = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataGood,
-            radius: 30,
+            radius: 70,
             gradient: [ 
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
             ]
         });
         heatmapGood.setMap(this.map);
+
+        // Makes the yellow (middle) heatmap
+        var heatmapMiddle = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataMiddle,
+            radius: 70,
+            gradient: [ 
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        });
+        heatmapMiddle.setMap(this.map);
+
+        // Makes the red (bad) heatmap
+        var heatmapBad = new google.maps.visualization.HeatmapLayer({
+            data: heatmapDataBad,
+            radius: 70,
+            gradient: [ 
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
+            ]
+        });
+        heatmapBad.setMap(this.map);
+
         }
     }
 
