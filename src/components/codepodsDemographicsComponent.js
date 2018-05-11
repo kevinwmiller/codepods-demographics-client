@@ -59,9 +59,11 @@ class CodepodsDemographicsComponent extends Component {
             },
             // Prevent axios from encoding our json object incorrectly
             paramsSerializer: function(params) {
+                console.log("Response", Qs.stringify(params, {arrayFormat: 'brackets'}));
                 return Qs.stringify(params, {arrayFormat: 'brackets'});
             },
         });
+
         return response;
     }
 
@@ -119,8 +121,6 @@ class CodepodsDemographicsComponent extends Component {
         this.setState({
             metricInfo: data
         })
-
-    
     }
 
     render() {
