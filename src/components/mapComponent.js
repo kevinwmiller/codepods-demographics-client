@@ -55,7 +55,7 @@ class MapComponent extends Component {
             // Configure all the things
             const mapConfig = {
                 center: {lat: 39.2556, lng:-76.7110},
-                zoom: 11,
+                zoom: 14,
             };
 
             this.map = new maps.Map(node, mapConfig);

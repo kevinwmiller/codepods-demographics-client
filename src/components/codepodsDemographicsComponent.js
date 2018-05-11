@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'semantic-ui-react';
-// import server from '../services/server';
+import logo from '../logo-main.png';
 
 // Only require those which are needed in the current component
 import MapComponent from './mapComponent';
@@ -40,7 +40,6 @@ class CodepodsDemographicsComponent extends Component {
             metricLabel,
             metricName: data.value,
         });
-        
     }
 
     onMarkerClick = (data) => {
@@ -52,23 +51,34 @@ class CodepodsDemographicsComponent extends Component {
     render() {
         return (
             <div>
-                <MetricSelectionComponent onMetricChangeCallback={this.onMetricChange} />
                 <Grid columns={2} divided>
-                    <Grid.Row>
+                    <Grid.Row style={{
+                        paddingTop: '50px',
+                    }}>
                         <Grid.Column>
-                            <MapComponent metrics={metrics} onMarkerClickCallback={this.onMarkerClick} metricName={this.state.metricName} />
+                            <h2 className="ui header">
+                                <img className="ui image" src={logo} alt="logo" />
+                                <div className="content">
+                                    Codepods Demographics
+                                </div>
+                            </h2>
                         </Grid.Column>
-                        <Grid.Column>
-                            <MetricStatisticsComponent metricStatistics={
-                                {
-                                    metricLabel: this.state.metricLabel,
-                                    metricName: this.state.metricName,
-                                    metricInfo: this.state.metricInfo,
-                                }}
-                            />
+                        <Grid.Column style={{
+                            boxShadow: 'none',
+                        }}>
+                            <MetricSelectionComponent onMetricChangeCallback={this.onMetricChange} />
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
+                <MapComponent metrics={metrics} onMarkerClickCallback={this.onMarkerClick} metricName={this.state.metricName} />
+                <MetricStatisticsComponent metricStatistics={
+                    {
+                        metricLabel: this.state.metricLabel,
+                        metricName: this.state.metricName,
+                        metricInfo: this.state.metricInfo,
+                    }}
+                />
+
             </div>
         );
     }

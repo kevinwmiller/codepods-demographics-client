@@ -31,10 +31,10 @@ class MetricSelectionComponent extends Component {
 
     render() {
         return (
-            <Segment>
-                <Label attached="top">Metric</Label>
-                <Dropdown placeholder="Select Metric" fluid selection options={metricOptions} onChange={this.onMetricChange} />
-            </Segment>
+            <Dropdown style={{
+                border: '1px solid #B794FA',
+                marginTop: '12px',
+            }} placeholder="Select Metric" fluid selection options={metricOptions} onChange={this.onMetricChange} />
         );
     }
 }
