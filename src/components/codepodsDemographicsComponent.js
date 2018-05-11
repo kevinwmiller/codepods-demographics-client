@@ -21,12 +21,6 @@ class CodepodsDemographicsComponent extends Component {
     constructor(props) {
         super(props);
 
-        // this.apiEndpoints = {
-        //     crime: this.fetchCrimeData,
-        //     // income: this.notImplemented,
-        //     // commute: this.notImplemented
-        // }
-
         this.state = {
             metricLabel: '',
             metricName: '',
@@ -35,37 +29,6 @@ class CodepodsDemographicsComponent extends Component {
             metricInfo: '',
         };
     }
-
-    // toggleFetchingData = () => {
-    //     this.setState({
-    //         fetchingData: !this.state.fetchingData,
-    //     })
-    // }
-
-    // fetchMetricData = async (metricName, bounds) => {
-
-    //     // Not a good way to handle this, but I'll leave it for now
-    //     if (this.state.fetchingData) {
-    //         console.log('Currently fetching data');
-    //         return null;
-    //     }
-
-    //     if (!this.apiEndpoints[this.state.metricName]) {
-    //         console.log(`No fetch function for ${this.state.metricName}`);
-    //         return null;
-    //     }
-    //     try {
-    //         this.toggleFetchingData();
-    //         const metricData = await (this.apiEndpoints[this.state.metricName])(bounds);
-    //         this.toggleFetchingData();
-    //         return metricData.data.response;
-    //     } catch(err) {
-    //         this.setState({
-    //             fetchingData: false
-    //         });
-    //         return [];
-    //     }
-    // }
 
     onMetricChange = (metricLabel, data) => {
         console.log("Metric change", data.value);
@@ -79,16 +42,6 @@ class CodepodsDemographicsComponent extends Component {
         });
         
     }
-
-    // onMapChange = async (bounds) => {
-    //     console.log("Map Change", bounds);
-    //     const metricData = await this.fetchMetricData(this.state.metricName, bounds);
-    //     if (metricData) {
-    //         this.setState({
-    //             metricData: metricData
-    //         });
-    //     }
-    // }
 
     onMarkerClick = (data) => {
         this.setState({
