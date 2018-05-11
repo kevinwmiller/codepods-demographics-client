@@ -37,10 +37,10 @@ class MetricStatisticsComponent extends Component {
 MetricStatisticsComponent.propTypes = {
     metricStatistics: PropTypes.shape({
         metricLabel: PropTypes.string.isRequired,
-        metricData: PropTypes.arrayOf(PropTypes.shape({
+        metricName: PropTypes.string.isRequired,
+        metricInfo: PropTypes.arrayOf(PropTypes.shape({
             value: PropTypes.number,
         })).isRequired,
-        metricInfo: PropTypes.string.isRequired,
     }).isRequired,
 };
 
