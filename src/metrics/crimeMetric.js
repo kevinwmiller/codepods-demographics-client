@@ -25,41 +25,61 @@ export default class {
         this.previousHeatmap = null;
     }
 
+    calculateGridSize
+
+    calculateCorrespondingCell(crime, cellSize, bounds) {
+        return 0;
+    }
+
     processCrimeData = (googleMaps, crimeData, map) => {
         if (!crimeData) {
             return [];
         }
         const bounds = map.getBounds()
-        const width = bounds.getNorthEast().lng() - bounds.getSouthWest().lng();
-        const height = bounds.getNorthEast().lat() - bounds.getSouthWest().lat();
-
-        const squareMilesPerCell = 2;
+        const viewportSize = {
+            height: bounds.getNorthEast().lat() - bounds.getSouthWest().lat(),
+            width: bounds.getNorthEast().lng() - bounds.getSouthWest().lng(),
+        };
+        const squareMilesPerCell = 1;
 
         // Length of longitude varies depending on your latitude
         // 1° longitude = cosine (latitude) * length of degree (miles) at equator
         const lengthOfLongitudeMile = Math.abs(Math.cos(convertToRadians(bounds.getNorthEast().lat())) * lengthOfLatitudeDegreeAtEquator);
-        console.log(lengthOfLongitudeMile);
         // 1 degree of latitude is approximately 69 miles
         // 0.072463781159 degrees of latitude is approximately 5 miles
         const fiveMilesInLatitudeDegrees = squareMilesPerCell / lengthOfLatitudeDegreeAtEquator;
         const fiveMilesInLongitudeDegrees = squareMilesPerCell / lengthOfLongitudeMile;
-        console.log(fiveMilesInLatitudeDegrees);
-        console.log(fiveMilesInLongitudeDegrees);
+        const gridSize = {
+            height: Math.ceil(viewportSize.height / fiveMilesInLatitudeDegrees),
+            width: Math.ceil(viewportSize.width / fiveMilesInLongitudeDegrees)
+        };
 
-        const gridHeight = Math.ceil(height / fiveMilesInLatitudeDegrees);
-        const gridWidth = Math.ceil(width / fiveMilesInLongitudeDegrees);
+        const cellSize = {
+            height: viewportSize.height / gridSize.height,
+            width: viewportSize.width / gridSize.width,
+        }
 
-        console.log(`Height: ${gridHeight}`);
-        console.log(`Width: ${gridWidth}`);
+        console.log(viewportSize);
+        console.log(gridSize);
+        console.log(cellSize);
+
         // Create an empty grid
-        let grid = Array.apply([], Array(gridHeight));
-        grid.map(row => {
-            return Array.apply([], Array(gridWidth));
+        let grid = Array(gridSize.height).fill().map(() => {
+            return Array(gridSize.width).fill().map(() => {
+                return [];
+            });
         });
 
-        console.log(crimeData);
+        let heatmapData = [];
+        for (let agency of crimeData) {
+            for (let crime of agency.crimes) {
+                // Determine grid cell for crime
+                const gridCell = this.calculateCorrespondingCell(crime, cellSize, bounds);
+                grid[gridCell].push(crime);
+            }
+        }
 
-        return [];
+        return heatmapData;
     }
 
     /**
@@ -202,11 +222,11 @@ export default class {
 
     updateMap = async (googleMaps, map) => {
         const crimeData = await this.fetchCrimeData(map.getBounds());
-        console.log(crimeData);
+        // console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map);
         let color = Math.ceil(Math.random() * 255);
         let baseColor = `rgba(${color}, 0, 0, 1)`;
-        console.log(baseColor);
+        // console.log(baseColor);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData,
             radius: 45,
