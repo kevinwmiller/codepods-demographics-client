@@ -5,7 +5,7 @@ import server from '../services/server'
 const lengthOfLatitudeDegreeAtEquator = 69.172;
 
 function convertToRadians(degreeValue) {
-    return (degreeValue * 180) / Math.PI;
+    return (degreeValue * Math.PI) / 180;
 }
 
 /**
@@ -16,16 +16,18 @@ function convertToRadians(degreeValue) {
 export default class {
 
     constructor() {
-        this.heatmapIsSet = false;
+        this.previousHeatmap = null;
     }
 
     processCrimeData = (googleMaps, crimeData, map) => {
         if (!crimeData) {
             return [];
         }
-        const bounds = map.getBounds();
+        const bounds = map.getBounds()
         const width = bounds.getNorthEast().lng() - bounds.getSouthWest().lng();
         const height = bounds.getNorthEast().lat() - bounds.getSouthWest().lat();
+
+        const squareMilesPerCell = 2;
 
         // Length of longitude varies depending on your latitude
         // 1° longitude = cosine (latitude) * length of degree (miles) at equator
@@ -33,8 +35,8 @@ export default class {
         console.log(lengthOfLongitudeMile);
         // 1 degree of latitude is approximately 69 miles
         // 0.072463781159 degrees of latitude is approximately 5 miles
-        const fiveMilesInLatitudeDegrees = 0.072463781159;
-        const fiveMilesInLongitudeDegrees = 5 / (lengthOfLongitudeMile);
+        const fiveMilesInLatitudeDegrees = squareMilesPerCell / lengthOfLatitudeDegreeAtEquator;
+        const fiveMilesInLongitudeDegrees = squareMilesPerCell / lengthOfLongitudeMile;
         console.log(fiveMilesInLatitudeDegrees);
         console.log(fiveMilesInLongitudeDegrees);
 
@@ -46,7 +48,7 @@ export default class {
         // Create an empty grid
         let grid = Array.apply([], Array(gridHeight));
         grid.map(row => {
-            row =  Array.apply([], Array(gridWidth));
+            return Array.apply([], Array(gridWidth));
         });
 
         console.log(crimeData);
@@ -197,17 +199,21 @@ export default class {
         const crimeData = await this.fetchCrimeData(map.getBounds());
         console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map);
+        let color = Math.ceil(Math.random() * 255);
+        let baseColor = `rgba(${color}, 0, 0, 1)`;
+        console.log(baseColor);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData,
             radius: 45,
             gradient: [
-                'rgba(255, 0, 0, 1)',
+                baseColor,
                 'rgba(0, 255, 0, 1)',
             ]
         });
-        if (!this.heatmapIsSet) {
-            this.heatmap.setMap(map);
-            this.heatmapIsSet = true;
+        if (this.previousHeatmap) {
+            this.previousHeatmap.setMap(null);
         }
+        this.heatmap.setMap(map);
+        this.previousHeatmap = this.heatmap;
     }
 }
