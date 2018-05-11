@@ -15,6 +15,15 @@ export default class {
         }
     }
 
+    clearData = (metricName) => {
+        if (metricName in this.metricProcessors) {
+            this.metricProcessors[metricName].clearData();
+        }
+        else {
+            // throw new Error(`Invalid metric name ${metricName}`)
+        }
+    }
+
     fetchData = async (metricName, bounds) => {
         if (metricName in this.metricProcessors) {
             return await this.metricProcessors[metricName].fetchData(bounds);

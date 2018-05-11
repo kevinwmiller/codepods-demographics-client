@@ -19,6 +19,12 @@ export default class {
         this.previousHeatmap = null;
     }
 
+    clearData = () => {
+        this.heatmap.setMap(null);
+        this.heatmap = null;
+        this.previousHeatmap = null;
+    }
+
     processCrimeData = (googleMaps, crimeData, map) => {
         if (!crimeData) {
             return [];
@@ -84,7 +90,6 @@ export default class {
                 return Qs.stringify(params, {arrayFormat: 'brackets'});
             },
         });
-
         return response.data.response;
     }
 

@@ -4,8 +4,11 @@ import { Grid } from 'semantic-ui-react';
 
 // Only require those which are needed in the current component
 import MapComponent from './mapComponent';
+import Metrics from '../metrics/metrics';
 import MetricSelectionComponent from './metricSelectionComponent';
 import MetricStatisticsComponent from './metricStatisticsComponent';
+
+const metrics = new Metrics();
 
 /**
   * The layout component of Codepods Demographics
@@ -66,6 +69,10 @@ class CodepodsDemographicsComponent extends Component {
 
     onMetricChange = (metricLabel, data) => {
         console.log("Metric change", data.value);
+        if (this.state.metricName) {
+            // Remove any existing data
+            metrics.clearData(this.state.metricName);
+        }
         this.setState({
             metricLabel,
             metricName: data.value,
@@ -96,7 +103,7 @@ class CodepodsDemographicsComponent extends Component {
                 <Grid columns={2} divided>
                     <Grid.Row>
                         <Grid.Column>
-                            <MapComponent onMarkerClickCallback={this.onMarkerClick} metricName={this.state.metricName} />
+                            <MapComponent metrics={metrics} onMarkerClickCallback={this.onMarkerClick} metricName={this.state.metricName} />
                         </Grid.Column>
                         <Grid.Column>
                             <MetricStatisticsComponent metricStatistics={

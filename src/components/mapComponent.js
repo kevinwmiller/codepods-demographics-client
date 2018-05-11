@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
 import {GoogleApiWrapper} from 'google-maps-react';
-import Metrics from '../metrics/metrics';
 
 const config = require('../config');
-const metrics = new Metrics();
 
 /*
 const MetricLabel = ({ metricName }) => <div style={{ fontSize: '24px', fontWeight: 'bold' }}>{metricName}</div>;
@@ -28,7 +26,7 @@ class MapComponent extends Component {
         if (this.props && this.props.google) {
             const {google} = this.props;
             const maps = google.maps;
-            metrics.updateMap(maps, this.props.metricName, this.map);
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map);
         }
     }
 
@@ -40,7 +38,7 @@ class MapComponent extends Component {
         if (this.props && this.props.google) {
             const {google} = this.props;
             const maps = google.maps;
-            metrics.updateMap(maps, this.props.metricName, this.map);
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map);
         }
     }
 
