@@ -230,12 +230,12 @@ export default class {
         console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map, callbacks);
 
-        this.heatmapViolent = new googleMaps.visualization.HeatmapLayer({
-            data: heatmapData["Violent"],
+        this.heatmapNoCrime = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["NoCrime"],
             radius: 200,
             gradient: [
-                'rgba(255, 0, 0, 0)',
-                'rgba(255, 0, 0, 1)',
+                'rgba(0, 255, 0, 0)',
+                'rgba(0, 255, 0, 1)',
             ]
         });
 
@@ -248,34 +248,33 @@ export default class {
             ]
         });
 
-        this.heatmapNoCrime = new googleMaps.visualization.HeatmapLayer({
-            data: heatmapData["NoCrime"],
+        this.heatmapViolent = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Violent"],
             radius: 200,
             gradient: [
-                'rgba(0, 255, 0, 0)',
-                'rgba(0, 255, 0, 1)',
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
             ]
         });
-
-        if (this.previousHeatmapViolent) {
-            this.previousHeatmapViolent.setMap(null);
-        }
-
-        this.heatmapViolent.setMap(map);
-        this.previousHeatmapViolent = this.heatmapViolent;
-
-        if (this.previousHeatmapNonViolent) {
-            this.previousHeatmapNonViolent.setMap(null);
-        }
-
-        this.heatmapNonViolent.setMap(map);
-        this.previousHeatmapNonViolent = this.heatmapNonViolent;
 
         if (this.previousHeatmapNoCrime) {
             this.previousHeatmapNoCrime.setMap(null);
         }
+        if (this.previousHeatmapNonViolent) {
+            this.previousHeatmapNonViolent.setMap(null);
+        }
+        if (this.previousHeatmapViolent) {
+            this.previousHeatmapViolent.setMap(null);
+        }
+
         this.heatmapNoCrime.setMap(map);
         this.previousHeatmapNoCrime = this.heatmapNoCrime;
+        
+        this.heatmapNonViolent.setMap(map);
+        this.previousHeatmapNonViolent = this.heatmapNonViolent;
+
+        this.heatmapViolent.setMap(map);
+        this.previousHeatmapViolent = this.heatmapViolent;
 
 
 
