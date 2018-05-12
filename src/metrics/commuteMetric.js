@@ -170,11 +170,11 @@ export default class {
 
                 map: map,
                 information: [
-                    {label: 'Commute Time', value: commute.commuteTime},
+                    {label: 'Commute Time (mins)', value: commute.commuteTime},
                     {label: 'Zip Code', value: commute.zipCode},
                     {label: 'State', value: commute.state},
-                    {label: 'County', value: commute.county},
-                    {label: 'Commute Time', value: commute.commuteTime}                   ],
+                    {label: 'County', value: commute.county}
+                ]
             });
             marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
         
