@@ -96,10 +96,11 @@ export default class {
         });
 
         // Set center coordinates of each cell. Can probably do this in a cleaner way, but this works for now
+        console.log(bounds);
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
                 grid[row][column].cellCenterCoordinates = {
-                    latitude: row * cellSize.height + (cellSize.height / 2) + bounds.getNorthEast().lat(),
+                    latitude: bounds.getNorthEast().lat() - (row * cellSize.height + (cellSize.height / 2)),
                     longitude: column * cellSize.width + (cellSize.width / 2) + bounds.getSouthWest().lng(),
                 }
             }
