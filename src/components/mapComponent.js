@@ -38,13 +38,13 @@ class MapComponent extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props && this.props.google) {
-            const {google} = this.props;
-            const maps = google.maps;
-            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
-                onMarkerClick: this.onMarkerClick
-            });
-        }
+        // if (this.props && this.props.google) {
+        //     const {google} = this.props;
+        //     const maps = google.maps;
+        //     this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
+        //         onMarkerClick: this.onMarkerClick
+        //     });
+        // }
     }
 
     // Initial Load
