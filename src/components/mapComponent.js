@@ -18,8 +18,11 @@ MetricLabel.propTypes = {
   * @reactProps {string} metricName - The metric to display
   */
 
-
-
+/**
+ * Class for map component.
+ *
+ * @class      MapComponent (name)
+ */
 class MapComponent extends Component {
 
     constructor() {
@@ -100,22 +103,37 @@ class MapComponent extends Component {
         return heatmapData;
     }
 
-    // Callback click function
+    /**
+     * { onMarkerClick }
+     *
+     * @param      {<type>}  data    The data
+     */
     onMarkerClick(data) {
         this.props.onMarkerClickCallback(data);
     }
 
+    /**
+     * { mapChange }
+     *
+     * @param      {<type>}  bounds  The bounds
+     */
     mapChange(bounds) {
         this.props.onMapChange(bounds);
     }
 
-
-    // Initital load
+    /**
+     * { compnentDidMount }
+     */
     componentDidMount(){
         this.loadMap(); 
     }
 
-    // Display whatever metric that is selected
+    /**
+     * { componentDidUpdate }
+     *
+     * @param      {<type>}  prevProps  The previous properties
+     * @param      {<type>}  prevState  The previous state
+     */
     componentDidUpdate(prevProps, prevState) {
         if (this.props.metricName === "crime") {
            this.crimeMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
@@ -128,8 +146,9 @@ class MapComponent extends Component {
         }
     }
 
-
-    // Initial Load
+    /**
+     * Loads a map.
+     */
     loadMap() {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -150,7 +169,13 @@ class MapComponent extends Component {
         }
     }
 
-    // load the crime map
+    /**
+     * { crimeMap }
+     *
+     * @param      {<type>}  clat    The Latitude Center
+     * @param      {<type>}  clng    The Longitude Center
+     * @param      {<type>}  cZoom   The Zoom Level
+     */
     crimeMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -163,7 +188,8 @@ class MapComponent extends Component {
         // Configure all the things
         const mapConfig = Object.assign({}, {
             center: {lat: clat, lng: clng},
-            zoom: cZoom
+            zoom: cZoom,
+            minZoom: 8
         })
 
         // Make a new map
@@ -207,17 +233,16 @@ class MapComponent extends Component {
         
         // Set up first heatmap data
         var newlocs = this.getHeatmapData(this.props.metricName, this.props.metricData)
-            
-        var exData = ["Assault", "Robbery", "Sad"]
+       
         // Iterate through all given information
-        for (var i = 0; i < newlocs["positions"].length; i++) {
+        for (i = 0; i < newlocs["positions"].length; i++) {
 
             // Get instance of lat and lng for convienence
             var thisLat = newlocs["positions"][i]["lat"];
             var thisLng = newlocs["positions"][i]["lng"];   
 
             // Put that in the grid at the correct position
-            for (var j = 0; j < dim; j++) {
+            for (j = 0; j < dim; j++) {
                 for (var k = 0; k < dim; k++){
                     
                     // Set up the bounds for that location
@@ -243,12 +268,12 @@ class MapComponent extends Component {
         var heatmapDataMiddle = [];
 
         // Iterate through the built grid
-        for (var i = 0; i < dim; i++) {
-            for (var j = 0; j < dim; j++) {
+        for (i = 0; i < dim; i++) {
+            for (j = 0; j < dim; j++) {
 
                 // Get info for convience
-                var leftBound = smallestLat + (totalLat / dim) * j;
-                var bottomBound = smallestLng + (totalLng / dim) * i;
+                leftBound = smallestLat + (totalLat / dim) * j;
+                bottomBound = smallestLng + (totalLng / dim) * i;
 
                 // Lat and lng for where the heatmap dot will be center upon
                 var centerLat = leftBound + (totalLat/dim)/2;
@@ -260,10 +285,10 @@ class MapComponent extends Component {
                     var crimeInfo = "";
                     var violent = 0;
                     var nonViolent = 0;
-                    for (var k = 0; k < gridData[i][j].length; k++) {
+                    for (k = 0; k < gridData[i][j].length; k++) {
                         // Would build info about the crime 
                         crimeInfo += gridData[i][j][k]["category"];
-                        if (gridData[i][j][k]["category"] == "violent") {
+                        if (gridData[i][j][k]["category"] === "violent") {
                             violent += 1
                         } else {
                             nonViolent += 1
@@ -325,8 +350,6 @@ class MapComponent extends Component {
         })
         heatmapMiddle.setMap(this.map);
         
-
-
         // Makes the red (bad) heatmap
         var heatmapBad = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataBad,
@@ -341,7 +364,13 @@ class MapComponent extends Component {
         }
     }
 
-    // Load the income map
+    /**
+     * { incomeMap }
+     *
+     * @param      {<type>}  clat    The clat
+     * @param      {<type>}  clng    The clng
+     * @param      {<type>}  cZoom   The zoom
+     */
     incomeMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
