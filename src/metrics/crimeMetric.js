@@ -66,7 +66,7 @@ export default class {
             height: bounds.getNorthEast().lat() - bounds.getSouthWest().lat(),
             width: bounds.getNorthEast().lng() - bounds.getSouthWest().lng(),
         };
-        const squareMilesPerCell = 0.5;
+        const squareMilesPerCell = 1;
         // Length of longitude varies depending on your latitude
         // 1° longitude = cosine (latitude) * length of degree (miles) at equator
         const lengthOfLongitudeMile = Math.abs(Math.cos(convertToRadians(bounds.getNorthEast().lat())) * lengthOfLatitudeDegreeAtEquator);
