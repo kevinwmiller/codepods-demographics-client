@@ -166,7 +166,7 @@ export default class {
      * @param      {<type>}  bounds  The map boundary information
      * @return     {<type>}  { crime information }
      */
-    fetchCrimeData = async (bounds) => {
+    fetchData = async (bounds) => {
         const response = await server.get('/crime', {
             params: {
                 startDate: '2018-04-30',
@@ -299,7 +299,7 @@ export default class {
     // }
 
     updateMap = async (googleMaps, map, callbacks) => {
-        const crimeData = await this.fetchCrimeData(map.getBounds());
+        const crimeData = await this.fetchData(map.getBounds());
         console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map, callbacks);
         let color = Math.ceil(Math.random() * 255);
