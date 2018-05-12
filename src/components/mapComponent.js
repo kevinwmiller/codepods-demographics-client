@@ -342,7 +342,7 @@ class MapComponent extends Component {
         // Makes yellow (middle) heatmap
         var heatmapMiddle = new google.maps.visualization.HeatmapLayer({
             data: heatmapDataMiddle,
-            radius: 80,
+            radius: 100,
             gradient: [
                 'rgba(255, 255, 0, 0)',
                 'rgba(255, 255, 0, 1)',
