@@ -27,8 +27,37 @@ export default class {
 
     calculateGridSize
 
-    calculateCorrespondingCell(crime, cellSize, bounds) {
-        return 0;
+    /**
+     * Calculates the corresponding cell. TEST ME
+     *
+     * @param      {<type>}  crime     The crime
+     * @param      {<type>}  cellSize  The cell size
+     * @param      {<type>}  bounds    The bounds
+     * @return     {Array}   The corresponding cell.
+     */
+    calculateCorrespondingCell = (crime, cellSize, bounds, gridSize) => {
+        const topLeftCoordinates = {
+            latitude: bounds.getNorthEast().lat(),
+            longitude: bounds.getSouthWest().lng(),
+        };
+        const distanceFromTopLeft = {
+            // Absolute value since latitude of crime will be smaller than the latitude of the top left corner
+            height: Math.abs(crime.location.latitude - topLeftCoordinates.latitude),
+            width: Math.abs(crime.location.longitude - topLeftCoordinates.longitude),
+        };
+        let cell = [
+            Math.floor(distanceFromTopLeft.height / cellSize.height),
+            Math.floor(distanceFromTopLeft.width / cellSize.width),
+        ]
+        // Doing this to fix any precision errors that are occurring during division.
+        // These error sometimes push the quotient over the "cell boundary" into an invalid cell
+        if (cell[0] >= gridSize.height) {
+            cell[0] = gridSize.height - 1;
+        }
+        if (cell[1] >= gridSize.width) {
+            cell[1] = gridSize.width - 1;
+        }
+        return cell;
     }
 
     processCrimeData = (googleMaps, crimeData, map) => {
@@ -59,10 +88,6 @@ export default class {
             width: viewportSize.width / gridSize.width,
         }
 
-        console.log(viewportSize);
-        console.log(gridSize);
-        console.log(cellSize);
-
         // Create an empty grid
         let grid = Array(gridSize.height).fill().map(() => {
             return Array(gridSize.width).fill().map(() => {
@@ -74,11 +99,11 @@ export default class {
         for (let agency of crimeData) {
             for (let crime of agency.crimes) {
                 // Determine grid cell for crime
-                const gridCell = this.calculateCorrespondingCell(crime, cellSize, bounds);
-                grid[gridCell].push(crime);
+                const gridCell = this.calculateCorrespondingCell(crime, cellSize, bounds, gridSize);
+                grid[gridCell[0]][gridCell[1]].push(crime);
             }
         }
-
+        console.log(grid);
         return heatmapData;
     }
 
