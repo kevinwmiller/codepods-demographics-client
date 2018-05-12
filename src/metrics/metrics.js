@@ -1,6 +1,8 @@
 import CrimeMetric from './crimeMetric';
+import CommuteMetric from './commuteMetric';
 
 const crimeMetric = new CrimeMetric();
+const commuteMetric = new CommuteMetric();
 /**
  * Class for metric.
  *
@@ -11,7 +13,7 @@ export default class {
         this.metricProcessors = {
             crime: crimeMetric,
             // income: this.notImplemented,
-            // commute: null
+            commute: commuteMetric
         }
     }
 
