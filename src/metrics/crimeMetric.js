@@ -16,13 +16,27 @@ function convertToRadians(degreeValue) {
 export default class {
 
     constructor() {
-        this.previousHeatmap = null;
+        this.previousHeatmapViolent = null;
+        this.previousHeatmapNonViolent = null;
+        this.previousHeatmapNoCrime = null;
     }
 
     clearData = () => {
-        this.heatmap.setMap(null);
-        this.heatmap = null;
-        this.previousHeatmap = null;
+        this.heatmapViolent.setMap(null);
+        this.heatmapViolent = null;
+        this.previousHeatmapViolent = null;
+
+        this.heatmapNonViolent.setMap(null);
+        this.heatmapNonViolent = null;
+        this.previousHeatmapNonViolent = null;
+
+        this.heatmapNoCrime.setMap(null);
+        this.heatmapNoCrime = null;
+        this.previousHeatmapNoCrime = null;
+
+
+
+
     }
 
     calculateGridSize
@@ -121,15 +135,39 @@ export default class {
         }
         let grid = this.buildGrid(crimeData, map);
         const avgCrimesPerSquareMile = 2;
-        let heatmapData = [];
+        let heatmapData = {"Violent": [], "NonViolent": [], "NoCrime": []};
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
-
                     const cellLocation = grid[row][column].cellCenterCoordinates;
-                    heatmapData.push({
-                        location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
-                        weight: 1
-                    });
+
+                    let numViolent = 0;
+                    let numNonViolent = 0;
+
+                    for (let i = 0; i < grid[row][column].cellData.length; i++) {
+                        if (grid[row][column].cellData[i].categorization.category === "violent") {
+                            numViolent += 1;
+                        } else {
+                            numNonViolent += 1;
+                        }
+                    }
+
+                    if (numViolent == 0 && numNonViolent == 0) {
+                        heatmapData["NoCrime"].push({
+                            location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                            weight: 1
+                        });
+                    } else if (numViolent >= numNonViolent) {
+                        heatmapData["Violent"].push({
+                            location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                            weight: 1
+                        });
+                    } else {
+                        heatmapData["NonViolent"].push({
+                            location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                            weight: 1
+                        });
+                    }
+
                     // Add a markers for crimes
                     for (let agency of crimeData) {
                         for (let crime of agency.crimes) {
@@ -190,30 +228,55 @@ export default class {
         const crimeData = await this.fetchData(map.getBounds());
         console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map, callbacks);
-        this.heatmap = new googleMaps.visualization.HeatmapLayer({
-            data: heatmapData,
-            radius: 45,
+
+        this.heatmapViolent = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Violent"],
+            radius: 100,
             gradient: [
-                'rgba(0, 255, 255, 0)',
-                'rgba(0, 255, 255, 1)',
-                'rgba(0, 191, 255, 1)',
-                'rgba(0, 127, 255, 1)',
-                'rgba(0, 63, 255, 1)',
-                'rgba(0, 0, 255, 1)',
-                'rgba(0, 0, 223, 1)',
-                'rgba(0, 0, 191, 1)',
-                'rgba(0, 0, 159, 1)',
-                'rgba(0, 0, 127, 1)',
-                'rgba(63, 0, 91, 1)',
-                'rgba(127, 0, 63, 1)',
-                'rgba(191, 0, 31, 1)',
-                'rgba(255, 0, 0, 1)'
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
             ]
         });
-        if (this.previousHeatmap) {
-            this.previousHeatmap.setMap(null);
+
+        this.heatmapNonViolent = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["NonViolent"],
+            radius: 100,
+            gradient: [
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        });
+
+        this.heatmapNoCrime = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["NoCrime"],
+            radius: 100,
+            gradient: [
+                'rgba(0, 255, 0, 0)',
+                'rgba(0, 255, 0, 1)',
+            ]
+        });
+
+        if (this.previousHeatmapViolent) {
+            this.previousHeatmapViolent.setMap(null);
         }
-        this.heatmap.setMap(map);
-        this.previousHeatmap = this.heatmap;
+
+        this.heatmapViolent.setMap(map);
+        this.previousHeatmapViolent = this.heatmapViolent;
+
+        if (this.previousHeatmapNonViolent) {
+            this.previousHeatmapNonViolent.setMap(null);
+        }
+
+        this.heatmapNonViolent.setMap(map);
+        this.previousHeatmapNonViolent = this.heatmapNonViolent;
+
+        if (this.previousHeatmapNoCrime) {
+            this.previousHeatmapNoCrime.setMap(null);
+        }
+        this.heatmapNoCrime.setMap(map);
+        this.previousHeatmapNoCrime = this.heatmapNoCrime;
+
+
+
     }
 }
