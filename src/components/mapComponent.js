@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
-import {GoogleApiWrapper} from 'google-maps-react'
+import {GoogleApiWrapper} from 'google-maps-react';
 
 
 const config = require('../config');
@@ -18,112 +18,23 @@ MetricLabel.propTypes = {
   * @reactProps {string} metricName - The metric to display
   */
 
-/**
- * Class for map component.
- *
- * @class      MapComponent (name)
- */
 class MapComponent extends Component {
 
-    constructor() {
-        super();
-        this.metricProcessors = {
-            crime: this.processCrime,
-            income: this.notImplemented,
-            commute: this.notImplemented
-        }
-    }
-    
-    processCrime = (data) => {
-        if (!data) {
-            return [];
-        }
-
-        let crimes = []
-        console.log("Data: ", data)
-
-        for (let incident of data) {
-            for (let crime of incident.crimes) {
-                crimes.push({
-                    lat: parseFloat(crime.location.latitude),
-                    lng: parseFloat(crime.location.longitude),
-                });
-            }
-        }
-        if (crimes.length > 0) {
-            console.log(crimes[0].lat, crimes[0].lng)
-        } else {
-            console.log("Nothing was put in crimes")
-        }
-
-        return [
-            {lat: 39.3278, lng: -76.6192, category: "violent"}, 
-            {lat: 39.103969, lng: -76.843785, category: "violent"}, 
-            {lat: 39.0957812, lng: -76.84830029999999, category: "violent"},
-            {lat: 39.12, lng: -76.9, category: "property"},
-            {lat: 39.32, lng: -76.5, category: "property"},  
-            {lat: 39.4, lng: -76.66, category: "violent"}, 
-            {lat: 39.11234, lng: -76.3456, category: "violent"}, 
-            {lat: 39.0543, lng: -76.7534, category: "violent"},
-            {lat: 39.234, lng: -76.64, category: "property"},
-            {lat: 39.634, lng: -76.23, category: "property"},  
-            {lat: 39.745, lng: -76.43, category: "violent"}, 
-            {lat: 39.543, lng: -76.643, category: "violent"}, 
-            {lat: 39.1234, lng: -76.83453, category: "violent"},
-            {lat: 39.643, lng: -76.345, category: "property"},
-            {lat: 39.32, lng: -76.1234, category: "property"},  
-
-        ]
-
-        return [
-            {lat: crimes[0].lat, lng: crimes[0].lng},
-            {lat: crimes[1].lat, lng: crimes[1].lng},
-            {lat: crimes[2].lat, lng: crimes[2].lng}
-        ]
-        return crimes;
-    }
-
-    notImplemented(data) {
-        return [];
-    }
-
-    getHeatmapData = (metricName, data) => {
-        let heatmapData = [];
-        // if (metricName in this.metricProcessors) {
-            try {
-                //console.log('setting heatmap', data);
-                heatmapData = {
-                    positions: this.processCrime(data),
-                };
-//                console.log(heatmapData);
-            } catch (err) {
-                console.log('aaaaaaaahahahha')
-            }
-        // }
-        return heatmapData;
-    }
-
-    /**
-     * { onMarkerClick }
-     *
-     * @param      {<type>}  data    The data
-     */
-    onMarkerClick(data) {
+    onMarkerClick = (data) => {
+        console.log('clicked');
         this.props.onMarkerClickCallback(data);
     }
 
-    /**
-     * { mapChange }
-     *
-     * @param      {<type>}  bounds  The bounds
-     */
-    mapChange(bounds) {
-        this.props.onMapChange(bounds);
+    mapChange = () => {
+        if (this.props && this.props.google) {
+            const {google} = this.props;
+            const maps = google.maps;
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
+                onMarkerClick: this.onMarkerClick
+            });
+        }
     }
 
-    /**
-     * { compnentDidMount }
-     */
     componentDidMount(){
         this.loadMap(); 
     }
@@ -135,20 +46,16 @@ class MapComponent extends Component {
      * @param      {<type>}  prevState  The previous state
      */
     componentDidUpdate(prevProps, prevState) {
-        if (this.props.metricName === "crime") {
-           this.crimeMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
-        } 
-        else if (this.props.metricName === "income") {
-            this.incomeMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
-        } 
-        else if (this.props.metricName === "commute") {
-            this.commuteMap(this.map.getCenter().lat(), this.map.getCenter().lng(), this.map.getZoom());
+        if (this.props && this.props.google) {
+            const {google} = this.props;
+            const maps = google.maps;
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
+                onMarkerClick: this.onMarkerClick
+            });
         }
     }
 
-    /**
-     * Loads a map.
-     */
+    // Initial Load
     loadMap() {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -159,15 +66,21 @@ class MapComponent extends Component {
             const node = ReactDOM.findDOMNode(mapRef);
 
             // Configure all the things
-            const mapConfig = Object.assign({}, {
+            const mapConfig = {
                 center: {lat: 39.2556, lng:-76.7110},
-                zoom: 11
-            })
+                zoom: 14,
+            };
 
-            // Make a new map
             this.map = new maps.Map(node, mapConfig);
+
+            // Update the heatmap when the bounds change
+            this.map.addListener("dragend", () => this.mapChange());
+            this.map.addListener("zoom_change", () => this.mapChange());
+
         }
+
     }
+    
 
     /**
      * { crimeMap }
@@ -176,6 +89,7 @@ class MapComponent extends Component {
      * @param      {<type>}  clng    The Longitude Center
      * @param      {<type>}  cZoom   The Zoom Level
      */
+     /*
     crimeMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -359,10 +273,9 @@ class MapComponent extends Component {
                 'rgba(255, 0, 0, 1)',
             ]
         });
-        heatmapBad.setMap(this.map);   
-
-        }
-    }
+        heatmapBad.setMap(this.map);
+        }   
+    */
 
     /**
      * { incomeMap }
@@ -371,6 +284,7 @@ class MapComponent extends Component {
      * @param      {<type>}  clng    The clng
      * @param      {<type>}  cZoom   The zoom
      */
+     /*
     incomeMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -454,10 +368,11 @@ class MapComponent extends Component {
 
         }
     }
-
+    */
     /* 
      * Load the commute heatmap
      */
+     /*
     commuteMap(clat, clng, cZoom) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -543,7 +458,7 @@ class MapComponent extends Component {
 
         }
     }
-
+*/
     render() {
 
         const style = { width: '100%', height: '600px'}
@@ -557,7 +472,6 @@ class MapComponent extends Component {
 
 MapComponent.propTypes = {
     onMarkerClickCallback: PropTypes.func.isRequired,
-    onMapChange: PropTypes.func.isRequired
 };
 
 export default GoogleApiWrapper({

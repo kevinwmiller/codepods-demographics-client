@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Segment } from 'semantic-ui-react';
+
 import red from '../red-legend.png';
 import green from '../green-legend.png'
 import yellow from '../yellow-legend.png'
 
 
+import { List, Segment } from 'semantic-ui-react';
+
 
 /**
+  * // 
   * Displays information about the selected metric for the given area
   * @reactProps {object} metricStatistics - The metric data to display
   */
@@ -46,6 +49,8 @@ class MetricStatisticsComponent extends Component {
                }
                {
                     this.props.metricStatistics.metricInfo ?
+                    /*
+<<<<<<< HEAD
                         <h3 className="ui header">
                             {this.props.metricStatistics.metricInfo}
                         </h3>
@@ -55,11 +60,18 @@ class MetricStatisticsComponent extends Component {
                                 <h3><img src={green} alt="legend"></img> {goodInfo} </h3>
                         </div> 
                         
+=======
+*/
+                        <h3 className="ui menu">
+                            <ul className="metricInfo">
+                                {this.props.metricStatistics.metricInfo.map((info) =>
+                                    <li className="metricInfoItem">{info.label}: {info.value}</li>
+                                )}
+                            </ul>
+                        </h3>
+                        : ""
                 }
             </Segment>
-
-
-
         );
     }
 }
@@ -68,10 +80,10 @@ class MetricStatisticsComponent extends Component {
 MetricStatisticsComponent.propTypes = {
     metricStatistics: PropTypes.shape({
         metricLabel: PropTypes.string.isRequired,
-        metricData: PropTypes.arrayOf(PropTypes.shape({
+        metricName: PropTypes.string.isRequired,
+        metricInfo: PropTypes.arrayOf(PropTypes.shape({
             value: PropTypes.number,
         })).isRequired,
-        metricInfo: PropTypes.string.isRequired,
     }).isRequired,
 };
 

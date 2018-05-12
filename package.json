@@ -6,7 +6,7 @@
     "axios": "^0.18.0",
     "babel-eslint": "^8.2.2",
     "eslint-plugin-babel": "^4.1.2",
-    "google-map-react": "^0.34.0",
+    "google-maps-react": "^2.0.2",
     "lodash": "^4.17.5",
     "moment": "^2.22.1",
     "prop-types": "^15.6.1",

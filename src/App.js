@@ -8,8 +8,6 @@
 import React, { Component } from 'react';
 import { Container, Segment } from 'semantic-ui-react';
 import './App.css';
-import logo from './logo-main.png';
-
 import CodepodsDemographicComponent from './components/codepodsDemographicsComponent';
 
 
@@ -23,15 +21,7 @@ class App extends Component {
     */
     render() {
         return (
-            <Container>
-                <Segment>
-                    <h2 className="ui header">
-                        <img className="ui image" src={logo} alt="logo" />
-                        <div className="content">
-                            Codepods Demographics
-                        </div>
-                    </h2>
-                </Segment>
+            <Container style={{width: '90%'}}>
                 <CodepodsDemographicComponent />
             </Container>
         );
