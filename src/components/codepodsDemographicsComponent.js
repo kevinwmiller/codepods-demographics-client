@@ -43,9 +43,11 @@ class CodepodsDemographicsComponent extends Component {
     }
 
     onMarkerClick = (data) => {
+        console.log("Marker clicked");
+        console.log(data);
         this.setState({
             metricInfo: data
-        })
+        });
     }
 
     render() {

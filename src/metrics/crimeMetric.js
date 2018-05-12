@@ -60,17 +60,13 @@ export default class {
         return cell;
     }
 
-    processCrimeData = (googleMaps, crimeData, map) => {
-        if (!crimeData) {
-            return [];
-        }
+    buildGrid = (crimeData, map) => {
         const bounds = map.getBounds()
         const viewportSize = {
             height: bounds.getNorthEast().lat() - bounds.getSouthWest().lat(),
             width: bounds.getNorthEast().lng() - bounds.getSouthWest().lng(),
         };
         const squareMilesPerCell = 1;
-
         // Length of longitude varies depending on your latitude
         // 1° longitude = cosine (latitude) * length of degree (miles) at equator
         const lengthOfLongitudeMile = Math.abs(Math.cos(convertToRadians(bounds.getNorthEast().lat())) * lengthOfLatitudeDegreeAtEquator);
@@ -82,28 +78,85 @@ export default class {
             height: Math.ceil(viewportSize.height / fiveMilesInLatitudeDegrees),
             width: Math.ceil(viewportSize.width / fiveMilesInLongitudeDegrees)
         };
-
         const cellSize = {
             height: viewportSize.height / gridSize.height,
             width: viewportSize.width / gridSize.width,
         }
-
-        // Create an empty grid
+        // Create a grid with an empty list in each cell
         let grid = Array(gridSize.height).fill().map(() => {
             return Array(gridSize.width).fill().map(() => {
-                return [];
+                return {
+                    cellCenterCoordinates: {
+                        latitude: 0,
+                        longitude: 0,
+                    },
+                    cellData: [],
+                };
             });
         });
 
-        let heatmapData = [];
+        // Set center coordinates of each cell. Can probably do this in a cleaner way, but this works for now
+        for (let row of grid.keys()) {
+            for (let column of grid[row].keys()) {
+                grid[row][column].cellCenterCoordinates = {
+                    latitude: row * cellSize.height + (cellSize.height / 2) + bounds.getNorthEast().lat(),
+                    longitude: column * cellSize.width + (cellSize.width / 2) + bounds.getSouthWest().lng(),
+                }
+            }
+        }
         for (let agency of crimeData) {
             for (let crime of agency.crimes) {
                 // Determine grid cell for crime
                 const gridCell = this.calculateCorrespondingCell(crime, cellSize, bounds, gridSize);
-                grid[gridCell[0]][gridCell[1]].push(crime);
+                grid[gridCell[0]][gridCell[1]].cellData.push(crime);
             }
         }
-        console.log(grid);
+        return grid;
+    }
+
+    processCrimeData = (googleMaps, crimeData, map, callbacks) => {
+        if (!crimeData) {
+            return [];
+        }
+        let grid = this.buildGrid(crimeData, map);
+        const avgCrimesPerSquareMile = 2;
+        let heatmapData = [];
+        for (let row of grid.keys()) {
+            for (let column of grid[row].keys()) {
+                    // console.log(grid[row][column]);
+                    const cellLocation = grid[row][column].cellCenterCoordinates;
+                    // console.log(cellLocation);
+                    heatmapData.push({
+                        location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                        weight: 1
+                    });
+
+                    // console.log(crimeData);
+                    // Add a markers for crimes
+                    for (let agency of crimeData) {
+                        for (let crime of agency.crimes) {
+                            // Determine grid cell for crime
+                            const marker = new googleMaps.Marker({
+                                position: new googleMaps.LatLng(crime.location.latitude, crime.location.longitude),
+                                map: map,
+                                information: [
+                                    {label: 'Case Number', value: crime.caseNumber},
+                                    {label: 'Address', value: crime.incidentAddress},
+                                    {label: 'City', value: crime.city},
+                                    {label: 'Description', value: crime.incidentDescription},
+                                    {label: 'Date of Occurrence', value: crime.timestamp},
+                                    {label: 'Category', value: crime.categorization.category},
+                                    {label: 'Type', value: crime.primaryType},
+                                ],
+                            });
+                            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
+                        }
+                    }
+            }
+        }
+        // for (let data of heatmapData) {
+            // console.log(data.location);
+        // }
         return heatmapData;
     }
 
@@ -131,7 +184,7 @@ export default class {
             },
             // Prevent axios from encoding our json object incorrectly
             paramsSerializer: function(params) {
-                // console.log("Response", Qs.stringify(params, {arrayFormat: 'brackets'}));
+                console.log("Response", Qs.stringify(params, {arrayFormat: 'brackets'}));
                 return Qs.stringify(params, {arrayFormat: 'brackets'});
             },
         });
@@ -245,19 +298,29 @@ export default class {
     //         }
     // }
 
-    updateMap = async (googleMaps, map) => {
+    updateMap = async (googleMaps, map, callbacks) => {
         const crimeData = await this.fetchCrimeData(map.getBounds());
-        // console.log(crimeData);
-        const heatmapData = this.processCrimeData(googleMaps, crimeData, map);
+        console.log(crimeData);
+        const heatmapData = this.processCrimeData(googleMaps, crimeData, map, callbacks);
         let color = Math.ceil(Math.random() * 255);
-        let baseColor = `rgba(${color}, 0, 0, 1)`;
-        // console.log(baseColor);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData,
             radius: 45,
             gradient: [
-                baseColor,
-                'rgba(0, 255, 0, 1)',
+                'rgba(0, 255, 255, 0)',
+                'rgba(0, 255, 255, 1)',
+                'rgba(0, 191, 255, 1)',
+                'rgba(0, 127, 255, 1)',
+                'rgba(0, 63, 255, 1)',
+                'rgba(0, 0, 255, 1)',
+                'rgba(0, 0, 223, 1)',
+                'rgba(0, 0, 191, 1)',
+                'rgba(0, 0, 159, 1)',
+                'rgba(0, 0, 127, 1)',
+                'rgba(63, 0, 91, 1)',
+                'rgba(127, 0, 63, 1)',
+                'rgba(191, 0, 31, 1)',
+                'rgba(255, 0, 0, 1)'
             ]
         });
         if (this.previousHeatmap) {

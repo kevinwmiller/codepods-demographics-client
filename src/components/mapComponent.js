@@ -18,15 +18,18 @@ MetricLabel.propTypes = {
   */
 class MapComponent extends Component {
 
-    onMarkerClick(data) {
+    onMarkerClick = (data) => {
+        console.log('clicked');
         this.props.onMarkerClickCallback(data);
     }
 
-    mapChange() {
+    mapChange = () => {
         if (this.props && this.props.google) {
             const {google} = this.props;
             const maps = google.maps;
-            this.props.metrics.updateMap(maps, this.props.metricName, this.map);
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
+                onMarkerClick: this.onMarkerClick
+            });
         }
     }
 
@@ -38,7 +41,9 @@ class MapComponent extends Component {
         if (this.props && this.props.google) {
             const {google} = this.props;
             const maps = google.maps;
-            this.props.metrics.updateMap(maps, this.props.metricName, this.map);
+            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
+                onMarkerClick: this.onMarkerClick
+            });
         }
     }
 

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Segment } from 'semantic-ui-react';
+import { List, Segment } from 'semantic-ui-react';
 
 /**
+  * // 
   * Displays information about the selected metric for the given area
   * @reactProps {object} metricStatistics - The metric data to display
   */
@@ -20,10 +21,13 @@ class MetricStatisticsComponent extends Component {
                {
                     this.props.metricStatistics.metricInfo ?
                         <h3 className="ui menu">
-                            {this.props.metricStatistics.metricInfo}
+                            <ul className="metricInfo">
+                                {this.props.metricStatistics.metricInfo.map((info) =>
+                                    <li className="metricInfoItem">{info.label}: {info.value}</li>
+                                )}
+                            </ul>
                         </h3>
-                        : <h3> Data </h3>
-               
+                        : ""
                 }
             </Segment>
         );

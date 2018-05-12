@@ -33,9 +33,9 @@ export default class {
         }
     }
 
-    updateMap = (googleMaps, metricName, map) => {
+    updateMap = (googleMaps, metricName, map, callbacks) => {
         if (metricName in this.metricProcessors) {
-            this.metricProcessors[metricName].updateMap(googleMaps, map);
+            this.metricProcessors[metricName].updateMap(googleMaps, map, callbacks);
         }
         else {
             // throw new Error(`Invalid metric name ${metricName}`)
