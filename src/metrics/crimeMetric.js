@@ -19,6 +19,7 @@ export default class {
         this.previousHeatmapViolent = null;
         this.previousHeatmapNonViolent = null;
         this.previousHeatmapNoCrime = null;
+        this.markers = [];
     }
 
     clearData = () => {
@@ -33,10 +34,9 @@ export default class {
         this.heatmapNoCrime.setMap(null);
         this.heatmapNoCrime = null;
         this.previousHeatmapNoCrime = null;
-
-
-
-
+        for (let marker of this.markers) {
+            marker.setMap(null);
+        }
     }
 
     calculateGridSize
@@ -186,6 +186,7 @@ export default class {
                                 ],
                             });
                             marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
+                            this.markers.push(marker);
                         }
                     }
             }
@@ -231,7 +232,7 @@ export default class {
 
         this.heatmapViolent = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData["Violent"],
-            radius: 100,
+            radius: 200,
             gradient: [
                 'rgba(255, 0, 0, 0)',
                 'rgba(255, 0, 0, 1)',
@@ -240,7 +241,7 @@ export default class {
 
         this.heatmapNonViolent = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData["NonViolent"],
-            radius: 100,
+            radius: 200,
             gradient: [
                 'rgba(255, 255, 0, 0)',
                 'rgba(255, 255, 0, 1)',
@@ -249,7 +250,7 @@ export default class {
 
         this.heatmapNoCrime = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData["NoCrime"],
-            radius: 100,
+            radius: 200,
             gradient: [
                 'rgba(0, 255, 0, 0)',
                 'rgba(0, 255, 0, 1)',
