@@ -16,13 +16,23 @@ function convertToRadians(degreeValue) {
 export default class {
 
     constructor() {
-        this.previousHeatmap = null;
+        this.previousHeatmapShort = null;
+        this.previousHeatmapMedium = null;
+        this.previousHeatmapLong = null;   
     }
 
     clearData = () => {
-        this.heatmap.setMap(null);
-        this.heatmap = null;
-        this.previousHeatmap = null;
+        this.heatmapShort.setMap(null);
+        this.heatmapShort = null;
+        this.previousHeatmapShort = null;
+
+        this.heatmapMedium.setMap(null);
+        this.heatmapMedium = null;
+        this.previousHeatmapMedium = null;
+
+        this.heatmapLong.setMap(null);
+        this.heatmapLong = null;
+        this.previousHeatmapLong = null;
     }
 
     calculateGridSize
@@ -156,15 +166,28 @@ export default class {
             return [];
         }
 
-        let heatmapData = [];
+        let heatmapData = {"Short" : [], "Medium" : [], "Long" : []};
 
         for (let commute of commuteData) {
+            if (Number(commute.commuteTime) > 40){
+                heatmapData["Long"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });                
+            } else if (Number(commute.commuteTime) > 25){
+                heatmapData["Medium"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });                
+            } else {
+                heatmapData["Short"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });                
+            }
 
-            heatmapData.push({
-                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                weight: 1
-            });
 
+            /*
             const marker = new googleMaps.Marker({
                 position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
 
@@ -174,10 +197,10 @@ export default class {
                     {label: 'Zip Code', value: commute.zipCode},
                     {label: 'State', value: commute.state},
                     {label: 'County', value: commute.county},
-                    {label: 'Commute Time', value: commute.commuteTime}                   ],
+                ]
             });
             marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
-        
+            */
         }
         return heatmapData;
     }
@@ -216,30 +239,52 @@ export default class {
         console.log(commuteData);
 
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
-        this.heatmap = new googleMaps.visualization.HeatmapLayer({
-            data: heatmapData,
-            radius: 90,
+        this.heatmapShort = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Short"],
+            radius: 200,
             gradient: [
-                'rgba(0, 255, 255, 0)',
-                'rgba(0, 255, 255, 1)',
-                'rgba(0, 191, 255, 1)',
-                'rgba(0, 127, 255, 1)',
-                'rgba(0, 63, 255, 1)',
-                'rgba(0, 0, 255, 1)',
-                'rgba(0, 0, 223, 1)',
-                'rgba(0, 0, 191, 1)',
-                'rgba(0, 0, 159, 1)',
-                'rgba(0, 0, 127, 1)',
-                'rgba(63, 0, 91, 1)',
-                'rgba(127, 0, 63, 1)',
-                'rgba(191, 0, 31, 1)',
-                'rgba(255, 0, 0, 1)'
+                'rgba(0, 255, 0, 0)',
+                'rgba(0, 255, 0, 1)',
             ]
         });
-        if (this.previousHeatmap) {
-            this.previousHeatmap.setMap(null);
+
+        this.heatmapMedium = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Medium"],
+            radius: 200,
+            gradient: [
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        });
+
+        this.heatmapLong = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Long"],
+            radius: 200,
+            gradient: [
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
+            ]
+        });
+
+
+
+
+        if (this.previousHeatmapShort) {
+            this.previousHeatmapShort.setMap(null);
         }
-        this.heatmap.setMap(map);
-        this.previousHeatmap = this.heatmap;
+        this.heatmapShort.setMap(map);
+        this.previousHeatmapShort = this.heatmapShort;
+
+        if (this.previousHeatmapMedium) {
+            this.previousHeatmapMedium.setMap(null);
+        }
+        this.heatmapMedium.setMap(map);
+        this.previousHeatmapMedium = this.heatmapMedium;
+
+        if (this.previousHeatmapLong) {
+            this.previousHeatmapLong.setMap(null);
+        }
+        this.heatmapLong.setMap(map);
+        this.previousHeatmapLong = this.heatmapLong;
     }
 }
