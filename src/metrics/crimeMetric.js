@@ -124,6 +124,7 @@ export default class {
         let heatmapData = [];
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
+
                     const cellLocation = grid[row][column].cellCenterCoordinates;
                     heatmapData.push({
                         location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
