@@ -35,10 +35,6 @@ export default class {
      * @param      {<type>}  bounds    The bounds
      * @return     {Array}   The corresponding cell.
      */
-
-/* Not sure if we will use the grid idea for commute data since it is only at the zipcode level, 
-
-
      calculateCorrespondingCell = (commute, cellSize, bounds, gridSize) => {
         const topLeftCoordinates = {
             latitude: bounds.getNorthEast().lat(),
@@ -118,6 +114,7 @@ export default class {
         return grid;
     }
 
+/*
     processCommuteData = (googleMaps, commuteData, map, callbacks) => {
         if (!commuteData) {
             return [];
@@ -152,8 +149,8 @@ export default class {
         }
         return heatmapData;
     }
-
 */
+
     processCommuteData = (googleMaps, commuteData, map, callbacks) => {
         if (!commuteData) {
             return [];
@@ -168,24 +165,22 @@ export default class {
                 weight: 1
             });
 
-            // Determine grid cell for commute
-                const marker = new googleMaps.Marker({
-                    position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+            const marker = new googleMaps.Marker({
+                position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
 
-
-
-                    map: map,
-                    information: [
-                        {label: 'Zip Code', value: commute.zipCode},
-                        {label: 'Commute Time', value: commute.commuteTime},
-                    ],
-                });
-                marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
+                map: map,
+                information: [
+                    {label: 'Commute Time', value: commute.commuteTime},
+                    {label: 'Zip Code', value: commute.zipCode},
+                    {label: 'State', value: commute.state},
+                    {label: 'County', value: commute.county},
+                    {label: 'Commute Time', value: commute.commuteTime}                   ],
+            });
+            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
         
         }
         return heatmapData;
     }
-
 
     /**
      * Fetches a commute data from backend server. This should probably be moved to another class
@@ -219,6 +214,7 @@ export default class {
     updateMap = async (googleMaps, map, callbacks) => {
         const commuteData = await this.fetchData(map.getBounds());
         console.log(commuteData);
+
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData,
