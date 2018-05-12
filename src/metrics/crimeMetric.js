@@ -123,15 +123,11 @@ export default class {
         let heatmapData = [];
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
-                    // console.log(grid[row][column]);
                     const cellLocation = grid[row][column].cellCenterCoordinates;
-                    // console.log(cellLocation);
                     heatmapData.push({
                         location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
                         weight: 1
                     });
-
-                    // console.log(crimeData);
                     // Add a markers for crimes
                     for (let agency of crimeData) {
                         for (let crime of agency.crimes) {
@@ -154,9 +150,6 @@ export default class {
                     }
             }
         }
-        // for (let data of heatmapData) {
-            // console.log(data.location);
-        // }
         return heatmapData;
     }
 
@@ -191,118 +184,10 @@ export default class {
         return response.data.response;
     }
 
-// load the crime map
-    // crimeMap(map) {
-
-    //         let bounds = map.getBounds();
-
-    //         // Find how much total lat and lng are taken up
-    //         let totalLat = bounds.getNorthEast().lat() - bounds.getSouthWest().lat();
-    //         let totalLng = bounds.getNorthEast().lng() - bounds.getSouthWest().lng();
-
-    //         // init grid for points and grid for info for those points
-    //         let mapGrid = {
-    //             buckets: [],
-    //             bucketData: [],
-    //         }
-    //         let mapBuckets = [];
-    //         let bucketData = [];
-
-    //         // This make a 10x10 grid
-    //         let dim = 10;
-
-    //         // Build the grid
-    //         for (let i = 0; i < dim; i++) {
-    //             let row = [];
-    //             let rowData = [];
-    //             for (let j = 0; j < dim; j++) {
-    //                 row.push(0)
-    //                 rowData.push([]);
-    //             }
-    //             grid.push(row)
-    //             gridData.push(rowData)
-    //         }
-            
-
-    //         // Set up first heatmap data
-    //         let newlocs = fetchCrimeData(bounds);
-                
-    //         // Iterate through all given information
-    //         for (let i = 0; i < newlocs["positions"].length; i++) {
-
-    //             // Get instance of lat and lng for convienence
-    //             let thisLat = newlocs["positions"][i]["lat"];
-    //             let thisLng = newlocs["positions"][i]["lng"];   
-
-    //             // Put that in the grid at the correct position
-    //             for (let j = 0; j < dim; j++) {
-    //                 for (let k = 0; k < dim; k++){
-                        
-    //                     // Set up the bounds for that location
-    //                     let leftBound = smallestLat + (totalLat / dim) * k;
-    //                     let rightBound = leftBound + (totalLat / dim);
-    //                     let bottomBound = smallestLng + (totalLng / dim) * j;
-    //                     let topBound = bottomBound +(totalLng / dim);
-
-    //                     // Check left, right, up, down bounds
-    //                     if (thisLat >= leftBound && thisLat <= rightBound && thisLng <= topBound && thisLng >= bottomBound){
-    //                         // If in update grid to be +1
-    //                         grid[j][k] += 1;
-    //                         gridData[j][k].push(exData[0])
-    //                         break;
-    //                     }
-    //                 }
-    //             }
-    //         }
-
-    //         // Build the heatmaps out of the data 
-    //         let heatmapDataGood = [];
-    //         let heatmapDataBad  = [];
-
-    //         // Iterate through the built grid
-    //         for (let i = 0; i < dim; i++) {
-    //             for (let j = 0; j < dim; j++) {
-
-    //                 // Get info for convience
-    //                 let leftBound = smallestLat + (totalLat / dim) * j;
-    //                 let bottomBound = smallestLng + (totalLng / dim) * i;
-
-    //                 // Lat and lng for where the heatmap dot will be center upon
-    //                 let centerLat = leftBound + (totalLat/dim)/2;
-    //                 let centerLongitude = bottomBound + (totalLng/dim)/2;
-
-    //                 // If there is a crime make it red
-    //                 if (grid[i][j] > 0) {
-    //                     heatmapDataBad.push({
-    //                         location: new google.maps.LatLng(centerLat, centerLongitude),
-    //                         weight: 1
-    //                     })
-
-    //                     // Add a marker with info about the crime
-    //                     const marker = new google.maps.Marker({
-    //                         position: new google.maps.LatLng(centerLat, centerLongitude),
-    //                         map: map,
-    //                         information: gridData[i][j][0]
-    //                     });
-
-    //                     marker.addListener('click', () => this.onMarkerClick(marker.information));
-
-    //                 // If there is no crime make it green
-    //                 } else {
-    //                     heatmapDataGood.push({
-    //                         location: new google.maps.LatLng(centerLat, centerLongitude),
-    //                         weight: 1
-    //                     })
-    //                 }
-    //             }
-    //         }
-    // }
-
     updateMap = async (googleMaps, map, callbacks) => {
         const crimeData = await this.fetchData(map.getBounds());
         console.log(crimeData);
         const heatmapData = this.processCrimeData(googleMaps, crimeData, map, callbacks);
-        let color = Math.ceil(Math.random() * 255);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData,
             radius: 45,
