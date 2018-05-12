@@ -39,6 +39,7 @@ class CodepodsDemographicsComponent extends Component {
         this.setState({
             metricLabel,
             metricName: data.value,
+            metricInfo: "",
         });
     }
 
@@ -54,6 +55,7 @@ class CodepodsDemographicsComponent extends Component {
         return (
             <div>
                 <Grid columns={2} divided>
+
                     <Grid.Row style={{
                         paddingTop: '50px',
                     }}>
