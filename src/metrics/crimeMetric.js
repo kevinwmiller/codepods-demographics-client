@@ -1,7 +1,8 @@
 import Qs from 'qs';
 import server from '../services/server';
 
-import {buildGrid, calculateCorrespondingCell} from '../map/grid';
+const buildGrid =  require('../map/grid').buildGrid;
+const calculateCorrespondingCell = require('../map/grid').calculateCorrespondingCell;
 /**
  * Class for crime metric.
  *
