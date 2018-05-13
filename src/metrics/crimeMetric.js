@@ -39,8 +39,6 @@ export default class {
         }
     }
 
-    calculateGridSize
-
     /**
      * Calculates the corresponding cell. TEST ME
      *
@@ -134,7 +132,7 @@ export default class {
             return [];
         }
         let grid = this.buildGrid(crimeData, map);
-        const avgCrimesPerSquareMile = 2;
+        // const avgCrimesPerSquareMile = 2;
         let heatmapData = {"Violent": [], "NonViolent": [], "NoCrime": []};
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
@@ -151,7 +149,7 @@ export default class {
                         }
                     }
 
-                    if (numViolent == 0 && numNonViolent == 0) {
+                    if (numViolent === 0 && numNonViolent === 0) {
                         heatmapData["NoCrime"].push({
                             location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
                             weight: 1
@@ -275,8 +273,5 @@ export default class {
 
         this.heatmapViolent.setMap(map);
         this.previousHeatmapViolent = this.heatmapViolent;
-
-
-
     }
 }

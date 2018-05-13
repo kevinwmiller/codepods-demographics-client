@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown, Label, Segment } from 'semantic-ui-react';
+import { Dropdown } from 'semantic-ui-react';
 import { filter } from 'lodash';
 
 // This should probably be in a common area

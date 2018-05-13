@@ -24,9 +24,7 @@ class CodepodsDemographicsComponent extends Component {
         this.state = {
             metricLabel: '',
             metricName: '',
-            metricData: [],
-            fetchingData: false,
-            metricInfo: '',
+            metricInfo: [],
         };
     }
 
