@@ -38,13 +38,6 @@ class MapComponent extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props && this.props.google) {
-            const {google} = this.props;
-            const maps = google.maps;
-            this.props.metrics.updateMap(maps, this.props.metricName, this.map, {
-                onMarkerClick: this.onMarkerClick
-            });
-        }
     }
 
     // Initial Load
@@ -72,7 +65,6 @@ class MapComponent extends Component {
     }
 
     render() {
-
         const style = { width: '100%', height: '600px'}
         return ( 
             <div ref="map" style={style}>
