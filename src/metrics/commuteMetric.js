@@ -1,13 +1,6 @@
 import Qs from 'qs'
 import server from '../services/server'
 
-// These can and probably should be moved to their own file
-const lengthOfLatitudeDegreeAtEquator = 69.172;
-
-function convertToRadians(degreeValue) {
-    return (degreeValue * Math.PI) / 180;
-}
-
 /**
  * Class for commute metric.
  *
