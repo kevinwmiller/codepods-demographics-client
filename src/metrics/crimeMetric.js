@@ -25,8 +25,6 @@ export default class {
         this.previousHeatmap = null;
     }
 
-    calculateGridSize
-
     /**
      * Calculates the corresponding cell. TEST ME
      *
@@ -120,35 +118,59 @@ export default class {
             return [];
         }
         let grid = this.buildGrid(crimeData, map);
-        const avgCrimesPerSquareMile = 2;
-        let heatmapData = [];
+        // const avgCrimesPerSquareMile = 2;
+        let heatmapData = {"Violent": [], "NonViolent": [], "NoCrime": []};
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
-                    const cellLocation = grid[row][column].cellCenterCoordinates;
-                    heatmapData.push({
+                const cellLocation = grid[row][column].cellCenterCoordinates;
+
+                let numViolent = 0;
+                let numNonViolent = 0;
+
+                for (let i = 0; i < grid[row][column].cellData.length; i++) {
+                    if (grid[row][column].cellData[i].categorization.category === "violent") {
+                        numViolent += 1;
+                    } else {
+                        numNonViolent += 1;
+                    }
+                }
+
+                if (numViolent === 0 && numNonViolent === 0) {
+                    heatmapData["NoCrime"].push({
                         location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
                         weight: 1
                     });
-                    // Add a markers for crimes
-                    for (let agency of crimeData) {
-                        for (let crime of agency.crimes) {
-                            // Determine grid cell for crime
-                            const marker = new googleMaps.Marker({
-                                position: new googleMaps.LatLng(crime.location.latitude, crime.location.longitude),
-                                map: map,
-                                information: [
-                                    {label: 'Case Number', value: crime.caseNumber},
-                                    {label: 'Address', value: crime.incidentAddress},
-                                    {label: 'City', value: crime.city},
-                                    {label: 'Description', value: crime.incidentDescription},
-                                    {label: 'Date of Occurrence', value: crime.timestamp},
-                                    {label: 'Category', value: crime.categorization.category},
-                                    {label: 'Type', value: crime.primaryType},
-                                ],
-                            });
-                            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
-                        }
+                } else if (numViolent >= numNonViolent) {
+                    heatmapData["Violent"].push({
+                        location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                        weight: 1
+                    });
+                } else {
+                    heatmapData["NonViolent"].push({
+                        location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
+                        weight: 1
+                    });
+                }
+                // Add a markers for crimes
+                for (let agency of crimeData) {
+                    for (let crime of agency.crimes) {
+                        // Determine grid cell for crime
+                        const marker = new googleMaps.Marker({
+                            position: new googleMaps.LatLng(crime.location.latitude, crime.location.longitude),
+                            map: map,
+                            information: [
+                                {label: 'Case Number', value: crime.caseNumber},
+                                {label: 'Address', value: crime.incidentAddress},
+                                {label: 'City', value: crime.city},
+                                {label: 'Description', value: crime.incidentDescription},
+                                {label: 'Date of Occurrence', value: crime.timestamp},
+                                {label: 'Category', value: crime.categorization.category},
+                                {label: 'Type', value: crime.primaryType},
+                            ],
+                        });
+                        marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
                     }
+                }
             }
         }
         return heatmapData;
@@ -212,7 +234,17 @@ export default class {
         if (this.previousHeatmap) {
             this.previousHeatmap.setMap(null);
         }
-        this.heatmap.setMap(map);
-        this.previousHeatmap = this.heatmap;
+        if (this.previousHeatmapViolent) {
+            this.previousHeatmapViolent.setMap(null);
+        }
+
+        this.heatmapNoCrime.setMap(map);
+        this.previousHeatmapNoCrime = this.heatmapNoCrime;
+        
+        this.heatmapNonViolent.setMap(map);
+        this.previousHeatmapNonViolent = this.heatmapNonViolent;
+
+        this.heatmapViolent.setMap(map);
+        this.previousHeatmapViolent = this.heatmapViolent;
     }
 }

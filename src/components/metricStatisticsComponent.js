@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { List, Segment } from 'semantic-ui-react';
+
+// import red from '../red-legend.png';
+// import green from '../green-legend.png'
+// import yellow from '../yellow-legend.png'
+
+
+import { Segment } from 'semantic-ui-react';
 
 /**
   * // 
@@ -9,6 +15,28 @@ import { List, Segment } from 'semantic-ui-react';
   */
 class MetricStatisticsComponent extends Component {
     render() {
+
+        // // Set up the legend
+        // var badInfo = "";
+        // var middleInfo = "";
+        // var goodInfo = "";
+
+        // These should be in the corresponding metrics classes. The marker.information key can be set to contain this information
+        // // Set up legend based on which statistic is used
+        // if (this.props.metricStatistics.metricLabel === "Crime") {
+        //     badInfo = "Violent Crime";
+        //     middleInfo = "Non-Violent Crime";
+        //     goodInfo = "No Crime";
+        // } else if (this.props.metricStatistics.metricLabel === "Income") {
+        //     badInfo = "Below 49,999$";
+        //     middleInfo = "Between 50,000$ and 99,999$";
+        //     goodInfo = "Above 100,000$";
+        // } else if (this.props.metricStatistics.metricLabel === "Commute") {
+        //     badInfo = "Over an Hour";
+        //     middleInfo = "Thirty Minutes to an Hour";
+        //     goodInfo = "Less than Thirty Minutes";
+        // }
+
         return (
             <Segment>
                 {
@@ -40,8 +68,9 @@ MetricStatisticsComponent.propTypes = {
         metricLabel: PropTypes.string.isRequired,
         metricName: PropTypes.string.isRequired,
         metricInfo: PropTypes.arrayOf(PropTypes.shape({
-            value: PropTypes.number,
-        })).isRequired,
+            label: PropTypes.string,
+            value: PropTypes.string
+        })),
     }).isRequired,
 };
 

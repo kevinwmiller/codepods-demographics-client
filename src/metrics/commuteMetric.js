@@ -24,9 +24,7 @@ export default class {
         this.heatmap = null;
         this.previousHeatmap = null;
     }
-
-    calculateGridSize
-
+    
     /**
      * Calculates the corresponding cell. TEST ME
      *
