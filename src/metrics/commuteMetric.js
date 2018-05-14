@@ -76,42 +76,42 @@ export default class {
                         location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
                         weight: 1
                     });
-
-                    for (let commute of commuteData) {
-
-                        if (commute.commuteTime<=10)
-                            heatmapData["Short"].push({
-                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                                weight: 1
-                            });
-                        else if (commute.commuteTime>20)         
-                            heatmapData["Long"].push({
-                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                                weight: 1
-                            });
-                        else
-                            heatmapData["Average"].push({
-                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                                weight: 1
-                            });
-
-
-                            const marker = new googleMaps.Marker({
-                            position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                            map: map,
-                            information: [
-                                {label: 'Commute Time (mins)', value: commute.commuteTime},
-                                {label: 'Zip Code', value: commute.zipCode},
-                                {label: 'State', value: commute.state},
-                                {label: 'County', value: commute.county}
-                            ]
-                            });
-                        marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
-                        this.markers.push(marker);
-                    }
-            
-             }
+            }
         }
+         
+        for (let commute of commuteData) {
+
+            if (commute.commuteTime<=15)
+                heatmapData["Short"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });
+            else if (commute.commuteTime>30)         
+                heatmapData["Long"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });
+            else
+                heatmapData["Average"].push({
+                    location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                    weight: 1
+                });
+
+
+            const marker = new googleMaps.Marker({
+            position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+            map: map,
+            information: [
+                {label: 'Commute Time (mins)', value: commute.commuteTime},
+                {label: 'Zip Code', value: commute.zipCode},
+                {label: 'State', value: commute.state},
+                {label: 'County', value: commute.county}
+            ]
+            });
+            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
+            this.markers.push(marker);
+    }
+
         return heatmapData;
     }
 
@@ -150,13 +150,14 @@ export default class {
 
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
         
+
         this.heatmapLong = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData["Long"],
             radius: 400,
             gradient: [
                 'rgba(255, 0, 0, 0)',
-                'rgba(255, 0, 0, 1)',
-            ]
+                'rgba(255, 0, 0, 0.75)',
+           ]
         });
 
         this.heatmapAverage = new googleMaps.visualization.HeatmapLayer({
@@ -164,16 +165,16 @@ export default class {
             radius: 400,
             gradient: [
                 'rgba(255, 255, 0, 0)',
-                'rgba(255, 255, 0, 1)',
+                'rgba(255, 255, 0, 0.75)',
             ]
         });
-
+    
         this.heatmapShort = new googleMaps.visualization.HeatmapLayer({
             data: heatmapData["Short"],
             radius: 400,
             gradient: [
                 'rgba(0, 255, 0, 0)',
-                'rgba(0, 255, 0, 1)',
+                'rgba(0, 255, 0, 0.75)',
             ]
         });
 
@@ -187,13 +188,14 @@ export default class {
         if (this.previousHeatmapShort) {
             this.previousHeatmapShort.setMap(null);
         }
-        this.heatmapLong.setMap(map);
-        this.previousHeatmapLong = this.heatmapLong;
 
         this.heatmapAverage.setMap(map);
         this.previousHeatmapAverage = this.heatmapAverage;
 
         this.heatmapShort.setMap(map);
         this.previousHeatmapShort = this.heatmapShort;
+
+        this.heatmapLong.setMap(map);
+        this.previousHeatmapLong = this.heatmapLong;
     }
 }
