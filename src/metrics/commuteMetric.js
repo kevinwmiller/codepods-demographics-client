@@ -8,6 +8,10 @@ function convertToRadians(degreeValue) {
     return (degreeValue * Math.PI) / 180;
 }
 
+const buildGrid =  require('../map/grid').buildGrid;
+const calculateCorrespondingCell = require('../map/grid').calculateCorrespondingCell;
+
+
 /**
  * Class for commute metric.
  *
@@ -16,14 +20,25 @@ function convertToRadians(degreeValue) {
 export default class {
 
     constructor() {
-        this.previousHeatmap = null;
+        this.previousheatmapLong = null;
+        this.previousheatmapAverage = null;
+        this.previousheatmapShort = null;
         this.markers = [];
     }
 
     clearData = () => {
-        this.heatmap.setMap(null);
-        this.heatmap = null;
-        this.previousHeatmap = null;
+        this.heatmapLong.setMap(null);
+        this.heatmapLong = null;
+        this.previousHeatmapLong = null;
+
+        this.heatmapAverage.setMap(null);
+        this.heatmapAverage = null;
+        this.previousHeatmapAverage = null;
+
+        this.heatmapShort.setMap(null);
+        this.heatmapShort = null;
+        this.previousHeatmapShort = null;
+
         for (let marker of this.markers) {
             marker.setMap(null);
         }
@@ -116,65 +131,55 @@ export default class {
         return grid;
     }
 
-/*
     processCommuteData = (googleMaps, commuteData, map, callbacks) => {
         if (!commuteData) {
             return [];
         }
         let grid = this.buildGrid(commuteData, map);
         const avgCrimesPerSquareMile = 2;
-        let heatmapData = [];
+        let heatmapData = {"Long": [], "Short": [], "Average": []};
         for (let row of grid.keys()) {
             for (let column of grid[row].keys()) {
                     const cellLocation = grid[row][column].cellCenterCoordinates;
-                    heatmapData.push({
+                    heatmapData["Average"].push({
                         location: new googleMaps.LatLng(cellLocation.latitude, cellLocation.longitude),
                         weight: 1
                     });
-                    // Add a markers for crimes
+
                     for (let commute of commuteData) {
 
-                      // Determine grid cell for commute
-                            const marker = new googleMaps.Marker({
-                                position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                                map: map,
-                                information: [
-                                    {label: 'Zip Code', value: commute.zipCode},
-                                    {label: 'Commute Time', value: commute.commuteTime},
-                                ],
+                        if (commute.commuteTime<=10)
+                            heatmapData["Short"].push({
+                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                                weight: 1
                             });
-                            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
-           
+                        else if (commute.commuteTime>20)         
+                            heatmapData["Long"].push({
+                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                                weight: 1
+                            });
+                        else
+                            heatmapData["Average"].push({
+                                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                                weight: 1
+                            });
+
+
+                            const marker = new googleMaps.Marker({
+                            position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
+                            map: map,
+                            information: [
+                                {label: 'Commute Time (mins)', value: commute.commuteTime},
+                                {label: 'Zip Code', value: commute.zipCode},
+                                {label: 'State', value: commute.state},
+                                {label: 'County', value: commute.county}
+                            ]
+                            });
+                        marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
+                        this.markers.push(marker);
                     }
-
+            
              }
-        }
-        return heatmapData;
-    }
-*/
-
-    processCommuteData = (googleMaps, commuteData, map, callbacks) => {
-        if (!commuteData) {
-            return [];
-        }
-        let heatmapData = [];
-        for (let commute of commuteData) {
-            heatmapData.push({
-                location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                weight: 1
-            });
-            const marker = new googleMaps.Marker({
-                position: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
-                map: map,
-                information: [
-                    {label: 'Commute Time (mins)', value: commute.commuteTime},
-                    {label: 'Zip Code', value: commute.zipCode},
-                    {label: 'State', value: commute.state},
-                    {label: 'County', value: commute.county}
-                ]
-                });
-            marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
-            this.markers.push(marker);
         }
         return heatmapData;
     }
@@ -213,30 +218,51 @@ export default class {
         console.log(commuteData);
 
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
-        this.heatmap = new googleMaps.visualization.HeatmapLayer({
-            data: heatmapData,
-            radius: 90,
+        
+        this.heatmapLong = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Long"],
+            radius: 400,
             gradient: [
-                'rgba(0, 255, 255, 0)',
-                'rgba(0, 255, 255, 1)',
-                'rgba(0, 191, 255, 1)',
-                'rgba(0, 127, 255, 1)',
-                'rgba(0, 63, 255, 1)',
-                'rgba(0, 0, 255, 1)',
-                'rgba(0, 0, 223, 1)',
-                'rgba(0, 0, 191, 1)',
-                'rgba(0, 0, 159, 1)',
-                'rgba(0, 0, 127, 1)',
-                'rgba(63, 0, 91, 1)',
-                'rgba(127, 0, 63, 1)',
-                'rgba(191, 0, 31, 1)',
-                'rgba(255, 0, 0, 1)'
+                'rgba(255, 0, 0, 0)',
+                'rgba(255, 0, 0, 1)',
             ]
         });
-        if (this.previousHeatmap) {
-            this.previousHeatmap.setMap(null);
+
+        this.heatmapAverage = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Average"],
+            radius: 200,
+            gradient: [
+                'rgba(255, 255, 0, 0)',
+                'rgba(255, 255, 0, 1)',
+            ]
+        });
+
+        this.heatmapShort = new googleMaps.visualization.HeatmapLayer({
+            data: heatmapData["Short"],
+            radius: 400,
+            gradient: [
+                'rgba(0, 255, 0, 0)',
+                'rgba(0, 255, 0, 1)',
+            ]
+        });
+
+
+        if (this.previousHeatmapLong) {
+            this.previousHeatmapLong.setMap(null);
         }
-        this.heatmap.setMap(map);
-        this.previousHeatmap = this.heatmap;
+        if (this.previousHeatmapAverage) {
+            this.previousHeatmapAverage.setMap(null);
+        }
+        if (this.previousHeatmapShort) {
+            this.previousHeatmapShort.setMap(null);
+        }
+        this.heatmapLong.setMap(map);
+        this.previousHeatmapLong = this.heatmapLong;
+
+        this.heatmapAverage.setMap(map);
+        this.previousHeatmapAverage = this.heatmapAverage;
+
+        this.heatmapShort.setMap(map);
+        this.previousHeatmapShort = this.heatmapShort;
     }
 }
