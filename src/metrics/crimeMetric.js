@@ -8,6 +8,8 @@ function convertToRadians(degreeValue) {
     return (degreeValue * Math.PI) / 180;
 }
 
+const buildGrid =  require('../map/grid').buildGrid;
+const calculateCorrespondingCell = require('../map/grid').calculateCorrespondingCell;
 /**
  * Class for crime metric.
  *
