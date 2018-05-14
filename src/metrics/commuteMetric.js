@@ -110,11 +110,11 @@ export default class {
             map: map,
             information: [
                 {label: 'Commute Time (mins)', value: commute.commuteTime},
-                {label: 'Legend', value: 'Max: ' + parseInt(this.rubic["Max"]*10)/10
-                                      + ' Min: ' + parseInt(this.rubic["Min"]*10)/10
-                                      + ' Average: ' + parseInt(this.rubic["Avg"]*10)/10 
-                                      + ' Long: ' + parseInt(this.rubic["Long"]*10)/10
-                                     + ' Short: ' + parseInt(this.rubic["Short"]*10)/10 },
+                {label: 'Legend', value: 'Max: ' + parseInt(this.rubic["Max"]*10,10)/10
+                                      + ' Min: ' + parseInt(this.rubic["Min"]*10,10)/10
+                                      + ' Average: ' + parseInt(this.rubic["Avg"]*10,10)/10 
+                                      + ' Long: ' + parseInt(this.rubic["Long"]*10,10)/10
+                                     + ' Short: ' + parseInt(this.rubic["Short"]*10,10)/10 },
                 {label: 'Zip Code', value: commute.zipCode},
                 {label: 'State', value: commute.state},
                 {label: 'County', value: commute.county},
