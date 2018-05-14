@@ -6,9 +6,7 @@
 
 */
 import React, { Component } from 'react';
-//import { Container } from 'semantic-ui-react';
-import { Container, Segment } from 'semantic-ui-react';
-
+import { Container } from 'semantic-ui-react';
 import './App.css';
 import CodepodsDemographicComponent from './components/codepodsDemographicsComponent';
 

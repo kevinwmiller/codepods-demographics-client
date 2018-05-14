@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types';
 import {GoogleApiWrapper} from 'google-maps-react';
 
-
 const config = require('../config');
 
 /*
@@ -17,7 +16,6 @@ MetricLabel.propTypes = {
   * A wrapper around a GoogleMap component that controls the rendering of different metric data
   * @reactProps {string} metricName - The metric to display
   */
-
 class MapComponent extends Component {
 
     onMarkerClick = (data) => {
@@ -39,12 +37,6 @@ class MapComponent extends Component {
         this.loadMap(); 
     }
 
-    /**
-     * { componentDidUpdate }
-     *
-     * @param      {<type>}  prevProps  The previous properties
-     * @param      {<type>}  prevState  The previous state
-     */
     componentDidUpdate(prevProps, prevState) {
         if (this.props && this.props.google) {
             const {google} = this.props;
@@ -75,14 +67,11 @@ class MapComponent extends Component {
 
             // Update the heatmap when the bounds change
             this.map.addListener("dragend", () => this.mapChange());
-            this.map.addListener("zoom_change", () => this.mapChange());
-
+            this.map.addListener("zoom_changed", () => this.mapChange());
         }
-
     }
 
     render() {
-
         const style = { width: '100%', height: '600px'}
         return ( 
             <div ref="map" style={style}>

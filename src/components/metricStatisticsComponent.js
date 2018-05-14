@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 
 import { Segment } from 'semantic-ui-react';
 
-
 /**
   * // 
   * Displays information about the selected metric for the given area
