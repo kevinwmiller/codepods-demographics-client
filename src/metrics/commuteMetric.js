@@ -211,7 +211,6 @@ export default class {
     updateMap = async (googleMaps, map, callbacks) => {
         const commuteData = await this.fetchData(map.getBounds());
         console.log(commuteData);
-        console.log('===================');
 
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
         this.heatmap = new googleMaps.visualization.HeatmapLayer({
