@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// import red from '../red-legend.png';
-// import green from '../green-legend.png'
-// import yellow from '../yellow-legend.png'
+import red from '../red-legend.png';
+import green from '../green-legend.png'
+import yellow from '../yellow-legend.png'
 
 
-import { Segment } from 'semantic-ui-react';
+import { List, Segment } from 'semantic-ui-react';
+
 
 /**
   * // 
@@ -16,28 +17,28 @@ import { Segment } from 'semantic-ui-react';
 class MetricStatisticsComponent extends Component {
     render() {
 
-        // // Set up the legend
-        // var badInfo = "";
-        // var middleInfo = "";
-        // var goodInfo = "";
+        // Set up the legend
+        var badInfo = "";
+        var middleInfo = "";
+        var goodInfo = "";
 
-        // These should be in the corresponding metrics classes. The marker.information key can be set to contain this information
-        // // Set up legend based on which statistic is used
-        // if (this.props.metricStatistics.metricLabel === "Crime") {
-        //     badInfo = "Violent Crime";
-        //     middleInfo = "Non-Violent Crime";
-        //     goodInfo = "No Crime";
-        // } else if (this.props.metricStatistics.metricLabel === "Income") {
-        //     badInfo = "Below 49,999$";
-        //     middleInfo = "Between 50,000$ and 99,999$";
-        //     goodInfo = "Above 100,000$";
-        // } else if (this.props.metricStatistics.metricLabel === "Commute") {
-        //     badInfo = "Over an Hour";
-        //     middleInfo = "Thirty Minutes to an Hour";
-        //     goodInfo = "Less than Thirty Minutes";
-        // }
+        // Set up legend based on which statistic is used
+        if (this.props.metricStatistics.metricLabel === "Crime") {
+            badInfo = "Violent Crime";
+            middleInfo = "Non-Violent Crime";
+            goodInfo = "No Crime";
+        } else if (this.props.metricStatistics.metricLabel === "Income") {
+            badInfo = "Below 49,999$";
+            middleInfo = "Between 50,000$ and 99,999$";
+            goodInfo = "Above 100,000$";
+        } else if (this.props.metricStatistics.metricLabel === "Commute") {
+            badInfo = "Over an Hour";
+            middleInfo = "Thirty Minutes to an Hour";
+            goodInfo = "Less than Thirty Minutes";
+        }
 
         return (
+
             <Segment>
                 {
                     this.props.metricStatistics.metricLabel ?
@@ -48,6 +49,19 @@ class MetricStatisticsComponent extends Component {
                }
                {
                     this.props.metricStatistics.metricInfo ?
+                    /*
+<<<<<<< HEAD
+                        <h3 className="ui header">
+                            {this.props.metricStatistics.metricInfo}
+                        </h3>
+                        : 
+                        <div> <h3><img src={red} alt="legend"></img> {badInfo} </h3>
+                                <h3><img src={yellow} alt="legend"></img> {middleInfo} </h3>
+                                <h3><img src={green} alt="legend"></img> {goodInfo} </h3>
+                        </div> 
+                        
+=======
+*/
                         <h3 className="ui menu">
                             <ul className="metricInfo">
                                 {this.props.metricStatistics.metricInfo.map((info) =>
@@ -68,9 +82,8 @@ MetricStatisticsComponent.propTypes = {
         metricLabel: PropTypes.string.isRequired,
         metricName: PropTypes.string.isRequired,
         metricInfo: PropTypes.arrayOf(PropTypes.shape({
-            label: PropTypes.string,
-            value: PropTypes.string
-        })),
+            value: PropTypes.number,
+        })).isRequired,
     }).isRequired,
 };
 
