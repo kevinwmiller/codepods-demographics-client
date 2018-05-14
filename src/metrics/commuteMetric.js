@@ -26,6 +26,8 @@ export default class {
         this.previousheatmapAverage = null;
         this.previousheatmapShort = null;
         this.markers = [];
+
+        this.rubic = {"Max": null, "Min": null, "Avg": null, "Short": null, "Long": null};
     }
 
     clearData = () => {
@@ -78,15 +80,20 @@ export default class {
                     });
             }
         }
-         
+    
+        let short= this.rubic.Short;
+        let long= this.rubic.Long
+
         for (let commute of commuteData) {
 
-            if (commute.commuteTime<=15)
+            console.log(short + ' ' + long + ' ' +commute.commuteTime);
+
+            if (commute.commuteTime<=short)
                 heatmapData["Short"].push({
                     location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
                     weight: 1
                 });
-            else if (commute.commuteTime>30)         
+            else if (commute.commuteTime>long)         
                 heatmapData["Long"].push({
                     location: new googleMaps.LatLng(commute.location.latitude, commute.location.longitude),
                     weight: 1
@@ -103,9 +110,14 @@ export default class {
             map: map,
             information: [
                 {label: 'Commute Time (mins)', value: commute.commuteTime},
+                {label: 'Legend', value: 'Max: ' + parseInt(this.rubic["Max"]*10)/10
+                                      + ' Min: ' + parseInt(this.rubic["Min"]*10)/10
+                                      + ' Average: ' + parseInt(this.rubic["Avg"]*10)/10 
+                                      + ' Long: ' + parseInt(this.rubic["Long"]*10)/10
+                                     + ' Short: ' + parseInt(this.rubic["Short"]*10)/10 },
                 {label: 'Zip Code', value: commute.zipCode},
                 {label: 'State', value: commute.state},
-                {label: 'County', value: commute.county}
+                {label: 'County', value: commute.county},
             ]
             });
             marker.addListener('click', () => callbacks.onMarkerClick(marker.information));
@@ -114,6 +126,32 @@ export default class {
 
         return heatmapData;
     }
+
+
+    calcRubic = async (commuteData) => {
+
+        let max=0;
+        let min=999999999999;
+        let avg=0;
+        let sum=0
+        let cnt=0; 
+        for (let commute of commuteData) {
+            if (commute.commuteTime<min && commute.commuteTime>0) min=commute.commuteTime; //dont use zeros (bad data)
+            if (commute.commuteTime>max) max=commute.commuteTime;
+            sum = Number(sum) + Number(commute.commuteTime) ;
+            cnt++;
+            avg=sum/cnt;
+        }
+
+        this.rubic['Max'] = max;
+        this.rubic['Min'] = min;
+        this.rubic['Avg'] = avg;
+        this.rubic['Short'] = Number(min)+Number(avg-min)/2;
+        this.rubic['Long'] = Number(max)-Number(max-avg)/2;
+        console.log(this.rubic)
+    }
+
+
 
     /**
      * Fetches a commute data from backend server. This should probably be moved to another class
@@ -147,6 +185,8 @@ export default class {
     updateMap = async (googleMaps, map, callbacks) => {
         const commuteData = await this.fetchData(map.getBounds());
         console.log(commuteData);
+
+        this.calcRubic(commuteData);
 
         const heatmapData = this.processCommuteData(googleMaps, commuteData, map, callbacks);
         
