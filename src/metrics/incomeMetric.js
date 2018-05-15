@@ -57,15 +57,14 @@ export default class {
                console.log("name: " + counties.data.response[i]);
                console.log("income: " + incD[counties.data.response[i]]);
                const path = geometry_dict[counties.data.response[i]].coordinates;
+               var strokeColor = '#000000';
                var fillColor = null;
-               var strokeColor = null;
 	       if (incD[counties.data.response[i]] < 45000) {
-	           strokeColor = fillColor = '#FF0000';
-
+	           fillColor = '#FF0000';
 	       } else if (incD[counties.data.response[i]] >= 45000 && incD[counties.data.response[i]] < 60000) {
-                   strokeColor = fillColor = '#FFFF00'
+                   fillColor = '#FFFF00'
 	       } else if (incD[counties.data.response[i]] >=60000) {
-                   strokeColor = fillColor = '#00FF00'
+                   fillColor = '#00FF00'
 	       }
 	       var strokeOpacity = .8;
                var strokeWeight = 2;
