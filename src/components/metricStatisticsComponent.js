@@ -14,6 +14,23 @@ import { Segment } from 'semantic-ui-react';
   * @reactProps {object} metricStatistics - The metric data to display
   */
 class MetricStatisticsComponent extends Component {
+
+    constructor(props) {
+        super();
+        this.state = {
+            metricLabel: '',
+        };
+    }
+
+    componentDidUpdate = (prevProps, prevState) => {
+        if (this.props.metricStatistics.metricLabel !== prevProps.metricStatistics.metricLabel) {
+            this.setState({
+                metricLabel: this.props.metricStatistics.metricLabel
+            });
+            this.props.metricStatistics.metricInfo = [];
+        }
+    }
+
     render() {
 
         // // Set up the legend
@@ -40,9 +57,9 @@ class MetricStatisticsComponent extends Component {
         return (
             <Segment>
                 {
-                    this.props.metricStatistics.metricLabel ?
+                    this.state.metricLabel ?
                         <h2 className="ui header">
-                            {this.props.metricStatistics.metricLabel} Statistics
+                            {this.state.metricLabel} Statistics
                         </h2>
                         : <h3> Statistics </h3>
                }
