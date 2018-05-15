@@ -86,7 +86,6 @@ export default class {
 
         for (let commute of commuteData) {
 
-            console.log(short + ' ' + long + ' ' +commute.commuteTime);
 
             if (commute.commuteTime<=short)
                 heatmapData["Short"].push({

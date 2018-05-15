@@ -1,0 +1,1951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Maryland Counties</name>
+    <description>Boundaries of Maryland Counties</description>
+    <Style id="poly-9ECAE1-2000-127-normal">
+      <LineStyle>
+        <color>ffe1ca9e</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-9ECAE1-2000-127-highlight">
+      <LineStyle>
+        <color>ffe1ca9e</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-9ECAE1-2000-127">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-9ECAE1-2000-127-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-9ECAE1-2000-127-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>cb_2017_us_county_20m</name>
+      <Placemark>
+        <name>Allegany</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  001 <br>  COUNTYNS  01713506 <br>  AFFGEOID  0500000US24001 <br>  GEOID  24001 <br>  NAME  Allegany <br>  LSAD  06 <br>  ALAND  1093331712 <br>  AWATER  14931771 <br>STATEFP: 24<br>COUNTYFP: 001<br>COUNTYNS: 01713506<br>AFFGEOID: 0500000US24001<br>GEOID: 24001<br>NAME: Allegany<br>LSAD: 06<br>ALAND: 1093331712<br>AWATER: 14931771]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  001 
+  COUNTYNS  01713506 
+  AFFGEOID  0500000US24001 
+  GEOID  24001 
+  NAME  Allegany 
+  LSAD  06 
+  ALAND  1093331712 
+  AWATER  14931771 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>001</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01713506</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24001</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24001</value>
+          </Data>
+          <Data name="NAME">
+            <value>Allegany</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1093331712</value>
+          </Data>
+          <Data name="AWATER">
+            <value>14931771</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -79.066892,39.480623,0
+                -79.067447,39.472809,0
+                -79.035623,39.473344,0
+                -78.956751,39.440264,0
+                -78.942618,39.479614,0
+                -78.851016,39.554044,0
+                -78.77114,39.638387,0
+                -78.73905,39.609697,0
+                -78.707098,39.555857,0
+                -78.655036,39.544382,0
+                -78.590654,39.530192,0
+                -78.46827,39.526224,0
+                -78.460951,39.525987,0
+                -78.438179,39.563524,0
+                -78.382959,39.622246,0
+                -78.332788,39.628528,0
+                -78.313325,39.692474,0
+                -78.342834,39.722658,0
+                -78.380477,39.722704,0
+                -78.723578,39.723122,0
+                -78.8083,39.723071,0
+                -78.928416,39.722999,0
+                -79.066892,39.480623,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Anne Arundel</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  003 <br>  COUNTYNS  01710958 <br>  AFFGEOID  0500000US24003 <br>  GEOID  24003 <br>  NAME  Anne Arundel <br>  LSAD  06 <br>  ALAND  1074289193 <br>  AWATER  448097535 <br>STATEFP: 24<br>COUNTYFP: 003<br>COUNTYNS: 01710958<br>AFFGEOID: 0500000US24003<br>GEOID: 24003<br>NAME: Anne Arundel<br>LSAD: 06<br>ALAND: 1074289193<br>AWATER: 448097535]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  003 
+  COUNTYNS  01710958 
+  AFFGEOID  0500000US24003 
+  GEOID  24003 
+  NAME  Anne Arundel 
+  LSAD  06 
+  ALAND  1074289193 
+  AWATER  448097535 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>003</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01710958</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24003</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24003</value>
+          </Data>
+          <Data name="NAME">
+            <value>Anne Arundel</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1074289193</value>
+          </Data>
+          <Data name="AWATER">
+            <value>448097535</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.840362,39.103142,0
+                -76.831424,39.069034,0
+                -76.790741,39.045722,0
+                -76.751258,39.034714,0
+                -76.670111,38.906919,0
+                -76.710639,38.815694,0
+                -76.686358,38.748475,0
+                -76.642749,38.769281,0
+                -76.615902,38.720804,0
+                -76.527093,38.71275,0
+                -76.526655,38.72443,0
+                -76.558743,38.756352,0
+                -76.526979,38.787016,0
+                -76.489878,38.838715,0
+                -76.516944,38.851157,0
+                -76.49068,38.884814,0
+                -76.473976,38.902693,0
+                -76.46938,38.907613,0
+                -76.45028,38.941113,0
+                -76.471281,38.956512,0
+                -76.448981,38.982811,0
+                -76.39408,39.011311,0
+                -76.420394,39.04207,0
+                -76.42186,39.081442,0
+                -76.428681,39.131709,0
+                -76.525785,39.177908,0
+                -76.504009,39.199286,0
+                -76.529486,39.218408,0
+                -76.580287,39.206607,0
+                -76.644212,39.248924,0
+                -76.697085,39.214092,0
+                -76.712164,39.201933,0
+                -76.713346,39.193739,0
+                -76.722606,39.182857,0
+                -76.746544,39.179592,0
+                -76.765016,39.164837,0
+                -76.781511,39.145498,0
+                -76.786966,39.128782,0
+                -76.813312,39.122464,0
+                -76.826665,39.109948,0
+                -76.840362,39.103142,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Baltimore</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  005 <br>  COUNTYNS  01695314 <br>  AFFGEOID  0500000US24005 <br>  GEOID  24005 <br>  NAME  Baltimore <br>  LSAD  06 <br>  ALAND  1549830329 <br>  AWATER  215909963 <br>STATEFP: 24<br>COUNTYFP: 005<br>COUNTYNS: 01695314<br>AFFGEOID: 0500000US24005<br>GEOID: 24005<br>NAME: Baltimore<br>LSAD: 06<br>ALAND: 1549830329<br>AWATER: 215909963]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  005 
+  COUNTYNS  01695314 
+  AFFGEOID  0500000US24005 
+  GEOID  24005 
+  NAME  Baltimore 
+  LSAD  06 
+  ALAND  1549830329 
+  AWATER  215909963 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>005</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01695314</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24005</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24005</value>
+          </Data>
+          <Data name="NAME">
+            <value>Baltimore</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1549830329</value>
+          </Data>
+          <Data name="AWATER">
+            <value>215909963</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.8931,39.457402,0
+                -76.8873,39.440502,0
+                -76.873378,39.35715,0
+                -76.882274,39.350185,0
+                -76.793626,39.313655,0
+                -76.79379,39.265863,0
+                -76.717258,39.225479,0
+                -76.697085,39.214092,0
+                -76.644212,39.248924,0
+                -76.65986,39.255509,0
+                -76.684649,39.266458,0
+                -76.711054,39.277889,0
+                -76.711186,39.354383,0
+                -76.711191,39.362798,0
+                -76.693693,39.372105,0
+                -76.626193,39.372017,0
+                -76.529793,39.372058,0
+                -76.529517,39.297056,0
+                -76.529486,39.218408,0
+                -76.504009,39.199286,0
+                -76.498384,39.204808,0
+                -76.463483,39.205908,0
+                -76.425281,39.205708,0
+                -76.395509,39.231702,0
+                -76.349994,39.248822,0
+                -76.325418,39.272905,0
+                -76.306579,39.310107,0
+                -76.373493,39.421418,0
+                -76.386697,39.459705,0
+                -76.420896,39.478414,0
+                -76.532174,39.543977,0
+                -76.56671,39.662689,0
+                -76.569475,39.721459,0
+                -76.715771,39.721393,0
+                -76.787097,39.721048,0
+                -76.804304,39.675882,0
+                -76.8931,39.457402,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Calvert</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  009 <br>  COUNTYNS  01676636 <br>  AFFGEOID  0500000US24009 <br>  GEOID  24009 <br>  NAME  Calvert <br>  LSAD  06 <br>  ALAND  552178309 <br>  AWATER  341560885 <br>STATEFP: 24<br>COUNTYFP: 009<br>COUNTYNS: 01676636<br>AFFGEOID: 0500000US24009<br>GEOID: 24009<br>NAME: Calvert<br>LSAD: 06<br>ALAND: 552178309<br>AWATER: 341560885]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  009 
+  COUNTYNS  01676636 
+  AFFGEOID  0500000US24009 
+  GEOID  24009 
+  NAME  Calvert 
+  LSAD  06 
+  ALAND  552178309 
+  AWATER  341560885 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>009</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01676636</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24009</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24009</value>
+          </Data>
+          <Data name="NAME">
+            <value>Calvert</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>552178309</value>
+          </Data>
+          <Data name="AWATER">
+            <value>341560885</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.686358,38.748475,0
+                -76.70196,38.710864,0
+                -76.675457,38.535876,0
+                -76.674118,38.499622,0
+                -76.608373,38.424445,0
+                -76.501475,38.372497,0
+                -76.453453,38.305057,0
+                -76.400195,38.319872,0
+                -76.387002,38.361267,0
+                -76.393378,38.389477,0
+                -76.450937,38.442422,0
+                -76.492699,38.482849,0
+                -76.517506,38.539149,0
+                -76.511278,38.615745,0
+                -76.528923,38.663889,0
+                -76.527093,38.71275,0
+                -76.615902,38.720804,0
+                -76.642749,38.769281,0
+                -76.686358,38.748475,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Caroline</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  011 <br>  COUNTYNS  00595737 <br>  AFFGEOID  0500000US24011 <br>  GEOID  24011 <br>  NAME  Caroline <br>  LSAD  06 <br>  ALAND  827350251 <br>  AWATER  16777064 <br>STATEFP: 24<br>COUNTYFP: 011<br>COUNTYNS: 00595737<br>AFFGEOID: 0500000US24011<br>GEOID: 24011<br>NAME: Caroline<br>LSAD: 06<br>ALAND: 827350251<br>AWATER: 16777064]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  011 
+  COUNTYNS  00595737 
+  AFFGEOID  0500000US24011 
+  GEOID  24011 
+  NAME  Caroline 
+  LSAD  06 
+  ALAND  827350251 
+  AWATER  16777064 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>011</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00595737</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24011</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24011</value>
+          </Data>
+          <Data name="NAME">
+            <value>Caroline</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>827350251</value>
+          </Data>
+          <Data name="AWATER">
+            <value>16777064</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.014427,38.726463,0
+                -75.945248,38.674109,0
+                -75.839103,38.704124,0
+                -75.707555,38.635385,0
+                -75.723103,38.829827,0
+                -75.748155,39.143132,0
+                -75.834948,39.108437,0
+                -75.940933,38.976295,0
+                -75.949335,38.918333,0
+                -75.896774,38.815109,0
+                -76.014427,38.726463,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Carroll</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  013 <br>  COUNTYNS  01696228 <br>  AFFGEOID  0500000US24013 <br>  GEOID  24013 <br>  NAME  Carroll <br>  LSAD  06 <br>  ALAND  1159279222 <br>  AWATER  13186154 <br>STATEFP: 24<br>COUNTYFP: 013<br>COUNTYNS: 01696228<br>AFFGEOID: 0500000US24013<br>GEOID: 24013<br>NAME: Carroll<br>LSAD: 06<br>ALAND: 1159279222<br>AWATER: 13186154]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  013 
+  COUNTYNS  01696228 
+  AFFGEOID  0500000US24013 
+  GEOID  24013 
+  NAME  Carroll 
+  LSAD  06 
+  ALAND  1159279222 
+  AWATER  13186154 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>013</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01696228</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24013</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24013</value>
+          </Data>
+          <Data name="NAME">
+            <value>Carroll</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1159279222</value>
+          </Data>
+          <Data name="AWATER">
+            <value>13186154</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.217024,39.720217,0
+                -77.307416,39.619101,0
+                -77.198024,39.57543,0
+                -77.107711,39.494556,0
+                -77.16808,39.353957,0
+                -77.101678,39.369296,0
+                -76.882274,39.350185,0
+                -76.873378,39.35715,0
+                -76.8873,39.440502,0
+                -76.8931,39.457402,0
+                -76.804304,39.675882,0
+                -76.787097,39.721048,0
+                -76.991062,39.720062,0
+                -76.999318,39.720068,0
+                -77.217024,39.720217,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Cecil</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  015 <br>  COUNTYNS  00596115 <br>  AFFGEOID  0500000US24015 <br>  GEOID  24015 <br>  NAME  Cecil <br>  LSAD  06 <br>  ALAND  896857451 <br>  AWATER  185336236 <br>STATEFP: 24<br>COUNTYFP: 015<br>COUNTYNS: 00596115<br>AFFGEOID: 0500000US24015<br>GEOID: 24015<br>NAME: Cecil<br>LSAD: 06<br>ALAND: 896857451<br>AWATER: 185336236]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  015 
+  COUNTYNS  00596115 
+  AFFGEOID  0500000US24015 
+  GEOID  24015 
+  NAME  Cecil 
+  LSAD  06 
+  ALAND  896857451 
+  AWATER  185336236 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>015</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00596115</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24015</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24015</value>
+          </Data>
+          <Data name="NAME">
+            <value>Cecil</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>896857451</value>
+          </Data>
+          <Data name="AWATER">
+            <value>185336236</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.233279,39.721646,0
+                -76.212676,39.686405,0
+                -76.094472,39.56781,0
+                -76.041976,39.494228,0
+                -76.037646,39.452642,0
+                -76.012312,39.453115,0
+                -76.00688,39.414527,0
+                -76.040962,39.394237,0
+                -76.061499,39.387748,0
+                -75.981109,39.366569,0
+                -75.766905,39.377652,0
+                -75.788596,39.722199,0
+                -75.81208,39.72217,0
+                -76.135697,39.721768,0
+                -76.233279,39.721646,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Charles</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  017 <br>  COUNTYNS  01676992 <br>  AFFGEOID  0500000US24017 <br>  GEOID  24017 <br>  NAME  Charles <br>  LSAD  06 <br>  ALAND  1185656912 <br>  AWATER  479539652 <br>STATEFP: 24<br>COUNTYFP: 017<br>COUNTYNS: 01676992<br>AFFGEOID: 0500000US24017<br>GEOID: 24017<br>NAME: Charles<br>LSAD: 06<br>ALAND: 1185656912<br>AWATER: 479539652]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  017 
+  COUNTYNS  01676992 
+  AFFGEOID  0500000US24017 
+  GEOID  24017 
+  NAME  Charles 
+  LSAD  06 
+  ALAND  1185656912 
+  AWATER  479539652 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>017</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01676992</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24017</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24017</value>
+          </Data>
+          <Data name="NAME">
+            <value>Charles</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1185656912</value>
+          </Data>
+          <Data name="AWATER">
+            <value>479539652</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.246584,38.538341,0
+                -77.259962,38.435821,0
+                -77.211188,38.380662,0
+                -77.123325,38.410646,0
+                -77.075489,38.42471,0
+                -77.016371,38.445572,0
+                -77.001638,38.421952,0
+                -76.975492,38.347327,0
+                -76.922177,38.311339,0
+                -76.864292,38.268945,0
+                -76.827036,38.2583,0
+                -76.87146,38.389937,0
+                -76.76829,38.512949,0
+                -76.674118,38.499622,0
+                -76.675457,38.535876,0
+                -76.740747,38.559141,0
+                -76.747335,38.616677,0
+                -76.862955,38.658649,0
+                -77.011028,38.651975,0
+                -77.047656,38.616303,0
+                -77.085785,38.705281,0
+                -77.132501,38.673816,0
+                -77.1302,38.635017,0
+                -77.129084,38.614364,0
+                -77.183767,38.600699,0
+                -77.246584,38.538341,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Dorchester</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  019 <br>  COUNTYNS  00596495 <br>  AFFGEOID  0500000US24019 <br>  GEOID  24019 <br>  NAME  Dorchester <br>  LSAD  06 <br>  ALAND  1400542024 <br>  AWATER  1145384767 <br>STATEFP: 24<br>COUNTYFP: 019<br>COUNTYNS: 00596495<br>AFFGEOID: 0500000US24019<br>GEOID: 24019<br>NAME: Dorchester<br>LSAD: 06<br>ALAND: 1400542024<br>AWATER: 1145384767]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  019 
+  COUNTYNS  00596495 
+  AFFGEOID  0500000US24019 
+  GEOID  24019 
+  NAME  Dorchester 
+  LSAD  06 
+  ALAND  1400542024 
+  AWATER  1145384767 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>019</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00596495</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24019</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24019</value>
+          </Data>
+          <Data name="NAME">
+            <value>Dorchester</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1400542024</value>
+          </Data>
+          <Data name="AWATER">
+            <value>1145384767</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.33636,38.492235,0
+                -76.280551,38.403143,0
+                -76.25,38.362304,0
+                -76.257667,38.324855,0
+                -76.217613,38.305683,0
+                -76.135513,38.232185,0
+                -76.088639,38.192649,0
+                -76.095548,38.125123,0
+                -76.048692,38.086728,0
+                -76.005904,38.07717,0
+                -76.011916,38.122214,0
+                -76.031988,38.18742,0
+                -76.038935,38.254932,0
+                -75.9445,38.249145,0
+                -75.923766,38.246285,0
+                -75.928628,38.297272,0
+                -75.864213,38.350782,0
+                -75.823706,38.481022,0
+                -75.701778,38.560767,0
+                -75.707551,38.635335,0
+                -75.707555,38.635385,0
+                -75.839103,38.704124,0
+                -75.945248,38.674109,0
+                -76.027717,38.572433,0
+                -76.170162,38.640842,0
+                -76.165435,38.6102,0
+                -76.203065,38.610741,0
+                -76.231187,38.61401,0
+                -76.279589,38.60952,0
+                -76.290043,38.569158,0
+                -76.277461,38.541851,0
+                -76.33636,38.492235,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Frederick</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  021 <br>  COUNTYNS  01711211 <br>  AFFGEOID  0500000US24021 <br>  GEOID  24021 <br>  NAME  Frederick <br>  LSAD  06 <br>  ALAND  1710553993 <br>  AWATER  18042333 <br>STATEFP: 24<br>COUNTYFP: 021<br>COUNTYNS: 01711211<br>AFFGEOID: 0500000US24021<br>GEOID: 24021<br>NAME: Frederick<br>LSAD: 06<br>ALAND: 1710553993<br>AWATER: 18042333]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  021 
+  COUNTYNS  01711211 
+  AFFGEOID  0500000US24021 
+  GEOID  24021 
+  NAME  Frederick 
+  LSAD  06 
+  ALAND  1710553993 
+  AWATER  18042333 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>021</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01711211</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24021</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24021</value>
+          </Data>
+          <Data name="NAME">
+            <value>Frederick</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1710553993</value>
+          </Data>
+          <Data name="AWATER">
+            <value>18042333</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.677696,39.317941,0
+                -77.66613,39.317008,0
+                -77.588235,39.301955,0
+                -77.553114,39.279268,0
+                -77.496606,39.251045,0
+                -77.460066,39.218843,0
+                -77.285719,39.299377,0
+                -77.262529,39.31028,0
+                -77.168801,39.353502,0
+                -77.16808,39.353957,0
+                -77.107711,39.494556,0
+                -77.198024,39.57543,0
+                -77.307416,39.619101,0
+                -77.217024,39.720217,0
+                -77.23995,39.720233,0
+                -77.459433,39.720229,0
+                -77.469145,39.720229,0
+                -77.570182,39.619998,0
+                -77.622604,39.507598,0
+                -77.656177,39.368397,0
+                -77.677696,39.317941,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Garrett</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  023 <br>  COUNTYNS  01711058 <br>  AFFGEOID  0500000US24023 <br>  GEOID  24023 <br>  NAME  Garrett <br>  LSAD  06 <br>  ALAND  1681276216 <br>  AWATER  22324651 <br>STATEFP: 24<br>COUNTYFP: 023<br>COUNTYNS: 01711058<br>AFFGEOID: 0500000US24023<br>GEOID: 24023<br>NAME: Garrett<br>LSAD: 06<br>ALAND: 1681276216<br>AWATER: 22324651]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  023 
+  COUNTYNS  01711058 
+  AFFGEOID  0500000US24023 
+  GEOID  24023 
+  NAME  Garrett 
+  LSAD  06 
+  ALAND  1681276216 
+  AWATER  22324651 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>023</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01711058</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24023</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24023</value>
+          </Data>
+          <Data name="NAME">
+            <value>Garrett</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1681276216</value>
+          </Data>
+          <Data name="AWATER">
+            <value>22324651</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -79.484372,39.3443,0
+                -79.486873,39.205961,0
+                -79.424413,39.228171,0
+                -79.35375,39.278039,0
+                -79.283723,39.30964,0
+                -79.262392,39.326244,0
+                -79.166497,39.400888,0
+                -79.091329,39.472407,0
+                -79.067447,39.472809,0
+                -79.066892,39.480623,0
+                -78.928416,39.722999,0
+                -79.045576,39.722928,0
+                -79.392458,39.721439,0
+                -79.476662,39.721078,0
+                -79.482366,39.531689,0
+                -79.484372,39.3443,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Harford</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  025 <br>  COUNTYNS  01698178 <br>  AFFGEOID  0500000US24025 <br>  GEOID  24025 <br>  NAME  Harford <br>  LSAD  06 <br>  ALAND  1132095114 <br>  AWATER  231904976 <br>STATEFP: 24<br>COUNTYFP: 025<br>COUNTYNS: 01698178<br>AFFGEOID: 0500000US24025<br>GEOID: 24025<br>NAME: Harford<br>LSAD: 06<br>ALAND: 1132095114<br>AWATER: 231904976]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  025 
+  COUNTYNS  01698178 
+  AFFGEOID  0500000US24025 
+  GEOID  24025 
+  NAME  Harford 
+  LSAD  06 
+  ALAND  1132095114 
+  AWATER  231904976 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>025</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01698178</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24025</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24025</value>
+          </Data>
+          <Data name="NAME">
+            <value>Harford</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1132095114</value>
+          </Data>
+          <Data name="AWATER">
+            <value>231904976</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.569475,39.721459,0
+                -76.56671,39.662689,0
+                -76.532174,39.543977,0
+                -76.420896,39.478414,0
+                -76.386697,39.459705,0
+                -76.373493,39.421418,0
+                -76.306579,39.310107,0
+                -76.325418,39.272905,0
+                -76.296609,39.301137,0
+                -76.224161,39.35278,0
+                -76.146373,39.40531,0
+                -76.060931,39.452208,0
+                -76.037646,39.452642,0
+                -76.041976,39.494228,0
+                -76.094472,39.56781,0
+                -76.212676,39.686405,0
+                -76.233279,39.721646,0
+                -76.233485,39.721646,0
+                -76.239684,39.721642,0
+                -76.41898,39.721526,0
+                -76.569475,39.721459,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Howard</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  027 <br>  COUNTYNS  01709077 <br>  AFFGEOID  0500000US24027 <br>  GEOID  24027 <br>  NAME  Howard <br>  LSAD  06 <br>  ALAND  649942723 <br>  AWATER  6345542 <br>STATEFP: 24<br>COUNTYFP: 027<br>COUNTYNS: 01709077<br>AFFGEOID: 0500000US24027<br>GEOID: 24027<br>NAME: Howard<br>LSAD: 06<br>ALAND: 649942723<br>AWATER: 6345542]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  027 
+  COUNTYNS  01709077 
+  AFFGEOID  0500000US24027 
+  GEOID  24027 
+  NAME  Howard 
+  LSAD  06 
+  ALAND  649942723 
+  AWATER  6345542 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>027</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01709077</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24027</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24027</value>
+          </Data>
+          <Data name="NAME">
+            <value>Howard</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>649942723</value>
+          </Data>
+          <Data name="AWATER">
+            <value>6345542</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.168801,39.353502,0
+                -77.186937,39.339265,0
+                -77.134466,39.276834,0
+                -77.070112,39.254104,0
+                -76.973666,39.162209,0
+                -76.958517,39.134023,0
+                -76.888505,39.130967,0
+                -76.840362,39.103142,0
+                -76.826665,39.109948,0
+                -76.813312,39.122464,0
+                -76.786966,39.128782,0
+                -76.781511,39.145498,0
+                -76.765016,39.164837,0
+                -76.746544,39.179592,0
+                -76.722606,39.182857,0
+                -76.713346,39.193739,0
+                -76.712164,39.201933,0
+                -76.697085,39.214092,0
+                -76.717258,39.225479,0
+                -76.79379,39.265863,0
+                -76.793626,39.313655,0
+                -76.882274,39.350185,0
+                -77.101678,39.369296,0
+                -77.16808,39.353957,0
+                -77.168801,39.353502,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Kent</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  029 <br>  COUNTYNS  00593907 <br>  AFFGEOID  0500000US24029 <br>  GEOID  24029 <br>  NAME  Kent <br>  LSAD  06 <br>  ALAND  717515665 <br>  AWATER  353303064 <br>STATEFP: 24<br>COUNTYFP: 029<br>COUNTYNS: 00593907<br>AFFGEOID: 0500000US24029<br>GEOID: 24029<br>NAME: Kent<br>LSAD: 06<br>ALAND: 717515665<br>AWATER: 353303064]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  029 
+  COUNTYNS  00593907 
+  AFFGEOID  0500000US24029 
+  GEOID  24029 
+  NAME  Kent 
+  LSAD  06 
+  ALAND  717515665 
+  AWATER  353303064 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>029</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00593907</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24029</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24029</value>
+          </Data>
+          <Data name="NAME">
+            <value>Kent</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>717515665</value>
+          </Data>
+          <Data name="AWATER">
+            <value>353303064</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.278527,39.145764,0
+                -76.246481,39.119588,0
+                -76.233457,39.091385,0
+                -76.231765,39.018518,0
+                -76.265037,39.028551,0
+                -76.210991,38.99258,0
+                -76.156944,39.094982,0
+                -76.04763,39.162666,0
+                -76.010292,39.239517,0
+                -75.866315,39.260859,0
+                -75.756435,39.246688,0
+                -75.760441,39.29679,0
+                -75.766895,39.377499,0
+                -75.766905,39.377652,0
+                -75.981109,39.366569,0
+                -76.061499,39.387748,0
+                -76.110527,39.372257,0
+                -76.159673,39.335909,0
+                -76.177704,39.298701,0
+                -76.211253,39.269812,0
+                -76.243166,39.213362,0
+                -76.278527,39.145764,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Montgomery</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  031 <br>  COUNTYNS  01712500 <br>  AFFGEOID  0500000US24031 <br>  GEOID  24031 <br>  NAME  Montgomery <br>  LSAD  06 <br>  ALAND  1276943098 <br>  AWATER  35936935 <br>STATEFP: 24<br>COUNTYFP: 031<br>COUNTYNS: 01712500<br>AFFGEOID: 0500000US24031<br>GEOID: 24031<br>NAME: Montgomery<br>LSAD: 06<br>ALAND: 1276943098<br>AWATER: 35936935]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  031 
+  COUNTYNS  01712500 
+  AFFGEOID  0500000US24031 
+  GEOID  24031 
+  NAME  Montgomery 
+  LSAD  06 
+  ALAND  1276943098 
+  AWATER  35936935 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>031</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01712500</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24031</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24031</value>
+          </Data>
+          <Data name="NAME">
+            <value>Montgomery</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1276943098</value>
+          </Data>
+          <Data name="AWATER">
+            <value>35936935</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.521222,39.161057,0
+                -77.519929,39.120925,0
+                -77.481279,39.105658,0
+                -77.462617,39.076248,0
+                -77.359702,39.062004,0
+                -77.330038,39.055952,0
+                -77.310705,39.052008,0
+                -77.248403,39.026909,0
+                -77.248404,39.026888,0
+                -77.249803,38.985909,0
+                -77.202502,38.96791,0
+                -77.146601,38.96421,0
+                -77.119759,38.934343,0
+                -77.041018,38.995548,0
+                -77.002546,38.965532,0
+                -76.974565,39.014714,0
+                -76.907292,39.117908,0
+                -76.888505,39.130967,0
+                -76.958517,39.134023,0
+                -76.973666,39.162209,0
+                -77.070112,39.254104,0
+                -77.134466,39.276834,0
+                -77.186937,39.339265,0
+                -77.168801,39.353502,0
+                -77.262529,39.31028,0
+                -77.285719,39.299377,0
+                -77.460066,39.218843,0
+                -77.459883,39.218682,0
+                -77.485971,39.185665,0
+                -77.521222,39.161057,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Prince George's]]></name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  033 <br>  COUNTYNS  01714670 <br>  AFFGEOID  0500000US24033 <br>  GEOID  24033 <br>  NAME  Prince George's <br>  LSAD  06 <br>  ALAND  1250087042 <br>  AWATER  41892810 <br>STATEFP: 24<br>COUNTYFP: 033<br>COUNTYNS: 01714670<br>AFFGEOID: 0500000US24033<br>GEOID: 24033<br>NAME: Prince George's<br>LSAD: 06<br>ALAND: 1250087042<br>AWATER: 41892810]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value><![CDATA[
+ Attributes
+  STATEFP  24 
+  COUNTYFP  033 
+  COUNTYNS  01714670 
+  AFFGEOID  0500000US24033 
+  GEOID  24033 
+  NAME  Prince George's 
+  LSAD  06 
+  ALAND  1250087042 
+  AWATER  41892810 ]]></value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>033</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01714670</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24033</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24033</value>
+          </Data>
+          <Data name="NAME">
+            <value><![CDATA[Prince George's]]></value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1250087042</value>
+          </Data>
+          <Data name="AWATER">
+            <value>41892810</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -77.079499,38.709515,0
+                -77.085785,38.705281,0
+                -77.047656,38.616303,0
+                -77.011028,38.651975,0
+                -76.862955,38.658649,0
+                -76.747335,38.616677,0
+                -76.740747,38.559141,0
+                -76.675457,38.535876,0
+                -76.70196,38.710864,0
+                -76.686358,38.748475,0
+                -76.710639,38.815694,0
+                -76.670111,38.906919,0
+                -76.751258,39.034714,0
+                -76.790741,39.045722,0
+                -76.831424,39.069034,0
+                -76.840362,39.103142,0
+                -76.888505,39.130967,0
+                -76.907292,39.117908,0
+                -76.974565,39.014714,0
+                -77.002546,38.965532,0
+                -76.909393,38.892852,0
+                -76.979497,38.837812,0
+                -77.039006,38.791645,0
+                -77.03924,38.785336,0
+                -77.040673,38.746692,0
+                -77.040998,38.737914,0
+                -77.053199,38.709915,0
+                -77.079499,38.709515,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Queen Anne's]]></name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  035 <br>  COUNTYNS  00596089 <br>  AFFGEOID  0500000US24035 <br>  GEOID  24035 <br>  NAME  Queen Anne's <br>  LSAD  06 <br>  ALAND  962649223 <br>  AWATER  360044740 <br>STATEFP: 24<br>COUNTYFP: 035<br>COUNTYNS: 00596089<br>AFFGEOID: 0500000US24035<br>GEOID: 24035<br>NAME: Queen Anne's<br>LSAD: 06<br>ALAND: 962649223<br>AWATER: 360044740]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value><![CDATA[
+ Attributes
+  STATEFP  24 
+  COUNTYFP  035 
+  COUNTYNS  00596089 
+  AFFGEOID  0500000US24035 
+  GEOID  24035 
+  NAME  Queen Anne's 
+  LSAD  06 
+  ALAND  962649223 
+  AWATER  360044740 ]]></value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>035</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00596089</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24035</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24035</value>
+          </Data>
+          <Data name="NAME">
+            <value><![CDATA[Queen Anne's]]></value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>962649223</value>
+          </Data>
+          <Data name="AWATER">
+            <value>360044740</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.361727,38.939175,0
+                -76.376202,38.850461,0
+                -76.334019,38.860238,0
+                -76.317947,38.911312,0
+                -76.250868,38.92825,0
+                -76.203638,38.928382,0
+                -76.205063,38.892726,0
+                -76.196869,38.855742,0
+                -76.103512,38.882308,0
+                -76.096956,38.944259,0
+                -75.949335,38.918333,0
+                -75.940933,38.976295,0
+                -75.834948,39.108437,0
+                -75.748155,39.143132,0
+                -75.756435,39.246688,0
+                -75.866315,39.260859,0
+                -76.010292,39.239517,0
+                -76.04763,39.162666,0
+                -76.156944,39.094982,0
+                -76.210991,38.99258,0
+                -76.265037,39.028551,0
+                -76.301847,39.039651,0
+                -76.322296,39.006375,0
+                -76.361727,38.939175,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St. Mary's]]></name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  037 <br>  COUNTYNS  01697853 <br>  AFFGEOID  0500000US24037 <br>  GEOID  24037 <br>  NAME  St. Mary's <br>  LSAD  06 <br>  ALAND  928885370 <br>  AWATER  1050517131 <br>STATEFP: 24<br>COUNTYFP: 037<br>COUNTYNS: 01697853<br>AFFGEOID: 0500000US24037<br>GEOID: 24037<br>NAME: St. Mary's<br>LSAD: 06<br>ALAND: 928885370<br>AWATER: 1050517131]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value><![CDATA[
+ Attributes
+  STATEFP  24 
+  COUNTYFP  037 
+  COUNTYNS  01697853 
+  AFFGEOID  0500000US24037 
+  GEOID  24037 
+  NAME  St. Mary's 
+  LSAD  06 
+  ALAND  928885370 
+  AWATER  1050517131 ]]></value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>037</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01697853</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24037</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24037</value>
+          </Data>
+          <Data name="NAME">
+            <value><![CDATA[St. Mary's]]></value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>928885370</value>
+          </Data>
+          <Data name="AWATER">
+            <value>1050517131</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.87146,38.389937,0
+                -76.827036,38.2583,0
+                -76.805949,38.252275,0
+                -76.740055,38.235227,0
+                -76.673462,38.234401,0
+                -76.590637,38.214212,0
+                -76.54038,38.152991,0
+                -76.481036,38.115873,0
+                -76.430425,38.119383,0
+                -76.37179,38.079565,0
+                -76.322093,38.036503,0
+                -76.330794,38.099331,0
+                -76.320136,38.138339,0
+                -76.353516,38.178135,0
+                -76.392668,38.239663,0
+                -76.374481,38.296348,0
+                -76.402894,38.311402,0
+                -76.400195,38.319872,0
+                -76.453453,38.305057,0
+                -76.501475,38.372497,0
+                -76.608373,38.424445,0
+                -76.674118,38.499622,0
+                -76.76829,38.512949,0
+                -76.87146,38.389937,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Somerset</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  039 <br>  COUNTYNS  00596907 <br>  AFFGEOID  0500000US24039 <br>  GEOID  24039 <br>  NAME  Somerset <br>  LSAD  06 <br>  ALAND  828090979 <br>  AWATER  752714478 <br>STATEFP: 24<br>COUNTYFP: 039<br>COUNTYNS: 00596907<br>AFFGEOID: 0500000US24039<br>GEOID: 24039<br>NAME: Somerset<br>LSAD: 06<br>ALAND: 828090979<br>AWATER: 752714478]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  039 
+  COUNTYNS  00596907 
+  AFFGEOID  0500000US24039 
+  GEOID  24039 
+  NAME  Somerset 
+  LSAD  06 
+  ALAND  828090979 
+  AWATER  752714478 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>039</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00596907</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24039</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24039</value>
+          </Data>
+          <Data name="NAME">
+            <value>Somerset</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>828090979</value>
+          </Data>
+          <Data name="AWATER">
+            <value>752714478</value>
+          </Data>
+        </ExtendedData>
+        <MultiGeometry>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <tessellate>1</tessellate>
+                <coordinates>
+                  -75.942375,38.187066,0
+                  -75.937089,38.124209,0
+                  -75.86381,38.100968,0
+                  -75.858881,38.060135,0
+                  -75.857507,38.038778,0
+                  -75.898956,37.974514,0
+                  -75.892686,37.916848,0
+                  -75.860727,37.91831,0
+                  -75.783815,37.972594,0
+                  -75.722662,37.97131,0
+                  -75.669711,37.950796,0
+                  -75.624341,37.994211,0
+                  -75.661827,38.041853,0
+                  -75.54087,38.08948,0
+                  -75.545898,38.17874,0
+                  -75.612764,38.278626,0
+                  -75.662679,38.298845,0
+                  -75.768671,38.285183,0
+                  -75.875447,38.219709,0
+                  -75.864104,38.200858,0
+                  -75.942375,38.187066,0
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+          <Polygon>
+            <outerBoundaryIs>
+              <LinearRing>
+                <tessellate>1</tessellate>
+                <coordinates>
+                  -76.046213,38.025533,0
+                  -76.04653,37.953586,0
+                  -75.984648,37.938121,0
+                  -75.980089,38.004891,0
+                  -76.007337,38.036706,0
+                  -76.046213,38.025533,0
+                </coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </MultiGeometry>
+      </Placemark>
+      <Placemark>
+        <name>Talbot</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  041 <br>  COUNTYNS  00592947 <br>  AFFGEOID  0500000US24041 <br>  GEOID  24041 <br>  NAME  Talbot <br>  LSAD  06 <br>  ALAND  695519250 <br>  AWATER  539405840 <br>STATEFP: 24<br>COUNTYFP: 041<br>COUNTYNS: 00592947<br>AFFGEOID: 0500000US24041<br>GEOID: 24041<br>NAME: Talbot<br>LSAD: 06<br>ALAND: 695519250<br>AWATER: 539405840]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  041 
+  COUNTYNS  00592947 
+  AFFGEOID  0500000US24041 
+  GEOID  24041 
+  NAME  Talbot 
+  LSAD  06 
+  ALAND  695519250 
+  AWATER  539405840 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>041</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>00592947</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24041</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24041</value>
+          </Data>
+          <Data name="NAME">
+            <value>Talbot</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>695519250</value>
+          </Data>
+          <Data name="AWATER">
+            <value>539405840</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.379739,38.788314,0
+                -76.39035,38.757004,0
+                -76.340543,38.730338,0
+                -76.347998,38.686234,0
+                -76.322418,38.679304,0
+                -76.275015,38.712714,0
+                -76.238725,38.712845,0
+                -76.200334,38.670774,0
+                -76.175159,38.673236,0
+                -76.170162,38.640842,0
+                -76.027717,38.572433,0
+                -75.945248,38.674109,0
+                -76.014427,38.726463,0
+                -75.896774,38.815109,0
+                -75.949335,38.918333,0
+                -76.096956,38.944259,0
+                -76.103512,38.882308,0
+                -76.196869,38.855742,0
+                -76.19109,38.82966,0
+                -76.219328,38.812371,0
+                -76.271575,38.851771,0
+                -76.310081,38.796846,0
+                -76.379739,38.788314,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Washington</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  043 <br>  COUNTYNS  01714220 <br>  AFFGEOID  0500000US24043 <br>  GEOID  24043 <br>  NAME  Washington <br>  LSAD  06 <br>  ALAND  1185609331 <br>  AWATER  24803926 <br>STATEFP: 24<br>COUNTYFP: 043<br>COUNTYNS: 01714220<br>AFFGEOID: 0500000US24043<br>GEOID: 24043<br>NAME: Washington<br>LSAD: 06<br>ALAND: 1185609331<br>AWATER: 24803926]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  043 
+  COUNTYNS  01714220 
+  AFFGEOID  0500000US24043 
+  GEOID  24043 
+  NAME  Washington 
+  LSAD  06 
+  ALAND  1185609331 
+  AWATER  24803926 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>043</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01714220</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24043</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24043</value>
+          </Data>
+          <Data name="NAME">
+            <value>Washington</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1185609331</value>
+          </Data>
+          <Data name="AWATER">
+            <value>24803926</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -78.342593,39.722658,0
+                -78.342834,39.722658,0
+                -78.313325,39.692474,0
+                -78.332788,39.628528,0
+                -78.313033,39.631001,0
+                -78.225075,39.658878,0
+                -78.08226,39.671166,0
+                -78.027629,39.620656,0
+                -78.006734,39.601337,0
+                -77.925988,39.607642,0
+                -77.829814,39.587288,0
+                -77.823762,39.525907,0
+                -77.810944,39.500739,0
+                -77.798201,39.475719,0
+                -77.740012,39.401694,0
+                -77.74593,39.353221,0
+                -77.719519,39.321314,0
+                -77.677696,39.317941,0
+                -77.656177,39.368397,0
+                -77.622604,39.507598,0
+                -77.570182,39.619998,0
+                -77.469145,39.720229,0
+                -77.469274,39.720229,0
+                -77.768644,39.721538,0
+                -78.075861,39.722448,0
+                -78.098971,39.722466,0
+                -78.342593,39.722658,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Wicomico</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  045 <br>  COUNTYNS  01668606 <br>  AFFGEOID  0500000US24045 <br>  GEOID  24045 <br>  NAME  Wicomico <br>  LSAD  06 <br>  ALAND  969736578 <br>  AWATER  66797773 <br>STATEFP: 24<br>COUNTYFP: 045<br>COUNTYNS: 01668606<br>AFFGEOID: 0500000US24045<br>GEOID: 24045<br>NAME: Wicomico<br>LSAD: 06<br>ALAND: 969736578<br>AWATER: 66797773]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  045 
+  COUNTYNS  01668606 
+  AFFGEOID  0500000US24045 
+  GEOID  24045 
+  NAME  Wicomico 
+  LSAD  06 
+  ALAND  969736578 
+  AWATER  66797773 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>045</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01668606</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24045</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24045</value>
+          </Data>
+          <Data name="NAME">
+            <value>Wicomico</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>969736578</value>
+          </Data>
+          <Data name="AWATER">
+            <value>66797773</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -75.928628,38.297272,0
+                -75.923766,38.246285,0
+                -75.888513,38.241423,0
+                -75.875447,38.219709,0
+                -75.768671,38.285183,0
+                -75.662679,38.298845,0
+                -75.612764,38.278626,0
+                -75.363582,38.291306,0
+                -75.307011,38.35476,0
+                -75.341287,38.452437,0
+                -75.479283,38.453698,0
+                -75.693721,38.460128,0
+                -75.700382,38.542743,0
+                -75.701778,38.560767,0
+                -75.823706,38.481022,0
+                -75.864213,38.350782,0
+                -75.928628,38.297272,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Worcester</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  047 <br>  COUNTYNS  01668802 <br>  AFFGEOID  0500000US24047 <br>  GEOID  24047 <br>  NAME  Worcester <br>  LSAD  06 <br>  ALAND  1212832597 <br>  AWATER  586845178 <br>STATEFP: 24<br>COUNTYFP: 047<br>COUNTYNS: 01668802<br>AFFGEOID: 0500000US24047<br>GEOID: 24047<br>NAME: Worcester<br>LSAD: 06<br>ALAND: 1212832597<br>AWATER: 586845178]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  047 
+  COUNTYNS  01668802 
+  AFFGEOID  0500000US24047 
+  GEOID  24047 
+  NAME  Worcester 
+  LSAD  06 
+  ALAND  1212832597 
+  AWATER  586845178 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>047</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01668802</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24047</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24047</value>
+          </Data>
+          <Data name="NAME">
+            <value>Worcester</value>
+          </Data>
+          <Data name="LSAD">
+            <value>06</value>
+          </Data>
+          <Data name="ALAND">
+            <value>1212832597</value>
+          </Data>
+          <Data name="AWATER">
+            <value>586845178</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -75.661827,38.041853,0
+                -75.624341,37.994211,0
+                -75.242266,38.027209,0
+                -75.193796,38.096013,0
+                -75.177394,38.130014,0
+                -75.143229,38.220475,0
+                -75.102947,38.311525,0
+                -75.085518,38.32427,0
+                -75.048939,38.451263,0
+                -75.185455,38.451012,0
+                -75.341287,38.452437,0
+                -75.307011,38.35476,0
+                -75.363582,38.291306,0
+                -75.612764,38.278626,0
+                -75.545898,38.17874,0
+                -75.54087,38.08948,0
+                -75.661827,38.041853,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Baltimore</name>
+        <description><![CDATA[description: <br> Attributes<br>  STATEFP  24 <br>  COUNTYFP  510 <br>  COUNTYNS  01702381 <br>  AFFGEOID  0500000US24510 <br>  GEOID  24510 <br>  NAME  Baltimore <br>  LSAD  25 <br>  ALAND  209643563 <br>  AWATER  28767622 <br>STATEFP: 24<br>COUNTYFP: 510<br>COUNTYNS: 01702381<br>AFFGEOID: 0500000US24510<br>GEOID: 24510<br>NAME: Baltimore<br>LSAD: 25<br>ALAND: 209643563<br>AWATER: 28767622]]></description>
+        <styleUrl>#poly-9ECAE1-2000-127</styleUrl>
+        <ExtendedData>
+          <Data name="description">
+            <value>
+ Attributes
+  STATEFP  24 
+  COUNTYFP  510 
+  COUNTYNS  01702381 
+  AFFGEOID  0500000US24510 
+  GEOID  24510 
+  NAME  Baltimore 
+  LSAD  25 
+  ALAND  209643563 
+  AWATER  28767622 </value>
+          </Data>
+          <Data name="STATEFP">
+            <value>24</value>
+          </Data>
+          <Data name="COUNTYFP">
+            <value>510</value>
+          </Data>
+          <Data name="COUNTYNS">
+            <value>01702381</value>
+          </Data>
+          <Data name="AFFGEOID">
+            <value>0500000US24510</value>
+          </Data>
+          <Data name="GEOID">
+            <value>24510</value>
+          </Data>
+          <Data name="NAME">
+            <value>Baltimore</value>
+          </Data>
+          <Data name="LSAD">
+            <value>25</value>
+          </Data>
+          <Data name="ALAND">
+            <value>209643563</value>
+          </Data>
+          <Data name="AWATER">
+            <value>28767622</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -76.711191,39.362798,0
+                -76.711186,39.354383,0
+                -76.711054,39.277889,0
+                -76.684649,39.266458,0
+                -76.65986,39.255509,0
+                -76.644212,39.248924,0
+                -76.580287,39.206607,0
+                -76.529486,39.218408,0
+                -76.529517,39.297056,0
+                -76.529793,39.372058,0
+                -76.626193,39.372017,0
+                -76.693693,39.372105,0
+                -76.711191,39.362798,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
