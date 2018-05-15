@@ -10,7 +10,12 @@ export default class {
 
     clearData = () => {
         this.incomeData = null;
+        for (let i = 0; i < this.polygons.length; ++i) {
+            this.polygons[i].value.setMap(null);
+            delete this.polygons[i].value;
+	}
         this.polygons = [];
+
     }
 
     fetchData = async(bounds) => {
