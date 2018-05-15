@@ -6,6 +6,10 @@ import { filter } from 'lodash';
 // This should probably be in a common area
 const metricOptions = [
     {
+        text: '',
+        value: '',
+    },
+    {
         text: 'Crime',
         value: 'crime',
     },
