@@ -22,7 +22,7 @@
               const response = await this.returnsPromiseObject()
                 // Do something with response.data
             } catch (err) {
-                // Do something with err or err.message
+                // Do something with err or err..
             }
         }
     ```
@@ -50,7 +50,6 @@
 ### Resources
 - [TypeChecking with Proptypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [Stateless Functional Components](https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc)
-  - Don't focus much on stateless components. Just an interesting read
 ### Folder Structure
 #### components/
 -  Contains React components. Components represent small parts of a web page such as a navigation menu or a box for comments. Components are re-rendered when the component state is changed
@@ -63,12 +62,33 @@
     - Empty component that can be used as a base for creating new components
 -  New components can be created by copying componentTemplate.js and modifying as needed
 ### App.js
--  Main page of our web server. This file is where the different components are organized in relation to each other on the web page
--  Gives an example on passing properties to a component
+-  Entry point component. Contains common header information and lays out the location of main components
 -  Import components by doing the following:
     ```javascript
     import {{ComponentName}} from './components/{{componentName}}
     ```
+### Using Google-Map-React Library
+- [Tutorial and Examples](https://github.com/istarkov/google-map-react)
+- [Documentation](https://github.com/istarkov/google-map-react/blob/master/DOC.md)
+
+#### Notes
+- The GoogleMapReact component will fill the size of its parent container. Make sure a width and height is specified
+- Components can be rendered on the map by using the component as the content in GoogleMapReact tags
+    ```javascript
+    <div style={{width : '600px', height : '600px'}}>
+        <GoogleMapReact
+            bootstrapURLKeys={{ key: config.googleMapsApiKey }}
+            defaultCenter={{lat: 39.2556, lng: -76.7110}}
+            defaultZoom={4}
+        >
+            <AnyReactComponent
+                lat={39.2556}
+                lng={-76.7110}
+                text={this.props.metricName}
+            />
+        </GoogleMapReact>
+    </div>
+   ```
 ### Querying Express Backend
 - Requests to the backend server should be made through the server module located in src/services/server
 - This module will create an axios instance with the baseUrl configured to the baseUrl of the backend

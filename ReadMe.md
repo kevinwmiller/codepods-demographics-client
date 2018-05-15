@@ -1,4 +1,4 @@
-# Codepods Demographics Client
+ # Codepods Demographics Client
 ####	Version 0.0.3
 
 Find out where to retire based on multiple metrics such as crime, income, commute, and more!
@@ -53,9 +53,9 @@ Use your distro's package manager to install VirtualBox, Vagrant, and Git
 4.	Start the web server and client
 	-	  vagrant ssh
 	-	  cd /vagrant
-	-	  yarn start-dev
+	-	  yarn start-dev 
 		-	yarn start-dev will start the client server. Changes made on the host machine will be reflected automatically on the web site
-
+	(just yarn start for the front end)
 
 ### Installing
 
@@ -98,6 +98,10 @@ Use your distro's package manager to install VirtualBox, Vagrant, and Git
 - [React.js](https://reactjs.org/)
 - [Yarn](https://yarnpkg.com/en/)
 - [Google Maps APIs](https://developers.google.com/maps/)
+    - [google-map-react](https://github.com/istarkov/google-map-react)
+    - [API Doc](https://github.com/istarkov/google-map-react/blob/master/API.md)
+    - [Documentation](https://github.com/istarkov/google-map-react/blob/master/DOC.md)
+- [Semantic UI](https://react.semantic-ui.com)
 
 ## Contributing
 
