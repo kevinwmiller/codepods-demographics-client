@@ -42,18 +42,23 @@ export default class {
     updateMap = async (googleMaps, map, callbacks) => {
         console.log("bounds: " + map.getBounds());
         const counties = await this.fetchData(map.getBounds());
-        console.log("response: ")
-        console.log(counties);
 	if (counties.data.response.length === 0) {
             console.log("inside a county, two counties needed for comparison");
 		//figure out if we are zoomd inside a given county. 
 	}else{
-           console.log(this.incomeData);
+           console.log(this.polygons);
+
 	   const incD = this.incomeData.data.response[0]; // this is a dict
            const incomeData_dict = []
            for (let i = 0; i < counties.data.response.length; ++i) { // for each key (county) in dict
-               // debugging code
-               
+               var alreadyRendered = false;
+               for (let j = 0; j < this.polygons.length;++j) {
+                   if (this.polygons[j].key === counties.data.response[i]){
+                       alreadyRendered = true;
+                       break;
+		   }
+	       }
+               if(!alreadyRendered){
                console.log("name: " + counties.data.response[i]);
                console.log("income: " + incD[counties.data.response[i]]);
                const path = geometry_dict[counties.data.response[i]].coordinates;
@@ -78,11 +83,11 @@ export default class {
                strokeWeight,
                fillColor,
                fillOpacity
-               
 	       };
                const polygon = new googleMaps.Polygon(params);
 	       polygon.setMap(map);
-               this.polygons.push(polygon);
+               this.polygons.push({key:counties.data.response[i], value:polygon});
+	       }
 	   }
 	           
 
