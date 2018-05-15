@@ -32,6 +32,7 @@ class CodepodsDemographicsComponent extends Component {
         console.log("Metric change", data.value);
         if (this.state.metricName) {
             // Remove any existing data
+            console.log('Clearing data');
             metrics.clearData(this.state.metricName);
         }
         this.setState({
