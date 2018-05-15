@@ -6,12 +6,10 @@
 
 */
 import React, { Component } from 'react';
-import logo from './logo-main.png';
+import { Container } from 'semantic-ui-react';
 import './App.css';
+import CodepodsDemographicComponent from './components/codepodsDemographicsComponent';
 
-// Import any components used in the frontend.
-// Only require those which are needed in the current component
-import ExampleComponent from './components/exampleComponent';
 
 /**
  * Entry point and main page of our react app
@@ -23,13 +21,9 @@ class App extends Component {
     */
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">CodePods Web Project</h1>
-                </header>
-                <ExampleComponent message="This is a property" />
-            </div>
+            <Container style={{width: '90%'}}>
+                <CodepodsDemographicComponent />
+            </Container>
         );
     }
 }

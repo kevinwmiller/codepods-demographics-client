@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Loader, Segment } from 'semantic-ui-react';
 import server from '../services/server';
 
 /**
@@ -14,6 +15,53 @@ function getApiData() {
         },
     });
 }
+
+/**
+    This is a stateless component that will determine how to render the Server Data
+    If we are still loading, display a loading icon
+    If there was an error fetching the data, then display an error message
+    Otherwise, display the data
+*/
+function ExampleServerData(props) {
+    if (props.loading) {
+        return (
+            <Loader active indeterminate inline>Fetching Data</Loader>
+        );
+    } else if (props.error) {
+        return (
+            <div className="ui negative message">
+                <div className="header">
+                    Could not fetch server data
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="ui relaxed divided list">
+            {props.response.map(personName => (
+                <div className="content" key={personName._firstNameId}>
+                    <div className="header">Hello {personName.firstName} {personName.lastName}!</div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+ExampleServerData.defaultProps = {
+    loading: false,
+    error: false,
+    response: [],
+};
+
+ExampleServerData.propTypes = {
+    loading: PropTypes.bool,
+    error: PropTypes.bool,
+    response: PropTypes.arrayOf(PropTypes.shape({
+        firstName: PropTypes.string.isRequired,
+        lastName: PropTypes.string.isRequired,
+    })),
+};
 
 /**
   * An example component showing the basics of making a call to the
@@ -113,14 +161,9 @@ class ExampleComponent extends Component {
                     The below is a call to the backend server
                 </p>
                 <div className="ExampleComponentState">
-                    {
-                        this.state.loading ?
-                            <p>Loading...</p>
-                            : this.state.error ? 
-                                <p>Failed to contact server</p>
-                                : this.state.response.map(personName =>
-                                    <p key={personName._firstNameId}>Hello {personName.firstName} {personName.lastName}!</p>)
-                    }
+                    <Segment>
+                        <ExampleServerData loading={this.state.loading} error={this.state.error} response={this.state.response} />
+                    </Segment>
                 </div>
             </div>
         );

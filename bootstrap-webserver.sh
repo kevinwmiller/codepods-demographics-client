@@ -1,20 +1,25 @@
-#!/bin/sh
+#!/bin/bash
+
+sudo chsh -s /bin/bash vagrant
 
 sudo apt-get update
 
 # Install Git
 sudo apt-get install -y git
 
-# Install nodejs 9.x and npm 5.6
-cd ~
-curl -sL https://deb.nodesource.com/setup_9.x -o nodesource_setup.sh
-sudo bash nodesource_setup.sh
-sudo apt-get install -y nodejs 
+cd /home/vagrant
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+echo $HOME
+export NVM_DIR="$HOME/.nvm"
+source $HOME/.nvm/nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+nvm install 9
 
 # Install build-essential for npm packages
 sudo apt-get install -y build-essential
 
-sudo npm install yarn -g
+npm install yarn -g
 
 cd /vagrant
 

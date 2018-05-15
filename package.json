@@ -2,22 +2,33 @@
   "name": "codepods-demographics-client",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+      "node": "9.11.1"
+  },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-eslint": "^8.2.2",
+    "eslint-plugin-babel": "^4.1.2",
+    "google-maps-react": "^2.0.2",
     "lodash": "^4.17.5",
+    "moment": "^2.22.1",
     "prop-types": "^15.6.1",
+    "qs": "^6.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+    "recompose": "^0.26.0",
+    "semantic-ui-css": "^2.3.0",
+    "semantic-ui-react": "^0.78.3",
     "shortid": "^2.2.8"
   },
   "scripts": {
-    "start": "./node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "./node_modules/react-scripts/bin/react-scripts.js build",
-    "eject": "./node_modules/react-scripts/bin/react-scripts.js eject",
-    "doc": "./node_modules/esdoc/out/src/ESDocCLI.js",
-    "test": "./node_modules/mocha/bin/mocha src/test --recursive",
-    "lint": "./node_modules/react-scripts/node_modules/eslint/bin/eslint.js ."
+    "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
+    "build": "node ./node_modules/react-scripts/bin/react-scripts.js build",
+    "eject": "node ./node_modules/react-scripts/bin/react-scripts.js eject",
+    "doc": "node ./node_modules/esdoc/out/src/ESDocCLI.js",
+    "test": "node ./node_modules/mocha/bin/mocha src/test --recursive",
+    "lint": "node ./node_modules/react-scripts/node_modules/eslint/bin/eslint.js ."
   },
   "devDependencies": {
     "chai": "^4.1.2",
